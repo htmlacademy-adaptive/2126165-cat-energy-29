@@ -30,7 +30,86 @@
     </nav>
   </header>
   <main class="page-content">
-
+    <section class="program-selection">
+      <h1 class="program-selection__title primary-title">Подбор программы</h1>
+      <p class="program-selection__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="program-selection__personal-data fieldset">
+          <legend class="visually-hidden">Личные данные вашего кота.</legend>
+          <label class="program-selection__label" for="cat-name">Имя:*</label>
+          <input class="program-selection__input form-control input" type="text" name="cat-name" id="cat-name"
+            placeholder="Барсик" required>
+          <label class="program-selection__label" for="cat-weight">Вес (кг):*</label>
+          <input class="program-selection__input form-control input" type="text" name="cat-weight" id="cat-weight"
+            placeholder="7" required>
+          <label class="program-selection__label" for="cat-age">Возраст (лет):</label>
+          <input class="program-selection__input form-control input" type="text" name="cat-age" id="cat-age"
+            placeholder="7">
+        </fieldset>
+        <fieldset class="program-selection__purpose fieldset">
+          <legend class="visually-hidden">Направление программы.</legend>
+          <ul class="program-selection__list">
+            <li class="program-selection__item">
+              <label class="program-selection__control">
+                <input class="program-selection__input form-control radio-input radio-input--checked" type="radio"
+                  name="purpose" value="loss-weight" checked>
+                <span class="program-selection__label">Похудение</span>
+              </label>
+            </li>
+            <li class="program-selection__item">
+              <label class="program-selection__control">
+                <input class="program-selection__input form-control radio-input" type="radio" name="purpose"
+                  value="gain-weight">
+                <span class="program-selection__label">Набор массы</span>
+              </label>
+            </li>
+            <li class="program-selection__item">
+              <label class="program-selection__control">
+                <input class="program-selection__input form-control radio-input" type="radio" name="purpose"
+                  value="doubt">
+                <span class="program-selection__label">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__contacts fieldset">
+          <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
+          <label class="program-selection__label label" for="email">E-mail:*</label>
+          <input class="program-selection__input form-control input program-selection__input--email" type="email"
+            name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          <label class="program-selection__label label" for="phone">Телефон:*</label>
+          <input class="program-selection__input form-control input program-selection__input--phone" type="tel"
+            name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+        </fieldset>
+        <fieldset class="program-selection__comment fieldset">
+          <legend class="program-selection__headline">Комментарий</legend>
+          <textarea class="program-selection__textarea form-control textarea" name="comment" cols="30"
+            rows="10">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="program-selection__additional fieldset">
+          <legend class="program-selection__headline">Дополнительно</legend>
+          <label class="program-selection__control">
+            <input class="program-selection__input form-control checkbox-input checkbox-input--checked" type="checkbox"
+              name="sweetener" checked>
+            <span class="program-selection__label">Сахарозаменитель</span>
+          </label>
+          <label class="program-selection__control">
+            <input class="program-selection__input form-control checkbox-input" type="checkbox" name="drinking-water">
+            <span class="program-selection__label">Питьевая вода</span>
+          </label>
+          <label class="program-selection__control">
+            <input class="program-selection__input form-control checkbox-input" type="checkbox" name="milk">
+            <span class="program-selection__label">Молоко</span>
+          </label>
+          <label class="program-selection__control">
+            <input class="program-selection__input form-control checkbox-input" type="checkbox" name="vitamins">
+            <span class="program-selection__label">Витамины</span>
+          </label>
+        </fieldset>
+        <button class="program-selection__button button button--primary" type="submit">Отправить заявку</button>
+        <p class="program-selection__legend">* — Обязательные поля</p>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <a class="footer__logo" href="index.html">
