@@ -36,15 +36,21 @@
       <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="program-selection__personal-data fieldset">
           <legend class="visually-hidden">Личные данные вашего кота.</legend>
-          <label class="program-selection__label" for="cat-name">Имя:*</label>
-          <input class="program-selection__input form-control input" type="text" name="cat-name" id="cat-name"
-            placeholder="Барсик" required>
-          <label class="program-selection__label" for="cat-weight">Вес (кг):*</label>
-          <input class="program-selection__input form-control input" type="text" name="cat-weight" id="cat-weight"
-            placeholder="7" required>
-          <label class="program-selection__label" for="cat-age">Возраст (лет):</label>
-          <input class="program-selection__input form-control input" type="text" name="cat-age" id="cat-age"
-            placeholder="7">
+          <p class="label-field">
+            <label class="program-selection__label" for="cat-name">Имя:*</label>
+            <input class="program-selection__input form-control input" type="text" name="cat-name" id="cat-name"
+              placeholder="Барсик" required>
+          </p>
+          <p class="label-field">
+            <label class="program-selection__label" for="cat-weight">Вес (кг):*</label>
+            <input class="program-selection__input form-control input" type="text" name="cat-weight" id="cat-weight"
+              placeholder="7" required>
+          </p>
+          <p class="label-field">
+            <label class="program-selection__label" for="cat-age">Возраст (лет):</label>
+            <input class="program-selection__input form-control input" type="text" name="cat-age" id="cat-age"
+              placeholder="7">
+          </p>
         </fieldset>
         <fieldset class="program-selection__purpose fieldset">
           <legend class="visually-hidden">Направление программы.</legend>
@@ -74,12 +80,16 @@
         </fieldset>
         <fieldset class="program-selection__contacts fieldset">
           <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
-          <label class="program-selection__label label" for="email">E-mail:*</label>
-          <input class="program-selection__input form-control input program-selection__input--email" type="email"
-            name="email" id="email" placeholder="kuklachev@gmail.com" required>
-          <label class="program-selection__label label" for="phone">Телефон:*</label>
-          <input class="program-selection__input form-control input program-selection__input--phone" type="tel"
-            name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+          <p class="label-field">
+            <label class="program-selection__label" for="email">E-mail:*</label>
+            <input class="program-selection__input form-control input program-selection__input--email" type="email"
+              name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </p>
+          <p class="label-field">
+            <label class="program-selection__label" for="phone">Телефон:*</label>
+            <input class="program-selection__input form-control input program-selection__input--phone" type="tel"
+              name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+          </p>
         </fieldset>
         <fieldset class="program-selection__comment fieldset">
           <legend class="program-selection__headline">Комментарий</legend>
