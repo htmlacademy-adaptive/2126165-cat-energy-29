@@ -1,2 +1,5 @@
-// fonts
+@use "global/global.scss";
+@use "global/variables.scss";
 @use "global/fonts.scss";
+
+@use "blocks/page.scss";
