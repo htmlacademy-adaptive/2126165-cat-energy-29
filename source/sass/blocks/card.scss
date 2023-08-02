@@ -1,0 +1,28 @@
+@use "../global/variables.scss";
+
+.card__caption-link {
+  text-decoration: none;
+  color: #222222;
+}
+
+.card__caption {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card__feature-list {
+  margin: 0;
+}
+
+.card__feature-item {
+  font-family: variables.$font-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$text-secondary;
+}
+
+.card__amount {
+  margin: 0;
+}
