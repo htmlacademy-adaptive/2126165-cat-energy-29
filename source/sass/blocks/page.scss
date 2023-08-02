@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .page {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: variables.$font-primary;
   font-size: 14px;
   line-height: 18px;
 }
@@ -9,5 +9,5 @@
 .page__body {
   margin: 0;
   background-color: #ffffff;
-  color: variables.$primary-text;
+  color: variables.$text-primary;
 }

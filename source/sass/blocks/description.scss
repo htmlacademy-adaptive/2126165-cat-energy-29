@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.descriprion__list {
+  @include mixins.list-reset;
+}
+
+.descriprion__text {
+  margin: 0;
+  font-family: variables.$font-primary;
+  color: variables.$text-secondary;
+}

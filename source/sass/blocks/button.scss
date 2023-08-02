@@ -6,9 +6,11 @@
   margin: 0;
   padding: 7px 44px;
   border: none;
+  font-family: variables.$font-primary;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -18,6 +20,6 @@
 }
 
 .button--secondary {
-  color: variables.$secondary-text;
+  color: variables.$text-secondary;
   background-color: #f2f2f2;
 }
