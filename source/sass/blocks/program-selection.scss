@@ -2,8 +2,8 @@
 @use "../global/mixins.scss";
 
 .program-selection__intro {
+  @include mixins.uppercase;
   margin: 0;
-  text-transform: uppercase;
 }
 
 .program-selection__list {

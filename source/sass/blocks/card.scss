@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .card__caption-link {
   text-decoration: none;
@@ -6,10 +7,10 @@
 }
 
 .card__caption {
+  @include mixins.uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .card__feature-list {

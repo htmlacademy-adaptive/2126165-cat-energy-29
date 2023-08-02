@@ -1,10 +1,11 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .invite__headline {
+  @include mixins.uppercase;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #111111;
 }
 

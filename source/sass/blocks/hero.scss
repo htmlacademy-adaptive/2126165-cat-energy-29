@@ -1,10 +1,12 @@
+@use "../global/mixins.scss";
+
 .hero {
   background-color: rgba(104, 183, 56, 0.85);
   color: #ffffff;
 }
 
 .hero__slogan {
+  @include mixins.uppercase;
   margin: 0;
   line-height: 14px;
-  text-transform: uppercase;
 }

@@ -1,15 +1,16 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .program {
   background-color: #f2f2f2;
 }
 
 .program__title {
+  @include mixins.uppercase;
   margin: 0;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .program__descriprion {
@@ -19,9 +20,9 @@
 }
 
 .program__link {
+  @include mixins.uppercase;
   font-size: 16px;
   line-height: 16px;
   color: variables.$text-primary;
-  text-transform: uppercase;
   text-decoration: none;
 }
