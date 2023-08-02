@@ -1,0 +1,22 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.program-selection__intro {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.program-selection__list {
+  @include mixins.list-reset;
+}
+
+.program-selection__headline {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.program-selection__legend {
+  margin: 0;
+  font-family: variables.$font-secondary;
+  line-height: 16px;
+}
