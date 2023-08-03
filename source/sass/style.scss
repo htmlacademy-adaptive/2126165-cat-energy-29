@@ -1,23 +1,23 @@
+//Global
 @use "global/global.scss";
 @use "global/variables.scss";
 @use "global/mixins.scss";
 @use "global/fonts.scss";
-
+//Global-blocks
+@use "blocks/page.scss";
 @use "blocks/site-logo.scss";
 @use "blocks/academy-logo.scss";
 @use "blocks/title.scss";
 @use "blocks/button.scss";
-
-@use "blocks/page.scss";
-
+//Header
 @use "blocks/header.scss";
 @use "blocks/navigation.scss";
 @use "blocks/site-list.scss";
-
+//Footer
 @use "blocks/footer.scss";
 @use "blocks/social.scss";
 @use "blocks/social-link.scss";
-
+//Index
 @use "blocks/hero.scss";
 @use "blocks/programs.scss";
 @use "blocks/program.scss";
@@ -25,7 +25,7 @@
 @use "blocks/example.scss";
 @use "blocks/slider.scss";
 @use "blocks/invite.scss";
-
+//Form
 @use "blocks/program-selection.scss";
 @use "blocks/fieldset.scss";
 @use "blocks/label-field.scss";
@@ -36,7 +36,7 @@
 @use "blocks/textarea.scss";
 @use "blocks/checkbox-field.scss";
 @use "blocks/checkbox-input.scss";
-
+//Catalog
 @use "blocks/catalog.scss";
 @use "blocks/cards.scss";
 @use "blocks/card.scss";
