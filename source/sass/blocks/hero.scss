@@ -5,6 +5,10 @@
   color: #ffffff;
 }
 
+.hero__title {
+  margin: 0;
+}
+
 .hero__slogan {
   @include mixins.uppercase;
   margin: 0;
