@@ -3,6 +3,17 @@
 
 .program {
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
+
+  &--slim {
+    background-image: url("../../img/cat-slim.svg");
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../../img/cat-pro.svg");
+    background-size: 67px 50px;
+  }
 }
 
 .program__title {
