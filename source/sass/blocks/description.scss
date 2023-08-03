@@ -9,29 +9,33 @@
   @include mixins.list-reset;
 }
 
-.descriprion__item {
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
-
-  &--healthy {
-    background-image: url("../../img/healthy-icon.svg");
-  }
-
-  &--simple {
-    background-image: url("../../img/simple-icon.svg");
-  }
-
-  &--tasty {
-    background-image: url("../../img/tasty-icon.svg");
-  }
-
-  &--fast {
-    background-image: url("../../img/fast-icon.svg");
-  }
-}
-
 .descriprion__text {
   margin: 0;
   font-family: variables.$font-primary;
   color: variables.$text-secondary;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/healthy-icon.svg");
+  }
+
+  &--simple::before {
+    background-image: url("../../img/simple-icon.svg");
+  }
+
+  &--tasty::before {
+    background-image: url("../../img/tasty-icon.svg");
+  }
+
+  &--fast::before {
+    background-image: url("../../img/fast-icon.svg");
+  }
 }
