@@ -1,0 +1,5 @@
+@use "../global/mixins.scss";
+
+.programs__list {
+  @include mixins.list-reset;
+}

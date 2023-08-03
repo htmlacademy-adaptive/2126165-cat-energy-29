@@ -1,0 +1,47 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.program {
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  @include mixins.uppercase;
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--slim::before {
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat-slim.svg");
+  }
+
+  &--pro::before {
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/cat-pro.svg");
+  }
+}
+
+.program__descriprion {
+  margin: 0;
+  font-family: variables.$font-secondary;
+  color: variables.$text-secondary;
+}
+
+.program__link {
+  @include mixins.uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: variables.$text-primary;
+  text-decoration: none;
+}

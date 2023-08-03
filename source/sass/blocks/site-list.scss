@@ -1,0 +1,15 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.site-list {
+  @include mixins.list-reset;
+}
+
+.site-list__link {
+  @include mixins.uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: variables.$text-primary;
+}

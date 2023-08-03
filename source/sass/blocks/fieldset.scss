@@ -1,0 +1,8 @@
+@use "../global/mixins.scss";
+
+.fieldset {
+  @include mixins.uppercase;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

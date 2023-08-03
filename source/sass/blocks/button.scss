@@ -1,0 +1,26 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.button {
+  @include mixins.uppercase;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 7px 44px;
+  border: none;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.button--secondary {
+  color: variables.$text-secondary;
+  background-color: #f2f2f2;
+}

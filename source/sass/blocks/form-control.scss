@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.form-control {
+  @include mixins.uppercase;
+  margin: 0;
+  padding: 14px 15px;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  line-height: 18px;
+  color: variables.$text-secondary;
+}

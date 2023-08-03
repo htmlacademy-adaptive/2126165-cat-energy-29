@@ -1,1 +1,46 @@
-// Начните писать стили здесь
+//Global
+@use "global/variables.scss";
+@use "global/mixins.scss";
+@use "global/fonts.scss";
+@use "global/global.scss";
+//Global-blocks
+@use "blocks/page.scss";
+@use "blocks/site-logo.scss";
+@use "blocks/academy-logo.scss";
+@use "blocks/title.scss";
+@use "blocks/button.scss";
+//Header
+@use "blocks/header.scss";
+@use "blocks/navigation.scss";
+@use "blocks/site-list.scss";
+//Footer
+@use "blocks/footer.scss";
+@use "blocks/social.scss";
+@use "blocks/social-link.scss";
+//Index
+@use "blocks/hero.scss";
+@use "blocks/programs.scss";
+@use "blocks/program.scss";
+@use "blocks/description.scss";
+@use "blocks/example.scss";
+@use "blocks/slider.scss";
+@use "blocks/invite.scss";
+//Form
+@use "blocks/program-selection.scss";
+@use "blocks/fieldset.scss";
+@use "blocks/label-field.scss";
+@use "blocks/form-control.scss";
+@use "blocks/input.scss";
+@use "blocks/radio-field.scss";
+@use "blocks/radio-input.scss";
+@use "blocks/textarea.scss";
+@use "blocks/checkbox-field.scss";
+@use "blocks/checkbox-input.scss";
+//Catalog
+@use "blocks/catalog.scss";
+@use "blocks/cards.scss";
+@use "blocks/card.scss";
+@use "blocks/showing.scss";
+@use "blocks/extra-products.scss";
+@use "blocks/extras.scss";
+@use "blocks/promotion.scss";

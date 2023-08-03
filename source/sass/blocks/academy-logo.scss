@@ -1,0 +1,13 @@
+@use "../global/variables.scss";
+
+.academy-logo {
+  text-decoration: none;
+}
+
+.academy-logo__text {
+  font-family: variables.$font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: variables.$text-secondary;
+}
