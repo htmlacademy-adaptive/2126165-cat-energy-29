@@ -1,8 +1,8 @@
 //Global
-@use "global/global.scss";
 @use "global/variables.scss";
 @use "global/mixins.scss";
 @use "global/fonts.scss";
+@use "global/global.scss";
 //Global-blocks
 @use "blocks/page.scss";
 @use "blocks/site-logo.scss";
