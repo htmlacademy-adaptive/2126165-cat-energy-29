@@ -10,4 +10,11 @@
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;
+
+  @media (min-width: variables.$desktop) {
+    background-image: url(../img/cat-hero-big.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 720px 694px;
+  }
 }
