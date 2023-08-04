@@ -3,6 +3,15 @@
 
 .site-list {
   @include mixins.list-reset;
+  text-align: center;
+
+  @media (min-width: variables.$tablet) {
+    width: 475px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 520px;
+  }
 }
 
 .site-list__link {

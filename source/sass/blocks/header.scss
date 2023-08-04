@@ -6,6 +6,7 @@
 
   @media (min-width: variables.$tablet) {
     width: 708px;
+    display: flex;
   }
 
   @media (min-width: variables.$desktop) {
