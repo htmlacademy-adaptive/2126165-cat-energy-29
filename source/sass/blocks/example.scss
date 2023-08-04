@@ -2,6 +2,14 @@
 
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: variables.$tablet) {
+    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+  }
 }
 
 .example__title {
