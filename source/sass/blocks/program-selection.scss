@@ -10,6 +10,64 @@
   text-transform: uppercase;
 }
 
+.program-selection__form {
+  display: grid;
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(4, 243px);
+    gap: 67px 80px;
+  }
+}
+
+.program-selection__personal-data {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 1 / 3;
+  }
+}
+
+.program-selection__purpose {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 3 / -1;
+  }
+}
+
+.program-selection__contacts {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 1 / -1;
+  }
+}
+
+.program-selection__comment {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 1 / -1;
+  }
+}
+
+.program-selection__additional {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 1 / -1;
+  }
+}
+
+.program-selection__button {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 1 / 3;
+  }
+}
+
+.program-selection__legend {
+
+  @media (min-width: variables.$desktop) {
+  grid-column: 3 / -1;
+  }
+}
+
 .program-selection__list {
   @include mixins.list-reset;
 }
