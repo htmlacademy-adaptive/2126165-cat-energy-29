@@ -1,7 +1,7 @@
-@use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .hero {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: variables.$color-primary;
   background-image: url("../img/cat-hero.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
@@ -12,7 +12,7 @@
 }
 
 .hero__slogan {
-  @include mixins.uppercase;
   margin: 0;
   line-height: 14px;
+  text-transform: uppercase;
 }

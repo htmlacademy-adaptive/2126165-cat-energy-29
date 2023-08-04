@@ -6,10 +6,10 @@
 }
 
 .site-list__link {
-  @include mixins.uppercase;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
   color: variables.$text-primary;
 }

@@ -1,5 +1,4 @@
 @use "../global/variables.scss";
-@use "../global/mixins.scss";
 
 .example {
   background-color: #eaeaea;
@@ -31,10 +30,11 @@
   margin: 0;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__item--special {
-  @include mixins.uppercase;
+  text-transform: uppercase;
 
   & .example__description,
   & .example__amount {
