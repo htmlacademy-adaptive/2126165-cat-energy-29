@@ -1,10 +1,18 @@
 @use "../common/variables.scss";
 
 .hero {
-  background-color: variables.$color-primary;
-  background-image: url("../img/cat-hero.jpg");
+  background-image:
+    url("../img/cat-hero.jpg"),
+    linear-gradient(#5eaa2f 302px, #ffffff 302px);
   background-repeat: no-repeat;
+  background-position: top right;
+  text-align: center;
   color: #ffffff;
+
+  @media (min-width: variables.$tablet) {
+    background-color: #ffffff;
+    background-image: none;
+  }
 }
 
 .hero__title {
