@@ -1,4 +1,4 @@
-@use "../global/mixins.scss";
+@use "../common/mixins.scss";
 
 .programs__list {
   @include mixins.list-reset;

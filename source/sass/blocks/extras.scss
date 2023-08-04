@@ -1,5 +1,5 @@
-@use "../global/mixins.scss";
-@use "../global/variables.scss";
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
 
 .extras {
   @include mixins.list-reset;

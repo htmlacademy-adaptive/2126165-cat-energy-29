@@ -1,4 +1,4 @@
-@use "../global/mixins.scss";
+@use "../common/mixins.scss";
 
 .cards {
   @include mixins.list-reset;
