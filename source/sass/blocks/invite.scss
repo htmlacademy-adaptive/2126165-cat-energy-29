@@ -1,5 +1,12 @@
 @use "../common/variables.scss";
 
+.invite__wrapper {
+
+  @media (min-width: variables.$desktop) {
+    width: 565px;
+  }
+}
+
 .invite__headline {
   margin: 0;
   font-size: 16px;
