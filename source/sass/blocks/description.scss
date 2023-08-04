@@ -5,14 +5,22 @@
   margin: 0;
 }
 
-.descriprion__list {
+.description__list {
   @include mixins.list-reset;
+  display: grid;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 58px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 81px;
+  }
 }
 
-.descriprion__text {
-  margin: 0;
-  font-family: variables.$font-primary;
-  color: variables.$text-secondary;
+.description__item {
 
   &::before {
     content: "";
@@ -38,4 +46,10 @@
   &--fast::before {
     background-image: url("../img/fast-icon.svg");
   }
+}
+
+.description__text {
+  margin: 0;
+  font-family: variables.$font-primary;
+  color: variables.$text-secondary;
 }
