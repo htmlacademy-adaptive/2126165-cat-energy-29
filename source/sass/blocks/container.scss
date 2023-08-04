@@ -1,0 +1,14 @@
+@use "../common/variables.scss";
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 1220px;
+  }
+}
