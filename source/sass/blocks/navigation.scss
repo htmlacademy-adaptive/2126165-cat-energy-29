@@ -1,8 +1,8 @@
 @use "../common/variables.scss";
 
-.navigation__container {
-  display: flex;
-  justify-content: space-between;
+.navigation__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .navigation__toggle {
