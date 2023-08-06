@@ -4,14 +4,13 @@
 .site-list {
   @include mixins.list-reset;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: variables.$tablet) {
-    width: 475px;
+    flex-direction: row;
   }
 
-  @media (min-width: variables.$desktop) {
-    width: 520px;
-  }
 }
 
 .site-list__item {
@@ -50,4 +49,12 @@
   text-decoration: none;
   text-transform: uppercase;
   color: variables.$text-primary;
+
+  @media (min-width: variables.$tablet) {
+    padding: 12px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    color: #ffffff;
+  }
 }
