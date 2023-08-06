@@ -14,7 +14,36 @@
   }
 }
 
+.site-list__item {
+  position: relative;
+
+  @media (max-width: variables.$mobile) {
+
+    &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background-color: #e6e6e6;
+  }
+
+  &--bottom::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e6e6e6;
+  }
+}
+
+}
+
 .site-list__link {
+  display: block;
+  padding: 22px 75px 24px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;

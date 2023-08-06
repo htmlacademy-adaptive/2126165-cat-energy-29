@@ -1,5 +1,10 @@
 @use "../common/variables.scss";
 
+.navigation__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation__toggle {
   margin: 0;
   padding: 0;
