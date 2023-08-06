@@ -2,38 +2,7 @@
 
 .navigation {
   display: flex;
-  flex-direction: column;
-
-  @media (min-width: variables.$tablet) {
-    width: 708px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: variables.$desktop) {
-    width: 1220px;
-  }
-}
-
-.header__navigation {
-
-  @media (min-width: variables.$tablet) {
-    margin: 0 auto;
-  }
-}
-
-.navigation__hat {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: variables.$tablet) {
-    width: 450px;
-    margin: 0;
-  }
-
-  @media (min-width: variables.$desktop) {
-    width: 330px;
-  }
+  justify-content: space-between;
 }
 
 .navigation__toggle {
