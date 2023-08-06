@@ -1,7 +1,6 @@
 @use "../common/variables.scss";
 
 .card {
-
   @media (min-width: variables.$tablet) {
     background-color: variables.$color-secondary;
   }

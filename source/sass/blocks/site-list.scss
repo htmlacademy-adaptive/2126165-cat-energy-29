@@ -23,34 +23,31 @@
     display: flex;
     flex-direction: row;
   }
-
 }
 
 .site-list__item {
   position: relative;
 
   @media (max-width: variables.$mobile) {
-
     &::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    left: 0;
-    right: 0;
-    background-color: #e6e6e6;
-  }
+      content: "";
+      position: absolute;
+      height: 1px;
+      left: 0;
+      right: 0;
+      background-color: #e6e6e6;
+    }
 
-  &--bottom::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #e6e6e6;
+    &--bottom::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #e6e6e6;
+    }
   }
-}
-
 }
 
 .site-list__link {

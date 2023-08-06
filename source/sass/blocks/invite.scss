@@ -1,7 +1,6 @@
 @use "../common/variables.scss";
 
 .invite__wrapper {
-
   @media (min-width: variables.$desktop) {
     width: 565px;
   }
