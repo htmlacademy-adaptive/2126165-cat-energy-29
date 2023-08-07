@@ -3,19 +3,15 @@
 
 .site-list {
   @include mixins.list-reset;
-  text-align: center;
-  display: none;
+  display: flex;
   flex-direction: column;
+  text-align: center;
 
-  &--shown {
-    display: flex;
+  &--hidden {
+    display: none;
   }
 
   @media (max-width: variables.$mobile) {
-    position: fixed;
-    left: 0;
-    top: 65px;
-    width: 100%;
     background-color: #ffffff;
   }
 

@@ -20,3 +20,12 @@
     display: none;
   }
 }
+
+.navigation__list {
+  @media (max-width: variables.$mobile) {
+    position: fixed;
+    left: 0;
+    top: 65px;
+    width: 100%;
+  }
+}
