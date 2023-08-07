@@ -4,6 +4,8 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
   }
 }
 
@@ -13,6 +15,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 13px 0 14px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
 }
 
 .navigation__toggle {

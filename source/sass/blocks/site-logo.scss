@@ -1,12 +1,26 @@
+@use "../common/variables.scss";
+
 .site-logo {
-  width: 33px;
-  height: 38px;
   text-decoration: none;
+
+  @media (max-width: variables.$mobile) {
+    width: 33px;
+    height: 38px;
+  }
+
+  @media (min-width: variables.$tablet) {
+    min-width: 174px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
 }
 
 .site-logo__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @media (max-width: variables.$mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
