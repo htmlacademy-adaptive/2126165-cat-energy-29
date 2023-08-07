@@ -5,10 +5,10 @@
   background-image:
     url("../img/cat-hero.jpg"),
     linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
-    linear-gradient(#62a63b calc(302 * 100% / 480), #ffffff calc(302 * 100% / 480));
+    linear-gradient(#62a63b 63%, #ffffff 63%);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto, auto calc(302 * 100% / 480), auto;
+  background-size: auto 63%, auto 63%, auto;
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
@@ -18,7 +18,11 @@
   }
 
   @media (min-width: variables.$desktop) {
-    background: none;
+    background:
+      url("../img/cat-hero-big.jpg"),
+      linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
+    background-repeat: no-repeat;
+    background-position: top right, 100%;
     color: variables.$text-primary;
   }
 }

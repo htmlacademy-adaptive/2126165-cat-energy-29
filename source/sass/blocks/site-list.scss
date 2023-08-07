@@ -31,6 +31,11 @@
   }
 }
 
+.site-list--with-background .site-list__link {
+  color: #ffffff;
+}
+
+
 .site-list__item {
   position: relative;
 
@@ -72,6 +77,5 @@
 
   @media (min-width: variables.$desktop) {
     padding: 15px 0;
-    color: #ffffff;
   }
 }
