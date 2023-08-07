@@ -73,6 +73,10 @@
     height: 2px;
     background-color: variables.$color-primary;
   }
+
+  @media (min-width: variables.$desktop) {
+    background-color: #ffffff;
+  }
 }
 
 .site-list__link {
@@ -86,12 +90,13 @@
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
+    padding: 12px 0;
     font-size: 18px;
     line-height: 24px;
-    padding: 12px 0;
   }
 
   @media (min-width: variables.$desktop) {
     padding: 15px 0;
+    font-size: 20px;
   }
 }
