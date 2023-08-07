@@ -1,14 +1,17 @@
 @use "../common/variables.scss";
 
 .hero {
-  min-height: 480px; //убрать по мере стилизации
+  $percent-height: calc(302 * 100% / 480);
+  box-sizing: border-box;
+  padding-top: 27px;
+  text-align: center;
   background-image:
     url("../img/cat-hero.jpg"),
     linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
-    linear-gradient(#62a63b 63%, #ffffff 63%);
+    linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto 63%, auto 63%, auto;
+  background-size: auto $percent-height, auto $percent-height, auto;
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
@@ -30,10 +33,23 @@
 
 .hero__title {
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
   margin: 0;
+  margin-bottom: 29px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.hero__image {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  padding: 11px 44px;
+  font-size: 14px;
+  line-height: 18px;
 }
