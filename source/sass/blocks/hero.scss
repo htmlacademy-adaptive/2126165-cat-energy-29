@@ -1,11 +1,14 @@
 @use "../common/variables.scss";
 
 .hero {
+  min-height: 480px; //убрать по мере стилизации
   background-image:
     url("../img/cat-hero.jpg"),
-    linear-gradient(#62a63b 302px, #ffffff 302px);
+    linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
+    linear-gradient(#62a63b calc(302 * 100% / 480), #ffffff calc(302 * 100% / 480));
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: auto, auto calc(302 * 100% / 480), auto;
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
