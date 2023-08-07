@@ -1,10 +1,11 @@
-//Global
-@use "global/variables.scss";
-@use "global/mixins.scss";
-@use "global/fonts.scss";
-@use "global/global.scss";
+//Common
+@use "common/variables.scss";
+@use "common/mixins.scss";
+@use "common/fonts.scss";
+@use "common/visually-hidden.scss";
 //Global-blocks
 @use "blocks/page.scss";
+@use "blocks/container.scss";
 @use "blocks/site-logo.scss";
 @use "blocks/academy-logo.scss";
 @use "blocks/title.scss";

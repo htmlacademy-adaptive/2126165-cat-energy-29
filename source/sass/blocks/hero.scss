@@ -1,8 +1,23 @@
-@use "../global/mixins.scss";
+@use "../common/variables.scss";
 
 .hero {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image:
+    url("../img/cat-hero.jpg"),
+    linear-gradient(#62a63b 302px, #ffffff 302px);
+  background-repeat: no-repeat;
+  background-position: top center;
   color: #ffffff;
+
+  @media (min-width: variables.$tablet) {
+    background-color: #ffffff;
+    background-image: none;
+    color: variables.$text-primary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    background: none;
+    color: variables.$text-primary;
+  }
 }
 
 .hero__title {
@@ -10,7 +25,7 @@
 }
 
 .hero__slogan {
-  @include mixins.uppercase;
   margin: 0;
   line-height: 14px;
+  text-transform: uppercase;
 }

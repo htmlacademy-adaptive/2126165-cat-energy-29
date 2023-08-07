@@ -1,8 +1,6 @@
-@use "../global/variables.scss";
-@use "../global/mixins.scss";
+@use "../common/variables.scss";
 
 .button {
-  @include mixins.uppercase;
   display: grid;
   place-content: center;
   margin: 0;
@@ -13,11 +11,12 @@
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button--primary {
   color: #ffffff;
-  background-color: #68b738;
+  background-color: variables.$color-primary;
 }
 
 .button--secondary {

@@ -1,5 +1,17 @@
-@use "../global/mixins.scss";
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
 
 .cards {
   @include mixins.list-reset;
+  display: grid;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 141px 60px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 143px 80px;
+  }
 }

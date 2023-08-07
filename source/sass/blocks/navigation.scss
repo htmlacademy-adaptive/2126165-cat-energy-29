@@ -1,1 +1,31 @@
-//заглушка
+@use "../common/variables.scss";
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__toggle {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/burger-button.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+
+  @media (min-width: variables.$tablet) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  @media (max-width: variables.$mobile) {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+  }
+}

@@ -1,8 +1,15 @@
-@use "../global/variables.scss";
-@use "../global/mixins.scss";
+@use "../common/variables.scss";
 
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: variables.$tablet) {
+    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+  }
 }
 
 .example__title {
@@ -27,14 +34,14 @@
 }
 
 .example__amount {
-  @include mixins.uppercase;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__item--special {
-  @include mixins.uppercase;
+  text-transform: uppercase;
 
   & .example__description,
   & .example__amount {

@@ -1,7 +1,9 @@
-@use "../global/variables.scss";
+@use "../common/variables.scss";
 
 .promotion {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: variables.$color-primary;
+  background-image: url("../img/cat-promo.jpg");
+  background-repeat: no-repeat;
 }
 
 .promotion__text {

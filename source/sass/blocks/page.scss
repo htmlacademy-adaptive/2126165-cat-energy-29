@@ -1,4 +1,4 @@
-@use "../global/variables.scss";
+@use "../common/variables.scss";
 
 .page {
   font-family: variables.$font-primary;
@@ -10,4 +10,13 @@
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;
+
+  &--background {
+    @media (min-width: variables.$desktop) {
+      background-image: url("../img/cat-hero-big.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 720px 694px;
+    }
+  }
 }
