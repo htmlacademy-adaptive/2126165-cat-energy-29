@@ -141,7 +141,7 @@
 
 @media (max-width: 767px) {
   .navigation__list {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 65px;
     width: 100%;
@@ -156,7 +156,7 @@
   flex-direction: column;
   text-align: center;
 }
-.site-list--hidden {
+.site-list--closed {
   display: none;
 }
 @media (max-width: 767px) {
