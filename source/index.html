@@ -11,13 +11,15 @@
 <body class="page__body page__body--background">
   <header class="header">
     <nav class="container navigation">
-      <a class="header__logo site-logo" href="#">
-        <img src="img/logo.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
-      </a>
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="navigation__list site-list site-list--closed">
+      <div class="navigation__hat">
+        <a class="header__logo site-logo" href="#">
+          <img src="img/logo.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
+        </a>
+        <button class="navigation__toggle navigation__toggle--nojs" type="button">
+          <span class="visually-hidden navigation__clue">Открыть меню.</span>
+        </button>
+      </div>
+      <ul class="navigation__list site-list site-list--closed site-list--nojs">
         <li class="site-list__item site-list__item--current">
           <a class="site-list__link" href="./" aria-current="page">Главная</a>
         </li>
@@ -154,6 +156,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

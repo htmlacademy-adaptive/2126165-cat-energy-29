@@ -1,12 +1,18 @@
 @use "../common/variables.scss";
 
 .navigation {
+  @media (min-width: variables.$tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navigation__hat {
   display: flex;
   justify-content: space-between;
 }
 
 .navigation__toggle {
-  margin: 0;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -19,13 +25,14 @@
   @media (min-width: variables.$tablet) {
     display: none;
   }
-}
 
-.navigation__list {
-  @media (max-width: variables.$mobile) {
-    position: absolute;
-    left: 0;
-    top: 65px;
-    width: 100%;
+  &--closed {
+    background-image: url("../img/close-button.svg");
+    background-position: center;
+    background-size: 18px 18px;
+  }
+
+  &--nojs {
+    display: none;
   }
 }
