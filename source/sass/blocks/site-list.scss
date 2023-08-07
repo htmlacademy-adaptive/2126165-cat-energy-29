@@ -22,6 +22,7 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     flex-direction: row;
+    gap: 33px;
   }
 
   &--nojs {
@@ -66,11 +67,11 @@
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    padding: 12px 16px;
+    padding: 12px 0;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 15px 16px;
+    padding: 15px 0;
     color: #ffffff;
   }
 }
