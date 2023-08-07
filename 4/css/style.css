@@ -139,23 +139,28 @@
   }
 }
 
-.site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  display: none;
-  flex-direction: column;
-}
-.site-list--shown {
-  display: flex;
-}
 @media (max-width: 767px) {
-  .site-list {
+  .navigation__list {
     position: fixed;
     left: 0;
     top: 65px;
     width: 100%;
+  }
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.site-list--hidden {
+  display: none;
+}
+@media (max-width: 767px) {
+  .site-list {
     background-color: #ffffff;
   }
 }
