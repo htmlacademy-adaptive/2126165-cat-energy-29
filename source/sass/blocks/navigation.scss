@@ -8,8 +8,11 @@
 }
 
 .navigation__hat {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 14px;
 }
 
 .navigation__toggle {

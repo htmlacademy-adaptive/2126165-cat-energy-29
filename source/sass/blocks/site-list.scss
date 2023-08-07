@@ -32,7 +32,10 @@
 }
 
 .site-list--with-background .site-list__link {
-  color: #ffffff;
+
+  @media (min-width: variables.$desktop) {
+    color: #ffffff;
+  }
 }
 
 
