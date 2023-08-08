@@ -27,3 +27,9 @@
 .invite--secondary {
   background-color: variables.$color-secondary;
 }
+
+.invite__map {
+  display: block;
+  width: 100%;
+  border: none;
+}
