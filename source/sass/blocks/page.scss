@@ -6,6 +6,12 @@
   line-height: 18px;
 }
 
+.page__header {
+  @media (min-width: variables.$desktop) {
+    margin-bottom: -175px;
+  }
+}
+
 .page__body {
   margin: 0;
   background-color: #ffffff;
