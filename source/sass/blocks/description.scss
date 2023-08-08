@@ -1,13 +1,31 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.description__wrapper {
+  margin-bottom: 49px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 69px;
+  }
+}
+
 .description__title {
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .description__list {
   @include mixins.list-reset;
   display: grid;
+  gap: 20px;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -21,13 +39,23 @@
 }
 
 .description__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+
   &::before {
     content: "";
-    display: inline-block;
+    display: block;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--healthy::before {
@@ -45,10 +73,39 @@
   &--fast::before {
     background-image: url("../img/fast-icon.svg");
   }
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: auto;
+    gap: 31px;
+    max-width: 250px;
+    padding: 40px 0 57px;
+    counter-increment: number 1;
+  }
+
+  &::after {
+
+    @media (min-width: variables.$tablet) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      content: counter(number);
+      display: block;
+      font-size: 280px;
+      line-height: 280px;
+      width: 134px;
+      color: variables.$color-secondary;
+    }
+  }
 }
 
 .description__text {
   margin: 0;
-  font-family: variables.$font-primary;
+  font-family: variables.$font-secondary;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

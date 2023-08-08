@@ -1,6 +1,16 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.programs__wrapper {
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 71px;
+  }
+}
+
 .programs__list {
   @include mixins.list-reset;
   display: grid;

@@ -13,6 +13,7 @@
 
   @media (max-width: variables.$mobile) {
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 65px;
     width: 100%;
