@@ -1,15 +1,22 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.description {
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .description__wrapper {
   margin-bottom: 49px;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 0;
+    padding-bottom: 47px;
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 69px;
+    padding-bottom: 0;
   }
 }
 
@@ -83,7 +90,6 @@
   }
 
   &::after {
-
     @media (min-width: variables.$tablet) {
       position: absolute;
       top: 0;

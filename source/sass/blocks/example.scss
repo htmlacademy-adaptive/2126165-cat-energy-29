@@ -1,29 +1,75 @@
 @use "../common/variables.scss";
 
 .example {
+  position: relative;
+  padding: 45px 0 40px;
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+    padding: 45px 0 101px;
+    background-image: linear-gradient(#ffffff calc(619 * 100% / 667), #eaeaea calc(619 * 100% / 667));
   }
 
   @media (min-width: variables.$desktop) {
-    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+    padding: 69px 0 75px;
+    background-image: linear-gradient(#ffffff calc(205 * 100% / 667), #eaeaea calc(205 * 100% / 667));
   }
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   margin: 0;
+  margin-bottom: 35px;
   font-family: variables.$font-secondary;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 440px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 32px;
   margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    grid-template-columns: 162px 162px 1fr;
+    gap: 43px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    gap: 55px 42px;
+    max-width: 366px;
+    margin-bottom: 0;
+  }
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
 }
 
 .example__description {
@@ -35,12 +81,17 @@
 
 .example__amount {
   margin: 0;
+  order: -1;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .example__item--special {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3px;
   text-transform: uppercase;
 
   & .example__description,
@@ -50,4 +101,26 @@
     line-height: 20px;
     color: variables.$text-primary;
   }
+
+  & .example__description {
+    order: -1;
+  }
+
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    grid-column: 3 / -1;
+    flex-direction: column;
+    gap: 0;
+    text-align: right;
+  }
+
+  @media (min-width: variables.$desktop) {
+    gap: 63px;
+    justify-content: start;
+  }
+}
+
+.example__slider {
+  position: absolute;
+  top: 70px;
+  right: 0;
 }
