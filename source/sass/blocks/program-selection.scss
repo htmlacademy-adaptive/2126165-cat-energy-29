@@ -57,12 +57,16 @@
 
 .program-selection__legend {
   margin: 0;
-  font-family: variables.$font-secondary;
-  line-height: 16px;
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
   }
+}
+
+.program-selection__legend small {
+  font-family: variables.$font-secondary;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .program-selection__list {
