@@ -2,7 +2,6 @@
 
 .hero {
   $percent-height: calc(302 * 100% / 480);
-  box-sizing: border-box;
   padding-top: 27px;
   text-align: center;
   background-image:
@@ -34,8 +33,10 @@
 }
 
 .hero__wrapper {
-  display: grid;
-  grid-template-columns: 708px;
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    grid-template-columns: 708px;
+  }
 }
 
 .hero__title {
