@@ -7,7 +7,7 @@
 
   @media (min-width: variables.$tablet) {
     padding: 45px 0 101px;
-    background-image: linear-gradient(#ffffff calc(619 * 100% / 667), #eaeaea calc(619 * 100% / 667));
+    background-image: linear-gradient(#ffffff calc(619 * 100% / 1081), #eaeaea calc(619 * 100% / 1081));
   }
 
   @media (min-width: variables.$desktop) {
@@ -120,7 +120,9 @@
 }
 
 .example__slider {
-  position: absolute;
-  top: 70px;
-  right: 0;
+  @media (min-width: variables.$desktop) {
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
 }
