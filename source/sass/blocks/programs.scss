@@ -5,9 +5,11 @@
   @include mixins.list-reset;
   display: grid;
   gap: 20px;
+  padding: 20px 0;
 
   @media (min-width: variables.$tablet) {
-    gap: 20px;
+    padding: 0;
+    gap: 30px;
   }
 
   @media (min-width: variables.$desktop) {

@@ -1,21 +1,58 @@
 @use "../common/variables.scss";
 
 .program {
+  padding: 24px 20px 18px;
   background-color: variables.$color-secondary;
+
+  &--slim {
+    padding-top: 21px;
+  }
+
+  @media (min-width: variables.$tablet) {
+    padding: 77px 53px 53px;
+    background-repeat: no-repeat;
+
+    &--slim {
+      background-image: url("../img/cat-slim.svg");
+      background-position: top 81px right 63px;
+      background-size: 200px 200px;
+    }
+
+    &--pro {
+      background-image: url("../img/cat-pro.svg");
+      background-position: top 91px right 29px;
+      background-size: 268px 200px;
+    }
+  }
 }
 
 .program__title {
+  display: flex;
+  align-items: center;
   margin: 0;
+  margin-bottom: 22px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &--slim {
+    gap: 20px;
+  }
+
+  &--pro {
+    gap: 11px;
+  }
 
   &::before {
     content: "";
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
   }
 
   &--slim::before {
@@ -27,20 +64,58 @@
   &--pro::before {
     width: 67px;
     height: 50px;
+    margin-left: -7px;
     background-image: url("../img/cat-pro.svg");
+  }
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .program__descriprion {
   margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 22px;
   font-family: variables.$font-secondary;
+  font-weight: 400;
   color: variables.$text-secondary;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 52px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
 }
 
 .program__link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 4px 0;
   font-size: 16px;
   line-height: 16px;
   color: variables.$text-primary;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    mask: url("../img/arrow.svg") no-repeat center;
+    background-color: variables.$text-primary;
+  }
+
+  @media (min-width: variables.$tablet) {
+    gap: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
