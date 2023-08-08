@@ -8,7 +8,7 @@
     padding-top: 21px;
   }
 
-  @media (min-width: variables.$tablet) {
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
     padding: 77px 53px 53px;
     background-repeat: no-repeat;
 
@@ -22,6 +22,15 @@
       background-image: url("../img/cat-pro.svg");
       background-position: top 91px right 29px;
       background-size: 268px 200px;
+    }
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 41px 60px 55px 52px;
+
+    &--pro {
+      padding-top: 47px;
+      padding-left: 33px;
     }
   }
 }
@@ -50,7 +59,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: variables.$tablet) {
+    @media (min-width: variables.$tablet) and (max-width: 1279px) {
       display: none;
     }
   }
@@ -73,6 +82,28 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 39px;
+
+    &--slim {
+      gap: 62px;
+    }
+
+    &--pro {
+      gap: 47px;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 100px;
+    }
+
+    &--slim::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .program__descriprion {
@@ -86,10 +117,16 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 52px;
+    padding: 0;
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
     border: none;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 27px;
+    max-width: 100%;
   }
 }
 
