@@ -20,12 +20,6 @@
     background-image: none;
     color: variables.$text-primary;
   }
-
-  @media (min-width: variables.$desktop) {
-    padding-top: 175px;
-    background: linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
-    color: variables.$text-primary;
-  }
 }
 
 .hero__wrapper {

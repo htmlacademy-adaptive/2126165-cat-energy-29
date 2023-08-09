@@ -6,18 +6,25 @@
   line-height: 18px;
 }
 
-.page__header {
-  @media (min-width: variables.$desktop) {
-    position: absolute;
-    width: 1220px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 .page__body {
   position: relative;
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;
+}
+
+.page__body--background::before {
+  @media (min-width: variables.$desktop) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    min-height: 694px;
+    background-color: #64a83d;
+    background-image: url("../../img/cat-hero-big.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 }
