@@ -8,4 +8,9 @@
   line-height: 18px;
   color: variables.$text-secondary;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
