@@ -2,7 +2,6 @@
 
 .hero {
   $percent-height: calc(302 * 100% / 480);
-  padding-top: 27px;
   text-align: center;
   background-image:
     url("../img/cat-hero.jpg"),
@@ -14,11 +13,19 @@
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
-    padding-top: 40px;
     text-align: left;
     background-color: #ffffff;
     background-image: none;
     color: variables.$text-primary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    background-image:
+      url("../img/cat-hero-big.jpg"),
+      linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
+    background-repeat: no-repeat;
+    background-position: bottom right, 100%;
+    background-size: 50%, 100%;
   }
 }
 

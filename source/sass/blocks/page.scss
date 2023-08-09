@@ -16,18 +16,14 @@
   color: variables.$text-primary;
 }
 
-.page__body--background::before {
-  @media (min-width: variables.$desktop) {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    min-height: 694px;
-    background-color: #64a83d;
-    background-image: url("../../img/cat-hero-big.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+.page__header {
+  &--background {
+    @media (min-width: variables.$desktop) {
+      margin-bottom: -1000px;
+    }
   }
+}
+
+.page__hero {
+  padding-top: 143px;
 }
