@@ -2,16 +2,20 @@
 @use "../common/mixins.scss";
 
 .program-selection {
-  padding: 27px 0 32px;
-
   @media (min-width: variables.$tablet) {
     padding: 0;
   }
 }
 
 .program-selection__wrapper {
+  padding: 27px 0 32px;
+
   @media (min-width: variables.$tablet) {
     padding: 65px 40px 60px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 74 0 80px;
   }
 }
 
@@ -21,6 +25,10 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 54px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 55px;
   }
 }
 
@@ -34,6 +42,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 66px;
+  }
 }
 
 .program-selection__form {
@@ -45,7 +57,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 67px 80px;
+    column-gap: 80px;
   }
 }
 
@@ -71,6 +83,8 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -89,6 +103,8 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
+    margin-bottom: 0;
+    padding: 30px 28px;
   }
 }
 
@@ -104,6 +120,8 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
   }
 }
 
@@ -119,6 +137,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
+    margin-top: 70px;
   }
 }
 
@@ -135,6 +154,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
+    margin-top: 70px;
   }
 }
 

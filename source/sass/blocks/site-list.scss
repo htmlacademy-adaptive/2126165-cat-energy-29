@@ -40,6 +40,10 @@
   }
 }
 
+.site-list--with-background .site-list__item--current::after {
+  background-color: #ffffff;
+}
+
 
 .site-list__item {
   position: relative;
@@ -66,10 +70,6 @@
     bottom: 4px;
     height: 2px;
     background-color: variables.$color-primary;
-  }
-
-  @media (min-width: variables.$desktop) {
-    background-color: #ffffff;
   }
 }
 
