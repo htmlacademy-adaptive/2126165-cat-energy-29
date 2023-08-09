@@ -1,1 +1,20 @@
-//заглушка
+@use "../common/variables.scss";
+
+.radio-input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.radio-input:checked::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: variables.$color-primary;
+}

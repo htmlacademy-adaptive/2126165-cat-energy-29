@@ -1,12 +1,18 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.program-selection {
+  padding: 27px 0 32px;
+}
+
 .program-selection__title {
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .program-selection__intro {
   margin: 0;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -20,36 +26,52 @@
 }
 
 .program-selection__personal-data {
+  padding: 24px 0 24px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
   }
 }
 
 .program-selection__purpose {
+  padding: 22px 0 19px;
+  margin-bottom: 26px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
   }
 }
 
 .program-selection__contacts {
+  padding: 0;
+  padding-bottom: 24px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
   }
 }
 
 .program-selection__comment {
+  padding: 0;
+  padding-bottom: 23px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
   }
 }
 
 .program-selection__additional {
+  padding: 0;
+  margin-bottom: 34px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
   }
 }
 
 .program-selection__button {
+  margin-bottom: 21px;
+
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
   }
@@ -57,6 +79,7 @@
 
 .program-selection__legend {
   margin: 0;
+  text-align: center;
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
@@ -71,9 +94,30 @@
 
 .program-selection__list {
   @include mixins.list-reset;
+  display: grid;
+  gap: 13px;
 }
 
 .program-selection__headline {
+  max-width: 225px;
+  margin-left: -20px;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-transform: capitalize;
   font-size: 24px;
   line-height: 26px;
+  background-color: #ffffff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    border: 2px solid variables.$color-primary;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
 }

@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="container navigation">
       <div class="navigation__hat">
-        <a class="header__logo site-logo" href="#">
+        <a class="header__logo header-logo" href="#">
           <svg width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_153_267)">
               <path
@@ -52,7 +52,7 @@
               </clipPath>
             </defs>
           </svg>
-          <img class="site-logo__text" src="img/logo.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
+          <img class="header-logo__text" src="img/logo.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
         </a>
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -77,7 +77,7 @@
         <h1 class="program-selection__title title title--primary">Подбор программы</h1>
         <p class="program-selection__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="program-selection__personal-data fieldset">
+          <fieldset class="program-selection__personal-data fieldset fieldset--with-decor">
             <legend class="visually-hidden">Личные данные вашего кота.</legend>
             <p class="label-field">
               <label class="program-selection__label" for="cat-name">Имя:*</label>
@@ -85,35 +85,35 @@
                 placeholder="Барсик" required>
             </p>
             <p class="label-field">
-              <label class="program-selection__label" for="cat-weight">Вес (кг):*</label>
+              <label class="program-selection__label" for="cat-weight">Вес&nbsp;(кг):*</label>
               <input class="program-selection__input form-control input" type="text" name="cat-weight" id="cat-weight"
                 placeholder="7" required>
             </p>
             <p class="label-field">
-              <label class="program-selection__label" for="cat-age">Возраст (лет):</label>
+              <label class="program-selection__label" for="cat-age">Возраст&nbsp;(лет):</label>
               <input class="program-selection__input form-control input" type="text" name="cat-age" id="cat-age"
                 placeholder="7">
             </p>
           </fieldset>
-          <fieldset class="program-selection__purpose fieldset">
+          <fieldset class="program-selection__purpose fieldset fieldset--with-decor">
             <legend class="visually-hidden">Направление программы.</legend>
             <ul class="program-selection__list">
               <li class="program-selection__item">
-                <label class="program-selection__control radio-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control radio-input radio-input--checked" type="radio"
                     name="purpose" value="loss-weight" checked>
                   <span class="program-selection__label">Похудение</span>
                 </label>
               </li>
               <li class="program-selection__item">
-                <label class="program-selection__control radio-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control radio-input" type="radio" name="purpose"
                     value="gain-weight">
                   <span class="program-selection__label">Набор массы</span>
                 </label>
               </li>
               <li class="program-selection__item">
-                <label class="program-selection__control radio-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control radio-input" type="radio" name="purpose"
                     value="doubt">
                   <span class="program-selection__label">Не знаю (нужен ваш совет)</span>
@@ -124,7 +124,7 @@
           <fieldset class="program-selection__contacts fieldset">
             <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
             <p class="label-field">
-              <label class="program-selection__label" for="email">E-mail:*</label>
+              <label class="program-selection__label" for="email">E&#8209;mail:*</label>
               <input class="program-selection__input form-control input program-selection__input--email" type="email"
                 name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </p>
@@ -137,33 +137,33 @@
           <fieldset class="program-selection__comment fieldset">
             <legend class="program-selection__headline">Комментарий</legend>
             <textarea class="program-selection__textarea form-control textarea" name="comment" cols="30"
-              rows="10">Расскажите обо всех повадках кота</textarea>
+              rows="7">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="program-selection__additional fieldset">
             <legend class="program-selection__headline">Дополнительно</legend>
             <ul class="program-selection__list">
               <li class="program-selection__item">
-                <label class="program-selection__control checkbox-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control checkbox-input checkbox-input--checked"
                     type="checkbox" name="sweetener" checked>
                   <span class="program-selection__label">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="program-selection__item">
-                <label class="program-selection__control checkbox-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control checkbox-input" type="checkbox"
                     name="drinking-water">
                   <span class="program-selection__label">Питьевая вода</span>
                 </label>
               </li>
               <li class="program-selection__item">
-                <label class="program-selection__control checkbox-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control checkbox-input" type="checkbox" name="milk">
                   <span class="program-selection__label">Молоко</span>
                 </label>
               </li>
               <li class="program-selection__item">
-                <label class="program-selection__control checkbox-field">
+                <label class="program-selection__control field">
                   <input class="program-selection__input form-control checkbox-input" type="checkbox" name="vitamins">
                   <span class="program-selection__label">Витамины</span>
                 </label>

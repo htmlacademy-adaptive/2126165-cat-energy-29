@@ -1,1 +1,17 @@
-//заглушка
+.checkbox-input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox-input:checked::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}

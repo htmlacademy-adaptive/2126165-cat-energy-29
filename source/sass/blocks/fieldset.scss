@@ -1,6 +1,22 @@
 .fieldset {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  display: grid;
+  gap: 13px;
+  margin-right: 0;
+  margin-left: 0;
   border: none;
   text-transform: uppercase;
+
+  &--with-decor {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
 }
