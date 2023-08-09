@@ -8,6 +8,9 @@
 
 .page__body {
   position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;

@@ -12,6 +12,12 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    padding: 13px 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--primary {

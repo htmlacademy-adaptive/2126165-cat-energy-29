@@ -157,6 +157,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / 3;
+    padding-left: 60px;
     text-align: left;
   }
 
@@ -169,6 +170,11 @@
   font-family: variables.$font-secondary;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .program-selection__list {

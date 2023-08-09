@@ -8,6 +8,11 @@
   height: 32px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: variables.$tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-input:checked::before {
@@ -17,4 +22,9 @@
   height: 14px;
   border-radius: 50%;
   background-color: variables.$color-primary;
+
+  @media (min-width: variables.$tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }
