@@ -1,23 +1,55 @@
 @use "../common/variables.scss";
 
+.invite {
+  position: relative;
+}
+
 .invite__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  @media (min-width: variables.$tablet) {
+    padding: 60px 40px;
+  }
+
   @media (min-width: variables.$desktop) {
-    width: 565px;
+    position: absolute;
+    top: 95px;
+    left: calc(110 * 100% / 1440);
+    max-width: 565px;
+    background-color: #ffffff;
   }
 }
 
 .invite__headline {
+  max-width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 165px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invite__address {
   font-family: variables.$font-secondary;
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    gap: 20px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .invite__text {
