@@ -1,6 +1,6 @@
 @use "../common/variables.scss";
 
-.site-logo {
+.header-logo {
   text-decoration: none;
 
   @media (max-width: variables.$mobile) {
@@ -16,7 +16,7 @@
   }
 }
 
-.site-logo__text {
+.header-logo__text {
   @media (max-width: variables.$mobile) {
     position: absolute;
     top: 50%;
