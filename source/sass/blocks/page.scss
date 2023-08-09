@@ -8,11 +8,15 @@
 
 .page__header {
   @media (min-width: variables.$desktop) {
-    margin-bottom: -175px;
+    position: absolute;
+    width: 1220px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .page__body {
+  position: relative;
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;

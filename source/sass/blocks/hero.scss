@@ -23,11 +23,7 @@
 
   @media (min-width: variables.$desktop) {
     padding-top: 175px;
-    background:
-      url("../img/cat-hero-big.jpg"),
-      linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
-    background-repeat: no-repeat;
-    background-position: bottom right, 100%;
+    background: linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
     color: variables.$text-primary;
   }
 }
