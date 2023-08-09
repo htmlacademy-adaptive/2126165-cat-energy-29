@@ -12,6 +12,12 @@
   @media (min-width: variables.$tablet) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
+    padding: 55px 0;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 66px 0;
   }
 }
 
@@ -24,11 +30,21 @@
     width: 128px;
     height: 24px;
   }
+
+  @media (min-width: variables.$tablet) {
+    padding: 6px 0;
+    border: none;
+  }
 }
 
 .footer__social {
   padding: 20px 0;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet) {
+    padding: 8px 0;
+    border: none;
+  }
 }
 
 .footer__academy {
@@ -36,4 +52,9 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 23px;
+    padding: 0;
+  }
 }
