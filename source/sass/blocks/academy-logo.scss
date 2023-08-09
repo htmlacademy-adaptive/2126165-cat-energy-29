@@ -2,6 +2,15 @@
 
 .academy-logo {
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask: url("../img/htmlacademy.svg") no-repeat center;
+    background-color: #666666;
+  }
 }
 
 .academy-logo__text {
