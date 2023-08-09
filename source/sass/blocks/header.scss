@@ -1,1 +1,18 @@
-//
+@use "../common/variables.scss";
+
+.header {
+  position: relative;
+
+  @media (max-width: variables.$mobile) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
+}

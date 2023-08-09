@@ -111,7 +111,7 @@
   background-color: #ffffff;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100vw;
     border: 2px solid variables.$color-primary;
