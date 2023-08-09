@@ -7,7 +7,7 @@
 .invite__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 0;
+  padding: 27px 0;
 
   @media (min-width: variables.$tablet) {
     padding: 60px 40px;
@@ -23,7 +23,7 @@
 }
 
 .invite__headline {
-  max-width: 140px;
+  min-width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
