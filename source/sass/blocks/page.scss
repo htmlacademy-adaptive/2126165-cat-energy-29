@@ -25,5 +25,11 @@
 }
 
 .page__hero {
-  padding-top: 143px;
+  @media (min-width: variables.$tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 143px;
+  }
 }
