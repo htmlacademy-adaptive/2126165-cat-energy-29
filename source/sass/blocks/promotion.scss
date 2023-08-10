@@ -24,12 +24,21 @@
       width: 80px;
       height: 82px;
     }
+
+    @media (min-width: variables.$desktop) {
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
   }
 
-  @media (min-width: variables.$tablet) {
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
     display: flex;
     justify-content: space-between;
     padding: 57px 125px 60px 77px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 56px 42px 43px;
   }
 }
 
@@ -45,5 +54,9 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin: 0 auto;
   }
 }

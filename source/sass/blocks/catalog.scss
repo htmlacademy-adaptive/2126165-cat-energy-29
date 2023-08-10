@@ -7,6 +7,10 @@
     position: relative;
     padding-top: 65px;
   }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 74px;
+  }
 }
 
 .catalog__wrapper {
@@ -26,4 +30,19 @@
   position: absolute;
   right: 0;
   bottom: 0;
+
+  @media (min-width: variables.$tablet) {
+    min-width: 324px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    min-width: 245px;
+    max-width: 245px;
+  }
+}
+
+.catalog__promotion {
+  @media (min-width: variables.$desktop) {
+    max-width: 245px;
+  }
 }

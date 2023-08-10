@@ -9,6 +9,14 @@
   }
 }
 
+.extra-products__wrapper {
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-template-columns: 73% auto;
+    column-gap: 80px;
+  }
+}
+
 .extra-products__title {
   margin: 0;
   margin-bottom: 36px;
@@ -21,6 +29,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+  }
 }
 
 .extra-products__list {
@@ -28,5 +40,9 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 0;
   }
 }

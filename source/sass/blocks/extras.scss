@@ -20,6 +20,12 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 26px 38px 28px;
   }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 25px 0 27px;
+  }
 }
 
 .extras__caption {
@@ -28,6 +34,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
@@ -54,6 +61,12 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / 3;
+    grid-template-columns: 75% 25%;
+    justify-items: start;
+  }
 }
 
 .extras__value {
@@ -67,8 +80,13 @@
 .extras__button {
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-top: 23px;
+    margin-top: 25px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 3 / -1;
+    margin-top: 0;
   }
 }

@@ -25,6 +25,10 @@
       margin: 0 auto;
       margin-bottom: 50px;
     }
+
+    @media (min-width: variables.$desktop) {
+      margin-bottom: 40px;
+    }
   }
 
   &::after {
@@ -43,9 +47,13 @@
   }
 
   @media (min-width: variables.$tablet) {
-    min-width: 324px;
     padding: 50px 37px 40px;
     border: 2px solid variables.$color-secondary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
@@ -64,6 +72,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 26px;
+  }
 }
 
 .showing__description {
@@ -79,6 +91,10 @@
     max-width: 170px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 90px;
   }
 }
 
