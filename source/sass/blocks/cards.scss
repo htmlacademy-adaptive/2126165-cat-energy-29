@@ -2,8 +2,20 @@
 @use "../common/mixins.scss";
 
 .cards {
+  position: relative;
   @include mixins.list-reset;
   display: grid;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
