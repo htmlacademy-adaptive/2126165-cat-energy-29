@@ -1,9 +1,12 @@
 @use "../common/variables.scss";
 
 .showing {
-  position: relative;
   padding: 25px 0;
   text-align: center;
+
+  @media (max-width: variables.$mobile) {
+    position: relative;
+  }
 
   &::before {
     content: "";
@@ -13,7 +16,15 @@
     width: 30px;
     height: 30px;
     background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
   }
 
   &::after {
@@ -25,6 +36,16 @@
     width: 100vw;
     height: 1px;
     background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    min-width: 324px;
+    padding: 50px 37px 40px;
+    border: 2px solid variables.$color-secondary;
   }
 }
 
@@ -35,6 +56,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: variables.$tablet) {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .showing__description {
@@ -43,8 +72,21 @@
   font-family: variables.$font-secondary;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: variables.$tablet) {
+    margin: 0 auto;
+    margin-bottom: 82px;
+    max-width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .showing__button {
   width: 100%;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

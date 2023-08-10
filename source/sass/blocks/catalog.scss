@@ -2,9 +2,28 @@
 
 .catalog {
   padding-top: 27px;
+
+  @media (min-width: variables.$tablet) {
+    position: relative;
+    padding-top: 65px;
+  }
+}
+
+.catalog__wrapper {
+  position: relative;
 }
 
 .catalog__title {
   margin: 0;
   margin-bottom: 41px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 165px;
+  }
+}
+
+.catalog__showing {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

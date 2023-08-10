@@ -1,9 +1,10 @@
-@use "../common/mixins.scss";
 @use "../common/variables.scss";
 
 .extras {
-  @include mixins.list-reset;
-  margin-bottom: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .extras__item {
@@ -14,6 +15,11 @@
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 26px 38px 28px;
+  }
 }
 
 .extras__caption {
@@ -22,6 +28,12 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extras__features {
@@ -33,6 +45,15 @@
   font-size: 14px;
   line-height: 14px;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    justify-items: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extras__value {
@@ -41,4 +62,13 @@
 
 .extras__price {
   margin: 0;
+}
+
+.extras__button {
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

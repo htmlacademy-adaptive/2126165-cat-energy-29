@@ -2,6 +2,11 @@
 
 .extra-products {
   padding: 25px 0 35px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+    padding-bottom: 75px;
+  }
 }
 
 .extra-products__title {
@@ -10,4 +15,18 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.extra-products__list {
+  margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 70px;
+  }
 }

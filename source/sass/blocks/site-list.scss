@@ -41,7 +41,9 @@
 }
 
 .site-list--with-background .site-list__item--current::after {
-  background-color: #ffffff;
+  @media (min-width: variables.$desktop) {
+    background-color: #ffffff;
+  }
 }
 
 

@@ -15,9 +15,15 @@
     width: 100vw;
     height: 1px;
     background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
   }
 
   @media (min-width: variables.$tablet) {
+    display: block;
+    padding: 0 37px 40px;
     background-color: variables.$color-secondary;
   }
 }
@@ -27,25 +33,73 @@
   grid-row: span 2;
   display: grid;
   place-content: center;
+
+  @media (min-width: variables.$tablet) {
+    margin-top: -52px;
+    margin-bottom: 40px;
+  }
+
+  &--big {
+    @media (min-width: variables.$tablet) {
+      margin-top: -71px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+
+  @media (min-width: variables.$tablet) {
+    width: 161px;
+    height: 172px;
+  }
+
+  &--big {
+    @media (min-width: variables.$tablet) {
+      width: 168px;
+      height: 206px;
+    }
+  }
 }
 
 .card__caption-link {
   grid-column: 2 / -1;
   max-width: 76px;
+  margin-bottom: 14px;
   text-decoration: none;
   color: #222222;
+
+  @media (min-width: variables.$tablet) {
+    display: block;
+    max-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .card__caption {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card__feature-list {
   grid-column: 2 / -1;
   margin: 0;
+
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    row-gap: 5px;
+  }
 }
 
 .card__feature-item {
@@ -55,6 +109,13 @@
   font-size: 12px;
   line-height: 16px;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .card__amount {
@@ -63,5 +124,13 @@
 
 .card__button {
   grid-column: 1 / -1;
+  width: 100%;
   margin-top: 17px;
+
+  @media (min-width: variables.$tablet) {
+    margin-top: 32px;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

@@ -15,11 +15,16 @@
     width: 100vw;
     height: 1px;
     background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
   }
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 141px 60px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: variables.$desktop) {
