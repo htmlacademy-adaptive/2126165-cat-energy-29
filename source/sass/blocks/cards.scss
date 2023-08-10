@@ -2,8 +2,8 @@
 @use "../common/mixins.scss";
 
 .cards {
-  position: relative;
   @include mixins.list-reset;
+  position: relative;
   display: grid;
 
   &::before {
