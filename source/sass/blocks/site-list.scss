@@ -69,9 +69,13 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 4px;
+    bottom: 2px;
     height: 2px;
     background-color: variables.$color-primary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    bottom: 5px;
   }
 }
 
@@ -86,13 +90,13 @@
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    padding: 12px 0;
+    padding: 14px 0 12px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 15px 0;
+    padding: 16px 0 13px;
     font-size: 20px;
   }
 }

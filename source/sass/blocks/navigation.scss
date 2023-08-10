@@ -4,12 +4,11 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    padding: 25px 0;
+    padding-top: 25px;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 60px 0 20px;
+    padding-top: 55px;
   }
 }
 
@@ -51,6 +50,10 @@
 }
 
 .navigation__list {
+  @media (min-width: variables.$tablet) {
+    max-width: 450px;
+  }
+
   @media (min-width: variables.$desktop) {
     max-width: 600px;
   }
