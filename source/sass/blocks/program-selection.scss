@@ -38,13 +38,13 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 66px;
+    margin-bottom: 31px;
   }
 }
 
@@ -61,6 +61,14 @@
   }
 }
 
+.program-selection__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+}
+
 .program-selection__label {
   font-size: 16px;
   line-height: 18px;
@@ -72,39 +80,34 @@
 }
 
 .program-selection__personal-data {
-  padding: 24px 0 24px;
-  border: none;
+  padding: 24px 0;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    padding: 50px 0 36px;
-    margin-bottom: 36px;
+    padding: 36px 0;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    margin-bottom: 0;
-    padding: 0;
+    margin-bottom: 35px;
+    padding: 35px 0;
   }
 }
 
 .program-selection__purpose {
   padding: 22px 0 19px;
   margin-bottom: 26px;
-  border: none;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 65px;
-    padding: 27px;
-    padding-top: 23px;
-    border: 1px solid #e7e7e7;
+    margin-bottom: 29px;
+    padding: 36px 0;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
-    margin-bottom: 0;
-    padding: 30px 28px;
+    margin-bottom: 35px;
+    padding: 23px 27px 27px;
   }
 }
 
@@ -158,6 +161,10 @@
   }
 }
 
+.program-selection__textarea {
+  width: 100%;
+}
+
 .program-selection__button {
   margin-bottom: 21px;
 
@@ -201,6 +208,15 @@
   @include mixins.list-reset;
   display: grid;
   gap: 13px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 23px 27px 27px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 25px 28px;
+  }
 
   &--extra {
     @media (min-width: variables.$tablet) {

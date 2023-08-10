@@ -1,13 +1,6 @@
 @use "../common/variables.scss";
 
 .fieldset {
-  position: relative;
-  display: grid;
-  gap: 13px;
-  margin-right: 0;
-  margin-left: 0;
-  text-transform: uppercase;
-
   &--with-decor {
     &::after {
       content: "";
@@ -23,13 +16,5 @@
         display: none;
       }
     }
-  }
-
-  @media (min-width: variables.$tablet) {
-    gap: 20px;
-  }
-
-  @media (min-width: variables.$desktop) {
-    gap: 13px;
   }
 }

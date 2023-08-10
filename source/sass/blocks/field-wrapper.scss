@@ -1,0 +1,10 @@
+@use "../common/variables.scss";
+
+.field-wrapper {
+  display: grid;
+  gap: 14px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 20px;
+  }
+}
