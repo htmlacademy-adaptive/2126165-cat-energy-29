@@ -1,2 +1,20 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
+
+.program-selection {
+  padding: 27px 0 32px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 65px 0 60px;
+  }
+
+  @media (min-width: variables.$tablet) {
+    padding: 74px 0 80px;
+  }
+}
+
+.program-selection__wrapper {
+  @media (min-width: variables.$tablet) {
+
+  }
+}
