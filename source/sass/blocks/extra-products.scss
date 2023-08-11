@@ -26,7 +26,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  &::after, &::before {
+  &::before,
+  &::after {
     content: "";
     position: relative;
     display: inline-block;
