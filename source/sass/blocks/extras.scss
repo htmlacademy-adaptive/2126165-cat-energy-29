@@ -78,6 +78,8 @@
 }
 
 .extras__button {
+  padding: 10px;
+
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
     margin-top: 25px;
