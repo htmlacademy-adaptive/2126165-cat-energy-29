@@ -8,6 +8,7 @@
   line-height: 18px;
   color: variables.$text-secondary;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: variables.$tablet) {
     padding: 11px 20px;

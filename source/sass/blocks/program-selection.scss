@@ -56,7 +56,7 @@
 
 .program-selection__form {
   display: grid;
-  align-items: center;
+  align-items: start;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -102,8 +102,13 @@
   }
 }
 
+.program-selection__input {
+  width: 100%;
+}
+
 .program-selection__textarea {
   width: 100%;
+  resize: vertical;
 }
 
 .program-selection__button {

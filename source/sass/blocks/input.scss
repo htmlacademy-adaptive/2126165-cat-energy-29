@@ -1,4 +1,24 @@
+@use "../common/variables.scss";
+
 .input {
-  width: 100%;
-  border: 1px solid #e7e7e7;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: top 50% right 5%;
+
+  &--email {
+    background-image: url("../img/email.svg");
+  }
+
+  &--phone {
+    background-image: url("../img/phone.svg");
+  }
+
+  @media (min-width: variables.$tablet) {
+    background-position: top 50% right 2%;
+  }
+
+  @media (min-width: variables.$desktop) {
+    background-position: top 50% right 3%;
+  }
 }
+
