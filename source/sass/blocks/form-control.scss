@@ -10,6 +10,7 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
+    padding: 11px 20px;
     font-size: 20px;
     line-height: 20px;
   }

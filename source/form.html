@@ -77,10 +77,10 @@
         <h1 class="program-selection__title title title--primary">Подбор программы</h1>
         <p class="program-selection__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="program-selection__personal personal-form fieldset fieldset--with-decor">
+          <fieldset class="program-selection__personal personal-form program-selection__fieldset program-selection__fieldset--with-decor">
             <legend class="visually-hidden">Личные данные вашего кота.</legend>
             <div class="personal-form__wrapper">
-              <ul class="program-selection__list">
+              <ul class="program-selection__list personal-form__list">
                 <li class="program-selection__item">
                   <p class="label-field">
                     <label class="program-selection__label" for="cat-name">Имя:*</label>
@@ -105,10 +105,10 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="program-selection__purpose purpose-form fieldset fieldset--with-decor">
+          <fieldset class="program-selection__purpose purpose-form program-selection__fieldset program-selection__fieldset--with-decor">
             <legend class="visually-hidden">Направление программы.</legend>
             <div class="purpose-form__wrapper">
-              <ul class="program-selection__list program-selection__list--with-decor">
+              <ul class="program-selection__list purpose-form__list">
                 <li class="program-selection__item">
                   <label class="program-selection__control field">
                     <input class="program-selection__input form-control radio-input radio-input--checked" type="radio"
@@ -133,10 +133,10 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="program-selection__contacts contacts-form fieldset">
+          <fieldset class="program-selection__contacts contacts-form program-selection__fieldset">
             <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
             <div class="contacts-form__wrapper">
-              <ul class="program-selection__list">
+              <ul class="program-selection__list contacts-form__list">
                 <li class="program-selection__item">
                   <p class="label-field">
                     <label class="program-selection__label" for="email">E&#8209;mail:*</label>
@@ -154,17 +154,17 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="program-selection__comment comment-form fieldset">
+          <fieldset class="program-selection__comment comment-form program-selection__fieldset">
             <legend class="program-selection__headline">Комментарий</legend>
             <div class="comment-form__wrapper">
               <textarea class="program-selection__textarea form-control textarea" name="comment" cols="30"
                 rows="7">Расскажите обо всех повадках кота</textarea>
             </div>
           </fieldset>
-          <fieldset class="program-selection__additional additional-form fieldset">
+          <fieldset class="program-selection__additional additional-form program-selection__fieldset">
             <legend class="program-selection__headline">Дополнительно</legend>
             <div class="additional-form__wrapper">
-              <ul class="program-selection__list program-selection__list--extra">
+              <ul class="program-selection__list additional-form__list">
                 <li class="program-selection__item">
                   <label class="program-selection__control field">
                     <input class="program-selection__input form-control checkbox-input checkbox-input--checked"
@@ -195,7 +195,9 @@
             </div>
           </fieldset>
           <button class="program-selection__button button button--primary" type="submit">Отправить заявку</button>
-          <p class="program-selection__legend"><small>* — Обязательные поля</small></p>
+          <p class="program-selection__legend">
+            <small class="program-selection__legend--small">* — Обязательные поля</small>
+          </p>
         </form>
       </div>
     </section>

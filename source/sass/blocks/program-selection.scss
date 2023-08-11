@@ -8,13 +8,244 @@
     padding: 65px 0 60px;
   }
 
-  @media (min-width: variables.$tablet) {
+  @media (min-width: variables.$desktop) {
     padding: 74px 0 80px;
   }
 }
 
 .program-selection__wrapper {
   @media (min-width: variables.$tablet) {
+    padding: 0 40px;
+  }
 
+  @media (min-width: variables.$desktop) {
+    padding: 0;
+  }
+}
+
+.program-selection__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.program-selection__intro {
+  max-width: 230px;
+  margin: 0;
+  margin-bottom: 39px;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 340px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 66px;
+  }
+}
+
+.program-selection__form {
+  display: grid;
+  align-items: center;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: variables.$desktop) {
+    column-gap: 80px;
+  }
+}
+
+.program-selection__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+
+  &--with-decor {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+
+      @media (min-width: variables.$tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
+.program-selection__label {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.program-selection__textarea {
+  width: 100%;
+}
+
+.program-selection__button {
+  margin-bottom: 21px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / 2;
+    max-width: 282px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+  }
+}
+
+.program-selection__legend {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 2 / 3;
+    // padding-left: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / -1;
+  }
+
+  &--small {
+    font-family: variables.$font-secondary;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.program-selection__list {
+  @include mixins.list-reset;
+  display: grid;
+}
+
+.program-selection__headline {
+  max-width: 225px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border: 2px solid variables.$color-primary;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: variables.$tablet) {
+    max-width: 610px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-left: -40px;
+    margin-bottom: 35px;
+  }
+}
+
+.program-selection__personal {
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    margin-bottom: 70px;
+  }
+}
+
+.program-selection__purpose {
+  margin-bottom: 26px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / -1;
+    margin-bottom: 70px;
+  }
+}
+
+.program-selection__contacts {
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    margin-bottom: 70px;
+  }
+}
+
+.program-selection__comment {
+  margin-bottom: 23px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    margin-bottom: 70px;
+  }
+}
+
+.program-selection__additional {
+  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    margin-bottom: 39px;
   }
 }

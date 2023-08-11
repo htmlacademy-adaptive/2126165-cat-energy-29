@@ -1,1 +1,23 @@
-//
+@use "./common/variables.scss";
+
+.purpose-form__wrapper {
+  padding: 22px 0 19px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
+}
+
+.purpose-form__list {
+  gap: 13px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 27px;
+    padding-top: 23px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: variables.$tablet) {
+    padding: 25px 28px;
+  }
+}
