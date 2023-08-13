@@ -1,5 +1,11 @@
+@use "../common/variables.scss";
+
 .field {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 15px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 20px;
+  }
 }

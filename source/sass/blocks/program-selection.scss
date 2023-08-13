@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .program-selection {
-  padding: 27px 0 32px;
+  padding: 28px 0 30px;
 
   @media (min-width: variables.$tablet) {
     padding: 65px 0 60px;
@@ -109,19 +109,26 @@
 .program-selection__textarea {
   width: 100%;
   resize: vertical;
+
+  @media (min-width: variables.$desktop) {
+    min-height: 175px;
+  }
 }
 
 .program-selection__button {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  padding: 10px 44px;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     max-width: 282px;
     margin-bottom: 0;
+    padding: 15px;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
+    min-width: 570px;
   }
 }
 
@@ -131,12 +138,15 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / 3;
-    // padding-left: 60px;
+    padding-top: 13px;
+    padding-left: 37px;
     text-align: left;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
+    padding-top: 15px;
+    padding-left: 3px;
   }
 
   &--small {
@@ -171,11 +181,15 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    top: 18px;
+    top: 17px;
     left: 50%;
     transform: translateX(-50%);
     background-color: variables.$color-primary;
     z-index: -1;
+
+    @media (min-width: variables.$tablet) {
+      top: 22px;
+    }
   }
 
   @media (min-width: variables.$tablet) {
@@ -191,7 +205,7 @@
 .program-selection__personal {
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: variables.$desktop) {
@@ -201,7 +215,7 @@
 }
 
 .program-selection__purpose {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
@@ -224,21 +238,21 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
 .program-selection__comment {
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 65px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 }
 
@@ -247,7 +261,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: variables.$desktop) {

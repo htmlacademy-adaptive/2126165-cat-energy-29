@@ -12,12 +12,12 @@
   gap: 13px;
 
   @media (min-width: variables.$tablet) {
-    padding: 27px;
+    padding: 25px;
     padding-top: 23px;
     border: 1px solid #e7e7e7;
   }
 
-  @media (min-width: variables.$tablet) {
-    padding: 25px 28px;
+  @media (min-width: variables.$desktop) {
+    padding: 24px 28px;
   }
 }

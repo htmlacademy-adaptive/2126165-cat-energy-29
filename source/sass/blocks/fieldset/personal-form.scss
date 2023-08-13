@@ -14,4 +14,8 @@
   @media (min-width: variables.$tablet) {
     gap: 18px;
   }
+
+  @media (min-width: variables.$desktop) {
+    gap: 17px;
+  }
 }
