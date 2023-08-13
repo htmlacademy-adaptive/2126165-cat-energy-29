@@ -42,23 +42,17 @@
   height: 107px;
 
   @media (min-width: variables.$tablet) {
-    margin-top: -52px;
-    margin-bottom: 40px;
+    width: 200px;
+    height: 210px;
+    margin: 0 auto;
+    margin-top: -71px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 31px;
-  }
-
-  &--big {
-    @media (min-width: variables.$tablet) {
-      margin-top: -71px;
-      margin-bottom: 27px;
-    }
-
-    @media (min-width: variables.$desktop) {
-      margin-bottom: 19px;
-    }
+    width: 169px;
+    margin-top: -72px;
+    margin-bottom: 12px;
   }
 }
 
