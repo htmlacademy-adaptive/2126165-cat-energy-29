@@ -16,11 +16,28 @@
   }
 }
 
+.header-logo__image {
+  @media (min-width: variables.$tablet) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
 .header-logo__text {
   @media (max-width: variables.$mobile) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 118px;
+    height: 21px;
   }
 }

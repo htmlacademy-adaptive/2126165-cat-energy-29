@@ -13,8 +13,12 @@
   @media (min-width: variables.$desktop) {
     padding: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(#ffffff calc(205 * 100% / 667), variables.$color-secondary calc(205 * 100% / 667));
+    background-image: linear-gradient(#ffffff calc(136 * 100% / 598), variables.$color-secondary calc(136 * 100% / 598));
   }
+}
+
+.example__wrapper {
+  position: relative;
 }
 
 .example__title {
@@ -38,10 +42,12 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 440px;
+    max-width: 433px;
     margin-bottom: 69px;
   }
 }
@@ -56,11 +62,11 @@
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
     grid-template-columns: 162px 162px 1fr;
     gap: 43px;
-    margin-bottom: 100px;
+    margin-bottom: 102px;
   }
 
   @media (min-width: variables.$desktop) {
-    gap: 58px 42px;
+    gap: 60px 42px;
     max-width: 366px;
     margin-bottom: 0;
   }
@@ -74,14 +80,14 @@
   border-radius: 5px;
 
   @media (min-width: variables.$tablet) {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
   }
 }
 
 .example__description {
   position: absolute;
   padding: 0 5px;
-  bottom: -15px;
+  top: calc(46 * 100% / 56);
   left: 50%;
   transform: translateX(-50%);
   font-family: variables.$font-secondary;
@@ -105,6 +111,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    top: calc(63 * 100% / 72);
     background-color: variables.$color-secondary;
   }
 }

@@ -3,12 +3,12 @@
 .program {
   display: grid;
   grid-template-columns: 30% 70%;
-  align-items: center;
+  align-items: start;
   padding: 21px 33px 18px 20px;
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    padding: 77px 31px 53px 52px;
+    grid-auto-flow: dense;
   }
 
   &::before {
@@ -27,11 +27,13 @@
 
   &--slim {
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      grid-template-columns: 63% 37%;
+      grid-template-columns: calc(393 * 100% / 593) calc(200 * 100% / 593);
+      padding: 77px 63px 58px 52px;
     }
 
     @media (min-width: variables.$desktop) {
-      padding: 41px 61px 59px 52px;
+      grid-template-columns: calc(162 * 100% / 457) calc(295 * 100% / 457);
+      padding: 41px 61px 58px 52px;
     }
   }
 
@@ -39,13 +41,13 @@
     padding-top: 24px;
 
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      grid-template-columns: 58% 42%;
-      padding-top: 77px;
-      padding-right: 29px;
+      grid-template-columns: calc(359 * 100% / 627) calc(268 * 100% / 627);
+      padding: 77px 29px 58px 52px;
     }
 
     @media (min-width: variables.$desktop) {
-      padding: 47px 67px 59px 52px;
+      grid-template-columns: calc(166 * 100% / 469) calc(290 * 100% / 469);
+      padding: 47px 61px 58px 52px;
     }
   }
 
@@ -63,6 +65,7 @@
     @media (min-width: variables.$desktop) {
       width: 100px;
       height: 106px;
+      margin: 0;
     }
   }
 
@@ -76,11 +79,15 @@
     @media (min-width: variables.$tablet) {
       width: 268px;
       height: 200px;
+      margin-left: 0;
+      margin-top: 14px;
     }
 
     @media (min-width: variables.$desktop) {
       width: 134px;
       height: 100px;
+      margin: 0;
+      margin-left: -19px;
     }
   }
 }
@@ -88,6 +95,8 @@
 .program__title {
   grid-column: 2 / -1;
   margin: 0;
+  margin-left: 2px;
+  padding-top: 8px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -95,7 +104,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -103,32 +112,31 @@
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
     margin: 0;
+    padding-top: 34px;
   }
 }
 
 .program__descriprion {
   grid-column: 1 / -1;
   margin: 0;
-  margin-bottom: 15px;
-  padding: 22px 0;
+  margin-bottom: 23px;
+  padding-top: 22px;
   font-family: variables.$font-secondary;
   font-weight: 400;
   color: variables.$text-secondary;
-  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
     padding: 0;
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
-    border: none;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     padding-top: 39px;
     max-width: 100%;
   }
@@ -140,16 +148,18 @@
   gap: 15px;
   align-items: center;
   padding: 4px 0;
+  padding-top: 18px;
   font-size: 16px;
   line-height: 16px;
   color: variables.$text-primary;
   text-decoration: none;
   text-transform: uppercase;
+  border-top: 1px solid #d9d9d9;
 
   &::after {
     content: "";
     display: block;
-    width: 32px;
+    min-width: 32px;
     height: 10px;
     mask: url("../img/arrow.svg") no-repeat center;
     background-color: variables.$text-primary;
@@ -160,9 +170,11 @@
     gap: 25px;
     font-size: 20px;
     line-height: 20px;
+    border: none;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
+    padding: 4px 0;
   }
 }

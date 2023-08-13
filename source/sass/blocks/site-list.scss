@@ -23,7 +23,7 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     flex-direction: row;
-    gap: 33px;
+    gap: 34px;
     flex-wrap: wrap;
     justify-content: end;
   }
@@ -73,10 +73,6 @@
     height: 2px;
     background-color: variables.$color-primary;
   }
-
-  @media (min-width: variables.$desktop) {
-    bottom: 5px;
-  }
 }
 
 .site-list__link {
@@ -96,7 +92,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 16px 0 13px;
+    padding: 20px 0 13px;
     font-size: 20px;
   }
 }

@@ -11,8 +11,8 @@
 
   @media (min-width: variables.$tablet) {
     flex-direction: row;
-    justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
     padding: 55px 0;
   }
 
@@ -45,9 +45,16 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
+    max-width: 180px;
     margin: 0;
+    margin-left: 160px;
+    margin-right: auto;
     padding: 8px 0;
     border: none;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-left: 416px;
   }
 }
 

@@ -4,6 +4,7 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     padding-top: 25px;
   }
 

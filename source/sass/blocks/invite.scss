@@ -7,23 +7,26 @@
 .invite__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   padding: 27px 0;
 
   @media (min-width: variables.$tablet) {
-    padding: 60px 40px;
+    padding: 61px 40px;
   }
 
   @media (min-width: variables.$desktop) {
     position: absolute;
     top: 95px;
-    left: calc(110 * 100% / 1440);
+    left: calc(220 * 100% / 1440);
+    align-items: start;
     max-width: 565px;
+    padding: 60px 73px 60px 80px;
     background-color: #ffffff;
   }
 }
 
 .invite__headline {
-  min-width: 140px;
+  min-width: 130px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -46,9 +49,14 @@
   @media (min-width: variables.$tablet) {
     display: grid;
     gap: 20px;
+    max-width: 160px;
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    text-align: left;
   }
 }
 
@@ -64,4 +72,8 @@
   display: block;
   width: 100%;
   border: none;
+
+  @media (min-width: variables.$tablet) {
+    height: 400px;
+  }
 }
