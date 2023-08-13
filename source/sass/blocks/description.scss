@@ -108,10 +108,12 @@
 
 .description__text {
   margin: 0;
+  padding-top: 2px;
   font-family: variables.$font-secondary;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
   }

@@ -25,6 +25,8 @@
 }
 
 .page__hero {
+  padding-top: 27px;
+
   @media (min-width: variables.$tablet) {
     padding-top: 65px;
   }

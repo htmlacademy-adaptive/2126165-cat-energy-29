@@ -19,12 +19,12 @@
     line-height: 20px;
   }
 
-  .button--primary {
+  &--primary {
     color: #ffffff;
     background-color: variables.$color-primary;
   }
 
-  .button--secondary {
+  &--secondary {
     color: variables.$text-secondary;
     background-color: #f2f2f2;
   }
