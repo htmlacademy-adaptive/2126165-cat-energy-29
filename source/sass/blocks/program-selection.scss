@@ -170,10 +170,11 @@
     content: "";
     position: absolute;
     width: 100vw;
-    border: 2px solid variables.$color-primary;
+    height: 2px;
     top: 18px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: variables.$color-primary;
     z-index: -1;
   }
 

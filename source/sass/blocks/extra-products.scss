@@ -10,6 +10,8 @@
 }
 
 .extra-products__wrapper {
+  position: relative;
+
   @media (min-width: variables.$desktop) {
     display: grid;
     grid-template-columns: 73% auto;
@@ -18,36 +20,30 @@
 }
 
 .extra-products__title {
-  display: inline-block;
-  // vertical-align: middle;
+  max-width: 270px;
   margin: 0;
+  margin-left: -20px;
   margin-bottom: 36px;
+  padding: 0 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: #ffffff;
 
-  &::before,
   &::after {
     content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    position: absolute;
     width: 100vw;
     height: 2px;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: variables.$color-primary;
-  }
-
-  &::before {
-    margin-left: -100%;
-    left: -20px;
-  }
-
-  &::after {
-    margin-right: -100%;
-    right: -20px;
+    z-index: -1;
   }
 
   @media (min-width: variables.$tablet) {
+    max-width: 380px;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
