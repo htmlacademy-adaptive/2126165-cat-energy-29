@@ -1,6 +1,52 @@
+@use "../common/variables.scss";
+
+.slider {
+  position: relative;
+  min-height: 256px;
+
+  @media (min-width: variables.$tablet) {
+    width: 560px;
+    min-height: 512px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    position: absolute;
+  }
+}
+
+.slider__image {
+  position: absolute;
+
+  &--first {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--second {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  @media (min-width: variables.$tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
 .slider__change-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
   margin: 0;
   padding: 0;
   border: none;
   background: none;
+  background-color: #666666;
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

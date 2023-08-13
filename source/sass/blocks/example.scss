@@ -11,7 +11,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 69px 0 75px;
+    padding: 0;
+    padding-bottom: 75px;
     background-image: linear-gradient(#ffffff calc(205 * 100% / 667), variables.$color-secondary calc(205 * 100% / 667));
   }
 }
@@ -161,8 +162,7 @@
 
 .example__slider {
   @media (min-width: variables.$desktop) {
-    position: absolute;
-    top: 70px;
+    top: 0;
     right: 0;
   }
 }
