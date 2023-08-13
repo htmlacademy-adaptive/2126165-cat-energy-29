@@ -22,7 +22,9 @@
 }
 
 .footer__logo {
-  padding-bottom: 20px;
+  display: grid;
+  place-content: center;
+  padding-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
 
