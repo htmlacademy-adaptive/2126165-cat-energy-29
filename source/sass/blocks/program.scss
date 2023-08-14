@@ -179,9 +179,14 @@
     padding: 4px 0;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: scaleX(1.3);
     transition: all 0.5s;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
   }
 
   &:active {

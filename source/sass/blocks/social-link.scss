@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .social-link {
   display: block;
   width: 28px;
@@ -15,5 +17,14 @@
 
   &--telegram {
     mask: url("../img/telegram.svg");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
