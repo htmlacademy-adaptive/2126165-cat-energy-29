@@ -897,7 +897,7 @@
   transform: scaleX(1.3);
   transition: all 0.5s;
 }
-.program__link:focus {
+.program__link:focus-visible {
   outline: 2px solid #444444;
 }
 .program__link:active {
