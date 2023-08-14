@@ -185,7 +185,7 @@
     transition: all 0.5s;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid #444444;
   }
 
