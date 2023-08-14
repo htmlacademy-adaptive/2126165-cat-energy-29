@@ -1,11 +1,15 @@
 @use "../common/variables.scss";
 
 .extra-products {
-  padding: 25px 0 35px;
+  padding: 24px 0 35px;
 
   @media (min-width: variables.$tablet) {
     padding: 0;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-bottom: 86px;
   }
 }
 
@@ -14,8 +18,20 @@
 
   @media (min-width: variables.$desktop) {
     display: grid;
-    grid-template-columns: 73% auto;
+    grid-template-columns: calc(896 * 100% / 1220) auto;
     column-gap: 80px;
+  }
+}
+
+.extra-products__list {
+  margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -35,11 +51,15 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    top: 18px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     background-color: variables.$color-primary;
     z-index: -1;
+
+    @media (min-width: variables.$tablet) {
+      top: 22px;
+    }
   }
 
   @media (min-width: variables.$tablet) {
@@ -53,17 +73,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
-  }
-}
-
-.extra-products__list {
-  margin-bottom: 35px;
-
-  @media (min-width: variables.$tablet) {
-    margin-bottom: 70px;
-  }
-
-  @media (min-width: variables.$desktop) {
-    margin-bottom: 0;
+    margin-left: -40px;
+    margin-bottom: 78px;
   }
 }

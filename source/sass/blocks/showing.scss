@@ -12,7 +12,7 @@
     content: "";
     display: block;
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     width: 30px;
     height: 30px;
     background-image: url("../img/plus.svg");
@@ -47,13 +47,12 @@
   }
 
   @media (min-width: variables.$tablet) {
-    padding: 50px 37px 40px;
+    padding: 50px 37px 37px;
     border: 2px solid variables.$color-secondary;
   }
 
   @media (min-width: variables.$desktop) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 48px 38px 37px;
   }
 }
 

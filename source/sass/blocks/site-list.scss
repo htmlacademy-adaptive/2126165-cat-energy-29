@@ -26,6 +26,11 @@
     gap: 34px;
     flex-wrap: wrap;
     justify-content: end;
+    padding-right: 4px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-right: 2px;
   }
 
   &--nojs {

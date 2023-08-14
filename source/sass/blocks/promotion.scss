@@ -34,7 +34,8 @@
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
     display: flex;
     justify-content: space-between;
-    padding: 57px 125px 60px 77px;
+    align-items: center;
+    padding: 57px 125px 60px 79px;
   }
 
   @media (min-width: variables.$desktop) {
@@ -52,11 +53,14 @@
 
   @media (min-width: variables.$tablet) {
     margin: 0;
+    text-align: left;
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: variables.$desktop) {
     margin: 0 auto;
+    min-width: 162px;
+    text-align: center;
   }
 }

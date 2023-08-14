@@ -9,7 +9,7 @@
 
 .extras__item {
   display: grid;
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -22,15 +22,15 @@
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: calc(325 * 100% / 896) calc(326 * 100% / 896) calc(245 * 100% / 896);
     align-items: center;
-    padding: 25px 0 27px;
+    padding: 14px 0 17px;
   }
 }
 
 .extras__caption {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -38,6 +38,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -46,6 +47,7 @@
 .extras__features {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   margin: 0;
   margin-bottom: 15px;
   font-family: variables.$font-secondary;
@@ -56,16 +58,20 @@
   @media (min-width: variables.$tablet) {
     grid-column: 2 / -1;
     display: grid;
-    grid-template-columns: 58% 42%;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
     justify-items: end;
+    margin: 0;
+    text-align: end;
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / 3;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
     justify-items: start;
+    padding-top: 7px;
+    text-align: left;
   }
 }
 
@@ -82,7 +88,8 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-top: 25px;
+    margin-top: 24px;
+    padding: 12px;
     font-size: 16px;
     line-height: 16px;
   }

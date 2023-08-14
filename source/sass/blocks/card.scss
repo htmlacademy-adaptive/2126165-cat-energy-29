@@ -22,7 +22,8 @@
   }
 
   @media (min-width: variables.$tablet) {
-    display: block;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, min-content) 1fr;
     padding: 0 37px 40px;
     background-color: variables.$color-secondary;
   }
@@ -42,6 +43,7 @@
   height: 107px;
 
   @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
     width: 200px;
     height: 210px;
     margin: 0 auto;
@@ -52,22 +54,26 @@
   @media (min-width: variables.$desktop) {
     width: 169px;
     margin-top: -72px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 
 .card__image {
   display: block;
+  width: 81px;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 
   @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
     width: 161px;
     height: 172px;
   }
 
   &--big {
+    width: 84px;
+
     @media (min-width: variables.$tablet) {
       width: 168px;
       height: 206px;
@@ -83,15 +89,18 @@
 .card__caption-link {
   grid-column: 2 / -1;
   max-width: 76px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
+  padding-top: 3px;
   text-decoration: none;
   color: #222222;
 
   @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
     display: block;
     max-width: 135px;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding: 0;
   }
 
   @media (min-width: variables.$desktop) {
@@ -119,8 +128,13 @@
   margin: 0;
 
   @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
     display: grid;
     row-gap: 5px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    row-gap: 7px;
   }
 }
 
@@ -133,10 +147,15 @@
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
+    gap: 6px;
     padding-bottom: 5px;
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-bottom: 6px;
   }
 }
 
@@ -148,10 +167,12 @@
   grid-column: 1 / -1;
   width: 100%;
   margin-top: 17px;
-  padding: 10px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   @media (min-width: variables.$tablet) {
-    margin-top: 32px;
+    align-self: end;
+    margin-top: 33px;
     padding: 10px 45px;
     font-size: 16px;
     line-height: 20px;
