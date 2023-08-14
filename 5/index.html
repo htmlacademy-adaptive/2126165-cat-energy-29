@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/2126165-cat-energy-29/5/">
 </head>
@@ -14,7 +16,8 @@
     <nav class="header__navigation container navigation">
       <div class="navigation__hat">
         <a class="header__logo header-logo" href="#">
-          <svg class="header-logo__image" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header-logo__image" width="33" height="38" viewBox="0 0 33 38" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_153_267)">
               <path
                 d="M6.0117 20.9349V18.6514C12.6311 17.7242 19.3065 17.2752 25.988 17.3076C25.988 17.9139 25.988 18.5302 25.9286 19.1465C27.8277 18.2867 29.8236 17.6691 31.8709 17.3076C30.5661 13.8643 28.1884 10.9536 25.1037 9.02347C22.0189 7.09332 18.398 6.25055 14.7979 6.62482C11.1978 6.9991 7.81798 8.56967 5.17831 11.095C2.53863 13.6202 0.785353 16.9603 0.188175 20.6014L6.0117 20.9349Z"
@@ -61,7 +64,7 @@
       </div>
       <ul class="navigation__list site-list site-list--closed site-list--nojs site-list--with-background">
         <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="./" aria-current="page">Главная</a>
+          <a class="site-list__link site-list__link--current" href="./" aria-current="page">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -119,13 +122,13 @@
           </li>
           <li class="description__item description__item--fast">
             <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему
-              вашего питомца!</p>
+              вашего&nbsp;питомца!</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="example">
-      <div class="container">
+      <div class="example__wrapper container">
         <h2 class="example__title title title--secondary">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -142,19 +145,20 @@
           </div>
           <div class="example__item example__item--special">
             <dt class="example__description">Затраты на питание:</dt>
-            <dd class="example__amount">15 000 руб.</dd>
+            <dd class="example__amount">15&nbsp;000&nbsp;руб.</dd>
           </div>
         </dl>
         <div class="example__slider slider">
-          <img class="slider__image" width="140" height="256" src="img/cat-fat.png" alt="Кот упитанного телосложения.">
-          <img class="slider__image" width="140" height="256" src="img/cat-skinny.png" alt="Кот худого телосложения.">
+          <img class="slider__image slider__image--first" width="280" height="256" src="img/cat-fat.png"
+            alt="Кот упитанного телосложения.">
+          <img class="slider__image slider__image--second" width="280" height="256" src="img/cat-skinny.png"
+            alt="Кот худого телосложения.">
           <button class="slider__change-image" type="button">
-            <svg width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="256" rx="2" fill="#666666" />
-              <rect x="1" y="109" width="38" height="38" rx="19" fill="white" />
-              <path d="M16 119L8 128L16 137V119Z" fill="#666666" />
-              <path d="M32 128L24 119V137L32 128Z" fill="#666666" />
-              <rect x="1" y="109" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+              <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
+              <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
+              <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
             </svg>
             <span class="visually-hidden">Ползунок смены изображений.</span>
           </button>
@@ -166,7 +170,7 @@
         <h2 class="visually-hidden">Расположение магазина.</h2>
         <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="invite__address">
-          <span class="invite__text">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
           <span class="invite__text">Санкт-Петербург</span>
         </address>
       </div>
