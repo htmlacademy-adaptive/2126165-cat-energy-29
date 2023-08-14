@@ -3,7 +3,7 @@ let center = [59.93871181590914, 30.3230150423278];
 function init() {
   let map = new ymaps.Map("map", {
     center: center,
-    zoom: 17
+    zoom: 14
   });
 
   let placemark = new ymaps.Placemark(center, {}, {
