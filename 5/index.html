@@ -174,10 +174,11 @@
           <span class="invite__text">Санкт-Петербург</span>
         </address>
       </div>
-      <iframe class="invite__map"
+      <div class="invite__map" id="map"></div>
+      <!-- <iframe class="invite__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ebc4331b7b053c1e52a21efc7cde36cbbace3aff91ef3e888202291bc01c9ca&amp;source=constructor"
         width="320" height="362" allowfullscreen title="Карта с местоположением Кэт энерджи.">
-      </iframe>
+      </iframe> -->
     </section>
   </main>
   <footer class="footer">
@@ -244,6 +245,9 @@
       </a>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="js/map.js"></script>
   <script src="js/script.js"></script>
 </body>
 
