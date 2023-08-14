@@ -2,10 +2,19 @@
 
 .field {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 15px;
 
   @media (min-width: variables.$tablet) {
     gap: 20px;
+  }
+
+  &:hover .radio-input,
+  &:hover .checkbox-input {
+    border-color: #bababa;
+  }
+
+  &--disabled {
+    opacity: 0.3;
   }
 }
