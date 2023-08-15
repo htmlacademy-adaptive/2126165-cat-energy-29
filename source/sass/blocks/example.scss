@@ -18,7 +18,10 @@
 }
 
 .example__wrapper {
-  position: relative;
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-auto-flow: dense;
+  }
 }
 
 .example__title {
@@ -30,6 +33,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
     margin-bottom: 146px;
   }
 }
@@ -47,6 +51,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
     max-width: 433px;
     margin-bottom: 69px;
   }
@@ -66,6 +71,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
     gap: 60px 42px;
     max-width: 366px;
     margin-bottom: 0;
@@ -168,8 +174,18 @@
 }
 
 .example__slider {
+  min-height: 256px;
+
+  @media (min-width: variables.$tablet) {
+    width: 560px;
+    min-height: 512px;
+    margin: 0 auto;
+  }
+
   @media (min-width: variables.$desktop) {
-    top: 0;
-    right: 0;
+    grid-column: 2 / 3;
+    grid-row: span 4;
+    justify-self: end;
+    margin: 0;
   }
 }

@@ -2,17 +2,6 @@
 
 .slider {
   position: relative;
-  min-height: 256px;
-
-  @media (min-width: variables.$tablet) {
-    width: 560px;
-    min-height: 512px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: variables.$desktop) {
-    position: absolute;
-  }
 }
 
 .slider__image {
