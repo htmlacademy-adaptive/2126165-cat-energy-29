@@ -1,6 +1,79 @@
+@use "../common/variables.scss";
+
+.extra-products {
+  padding: 24px 0 35px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-bottom: 86px;
+  }
+}
+
+.extra-products__wrapper {
+  position: relative;
+
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-template-columns: calc(896 * 100% / 1220) auto;
+    column-gap: 80px;
+  }
+}
+
+.extra-products__list {
+  margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .extra-products__title {
+  max-width: 270px;
   margin: 0;
+  margin-left: -20px;
+  margin-bottom: 36px;
+  padding: 0 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: variables.$color-primary;
+    z-index: -1;
+
+    @media (min-width: variables.$tablet) {
+      top: 22px;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    max-width: 425px;
+    margin-left: 0;
+    margin-bottom: 80px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    margin-left: -40px;
+    margin-bottom: 78px;
+  }
 }

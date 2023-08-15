@@ -1,16 +1,108 @@
 @use "../common/variables.scss";
 
+.showing {
+  padding: 25px 0;
+  text-align: center;
+
+  @media (max-width: variables.$mobile) {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: variables.$desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    padding: 50px 37px 37px;
+    border: 2px solid variables.$color-secondary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 48px 38px 37px;
+  }
+}
+
 .showing__title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: variables.$tablet) {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 26px;
+  }
 }
 
 .showing__description {
   margin: 0;
+  margin-bottom: 21px;
   font-family: variables.$font-secondary;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: variables.$tablet) {
+    margin: 0 auto;
+    margin-bottom: 82px;
+    max-width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 90px;
+  }
+}
+
+.showing__button {
+  width: 100%;
+  padding: 10px;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

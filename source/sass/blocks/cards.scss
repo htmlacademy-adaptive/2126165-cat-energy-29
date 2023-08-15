@@ -3,15 +3,33 @@
 
 .cards {
   @include mixins.list-reset;
+  position: relative;
   display: grid;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 141px 60px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(4, 1fr);
     gap: 143px 80px;
+    margin-bottom: 76px;
   }
 }

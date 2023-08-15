@@ -1,1 +1,66 @@
-//заглушка
+@use "../common/variables.scss";
+
+.slider {
+  position: relative;
+}
+
+.slider__image {
+  position: absolute;
+
+  &--first {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--second {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  @media (min-width: variables.$tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__change-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  background-color: #666666;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-primary;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: variables.$color-primary;
+  }
+
+  &:hover rect,
+  &:focus rect {
+    stroke: variables.$color-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.slider__change-image svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

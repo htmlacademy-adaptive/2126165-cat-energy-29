@@ -1,23 +1,78 @@
-@use "../common/mixins.scss";
 @use "../common/variables.scss";
 
 .extras {
-  @include mixins.list-reset;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.extras__item {
+  display: grid;
+  padding: 13px 0 18px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: calc(325 * 100% / 896) calc(326 * 100% / 896) calc(245 * 100% / 896);
+    align-items: center;
+    padding: 14px 0 17px;
+  }
 }
 
 .extras__caption {
   margin: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / 2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extras__features {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
   margin: 0;
+  margin-bottom: 15px;
   font-family: variables.$font-secondary;
   font-size: 14px;
   line-height: 14px;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
+    justify-items: end;
+    margin: 0;
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / 3;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
+    justify-items: start;
+    padding-top: 7px;
+    text-align: left;
+  }
 }
 
 .extras__value {
@@ -26,4 +81,21 @@
 
 .extras__price {
   margin: 0;
+}
+
+.extras__button {
+  padding: 10px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 3 / -1;
+    margin-top: 0;
+  }
 }

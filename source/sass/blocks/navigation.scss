@@ -1,12 +1,44 @@
 @use "../common/variables.scss";
 
 .navigation {
+  @media (min-width: variables.$tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 25px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 55px;
+  }
+}
+
+.navigation__hat {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 14px;
+
+  @media (max-width: variables.$mobile) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
 }
 
 .navigation__toggle {
-  margin: 0;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -19,13 +51,24 @@
   @media (min-width: variables.$tablet) {
     display: none;
   }
+
+  &--closed {
+    background-image: url("../img/close-button.svg");
+    background-position: center;
+    background-size: 18px 18px;
+  }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .navigation__list {
-  @media (max-width: variables.$mobile) {
-    position: absolute;
-    left: 0;
-    top: 65px;
-    width: 100%;
+  @media (min-width: variables.$tablet) {
+    max-width: 450px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 600px;
   }
 }

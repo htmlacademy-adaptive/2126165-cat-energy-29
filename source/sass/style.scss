@@ -2,16 +2,17 @@
 @use "common/variables.scss";
 @use "common/mixins.scss";
 @use "common/fonts.scss";
+@use "common/global.scss";
 @use "common/visually-hidden.scss";
 //Global-blocks
 @use "blocks/page.scss";
 @use "blocks/container.scss";
-@use "blocks/site-logo.scss";
 @use "blocks/academy-logo.scss";
 @use "blocks/title.scss";
 @use "blocks/button.scss";
 //Header
 @use "blocks/header.scss";
+@use "blocks/header-logo.scss";
 @use "blocks/navigation.scss";
 @use "blocks/site-list.scss";
 //Footer
@@ -28,15 +29,18 @@
 @use "blocks/invite.scss";
 //Form
 @use "blocks/program-selection.scss";
-@use "blocks/fieldset.scss";
 @use "blocks/label-field.scss";
 @use "blocks/form-control.scss";
 @use "blocks/input.scss";
-@use "blocks/radio-field.scss";
+@use "blocks/field.scss";
 @use "blocks/radio-input.scss";
 @use "blocks/textarea.scss";
-@use "blocks/checkbox-field.scss";
 @use "blocks/checkbox-input.scss";
+@use "blocks/fieldset/additional-form.scss";
+@use "blocks/fieldset/comment-form.scss";
+@use "blocks/fieldset/contacts-form.scss";
+@use "blocks/fieldset/personal-form.scss";
+@use "blocks/fieldset/purpose-form.scss";
 //Catalog
 @use "blocks/catalog.scss";
 @use "blocks/cards.scss";
