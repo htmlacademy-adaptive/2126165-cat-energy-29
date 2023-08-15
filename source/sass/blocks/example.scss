@@ -1,5 +1,17 @@
 @use "../common/variables.scss";
 
+@mixin item-special {
+  position: static;
+  margin: 0;
+  padding: 0;
+  font-family: variables.$font-primary;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$text-primary;
+  text-transform: uppercase;
+  transform: none;
+}
+
 .example {
   position: relative;
   padding: 25px 0 40px;
@@ -60,12 +72,12 @@
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 32px;
+  gap: 32px;
   margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-template-columns: 162px 162px 1fr;
+    grid-template-columns: repeat(2, 162px) 1fr;
     gap: 43px;
     margin-bottom: 102px;
   }
@@ -120,6 +132,14 @@
     top: calc(63 * 100% / 72);
     background-color: variables.$color-secondary;
   }
+
+  &--special {
+    @include item-special;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 20px;
+    }
+  }
 }
 
 .example__amount {
@@ -133,6 +153,14 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  &--special {
+    @include item-special;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 20px;
+    }
+  }
 }
 
 .example__item--special {
@@ -142,23 +170,6 @@
   gap: 3px;
   padding: 0;
   border: none;
-
-  & .example__description,
-  & .example__amount {
-    position: static;
-    margin: 0;
-    padding: 0;
-    font-family: variables.$font-primary;
-    font-size: 14px;
-    line-height: 20px;
-    color: variables.$text-primary;
-    text-transform: uppercase;
-    transform: none;
-
-    @media (min-width: variables.$tablet) {
-      font-size: 20px;
-    }
-  }
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
     grid-column: 3 / -1;
