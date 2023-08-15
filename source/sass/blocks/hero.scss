@@ -83,6 +83,7 @@
 .hero__image {
   display: block;
   margin-bottom: 3px;
+  margin: 0 auto;
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / -1;
