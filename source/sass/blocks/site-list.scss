@@ -59,9 +59,11 @@
     &::after {
       content: "";
       position: absolute;
+      width: 100vw;
       height: 1px;
-      left: 0;
+      left: 50%;
       right: 0;
+      transform: translateX(-50%);
       bottom: 0;
       background-color: #e6e6e6;
     }
@@ -82,7 +84,7 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 75px 24px;
+  padding: 22px 22px 24px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
