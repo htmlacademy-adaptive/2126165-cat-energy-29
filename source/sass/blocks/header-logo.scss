@@ -1,0 +1,51 @@
+@use "../common/variables.scss";
+
+.header-logo {
+  text-decoration: none;
+
+  @media (max-width: variables.$mobile) {
+    width: 33px;
+    height: 38px;
+  }
+
+  @media (min-width: variables.$tablet) {
+    min-width: 174px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header-logo__image {
+  @media (min-width: variables.$tablet) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.header-logo__text {
+  @media (max-width: variables.$mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 118px;
+    height: 21px;
+  }
+}

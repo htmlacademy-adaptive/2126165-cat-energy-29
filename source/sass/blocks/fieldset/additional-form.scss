@@ -1,0 +1,26 @@
+@use "./common/variables.scss";
+
+.additional-form__wrapper {
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 22px 0;
+  }
+}
+
+.additional-form__list {
+  gap: 12px;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 58px;
+    justify-content: start;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 78px;
+  }
+}

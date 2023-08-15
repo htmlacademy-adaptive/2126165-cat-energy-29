@@ -1,53 +1,202 @@
 @use "../common/variables.scss";
 
+@mixin item-special {
+  position: static;
+  margin: 0;
+  padding: 0;
+  font-family: variables.$font-primary;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$text-primary;
+  text-transform: uppercase;
+  transform: none;
+}
+
 .example {
+  position: relative;
+  padding: 25px 0 40px;
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+    padding: 45px 0 101px;
+    background-image: linear-gradient(#ffffff calc(619 * 100% / 1081), #eaeaea calc(619 * 100% / 1081));
   }
 
   @media (min-width: variables.$desktop) {
-    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+    padding: 0;
+    padding-bottom: 75px;
+    background-image: linear-gradient(#ffffff calc(136 * 100% / 598), variables.$color-secondary calc(136 * 100% / 598));
+  }
+}
+
+.example__wrapper {
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-auto-flow: dense;
   }
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   margin: 0;
+  margin-bottom: 20px;
   font-family: variables.$font-secondary;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    max-width: 433px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    grid-template-columns: repeat(2, 162px) 1fr;
+    gap: 43px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    gap: 60px 42px;
+    max-width: 366px;
+    margin-bottom: 0;
+  }
+}
+
+.example__item {
+  position: relative;
+  padding: 14px 10px 7px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+  @media (min-width: variables.$tablet) {
+    padding-bottom: 9px;
+  }
 }
 
 .example__description {
+  position: absolute;
+  padding: 0 5px;
+  top: calc(46 * 100% / 56);
+  left: 50%;
+  transform: translateX(-50%);
   font-family: variables.$font-secondary;
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
   color: variables.$text-secondary;
+  background-color: #eaeaea;
+
+  @media (min-width: variables.$tablet) {
+    bottom: -5px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    background-color: #ffffff;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: variables.$desktop) {
+    top: calc(63 * 100% / 72);
+    background-color: variables.$color-secondary;
+  }
+
+  &--special {
+    @include item-special;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 20px;
+    }
+  }
 }
 
 .example__amount {
   margin: 0;
+  margin-bottom: 10px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  &--special {
+    @include item-special;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 20px;
+    }
+  }
 }
 
 .example__item--special {
-  text-transform: uppercase;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  padding: 0;
+  border: none;
 
-  & .example__description,
-  & .example__amount {
-    font-family: variables.$font-primary;
-    font-size: 14px;
-    line-height: 20px;
-    color: variables.$text-primary;
+  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    grid-column: 3 / -1;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+  }
+
+  @media (min-width: variables.$desktop) {
+    gap: 66px;
+    justify-content: start;
+  }
+}
+
+.example__slider {
+  min-height: 256px;
+
+  @media (min-width: variables.$tablet) {
+    width: 560px;
+    min-height: 512px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / 3;
+    grid-row: span 4;
+    justify-self: end;
+    margin: 0;
   }
 }

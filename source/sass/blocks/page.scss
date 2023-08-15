@@ -7,16 +7,35 @@
 }
 
 .page__body {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   margin: 0;
   background-color: #ffffff;
   color: variables.$text-primary;
+}
 
+.page__header {
   &--background {
     @media (min-width: variables.$desktop) {
-      background-image: url("../img/cat-hero-big.jpg");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 720px 694px;
+      margin-bottom: -360px;
     }
+  }
+}
+
+.page__content {
+  min-width: 100%;
+}
+
+.page__hero {
+  padding-top: 27px;
+
+  @media (min-width: variables.$tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 143px;
   }
 }

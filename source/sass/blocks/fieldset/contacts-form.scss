@@ -1,0 +1,22 @@
+@use "./common/variables.scss";
+
+.contacts-form__wrapper {
+  padding-top: 15px;
+
+  @media (min-width: variables.$tablet) {
+    padding-top: 41px;
+  }
+}
+
+.contacts-form__list {
+  gap: 14px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 17px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}

@@ -2,4 +2,9 @@
 
 .social__list {
   @include mixins.list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 132px;
+  margin: 0 auto;
 }

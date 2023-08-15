@@ -1,34 +1,180 @@
 @use "../common/variables.scss";
 
 .card {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
+  }
+
   @media (min-width: variables.$tablet) {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    padding: 0 37px 40px;
     background-color: variables.$color-secondary;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
+.card__image-link {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+  display: grid;
+  place-content: center;
+  width: 140px;
+  height: 107px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    width: 200px;
+    height: 210px;
+    margin: 0 auto;
+    margin-top: -71px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 169px;
+    margin-top: -72px;
+    margin-bottom: 14px;
+  }
+}
+
+.card__image {
+  display: block;
+  width: 81px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    width: 161px;
+    height: 172px;
+  }
+
+  &--big {
+    width: 84px;
+
+    @media (min-width: variables.$tablet) {
+      width: 168px;
+      height: 206px;
+    }
+
+    @media (min-width: variables.$desktop) {
+      width: 172px;
+      height: 196px;
+    }
   }
 }
 
 .card__caption-link {
+  grid-column: 2 / -1;
+  max-width: 76px;
+  margin-bottom: 11px;
+  padding-top: 3px;
   text-decoration: none;
   color: #222222;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    display: block;
+    max-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 140px;
+    margin-bottom: 23px;
+  }
 }
 
 .card__caption {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card__feature-list {
+  grid-column: 2 / -1;
   margin: 0;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    display: grid;
+    row-gap: 5px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    row-gap: 7px;
+  }
 }
 
 .card__feature-item {
+  display: flex;
+  justify-content: space-between;
   font-family: variables.$font-secondary;
   font-size: 12px;
   line-height: 16px;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    gap: 6px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-bottom: 6px;
+  }
 }
 
 .card__amount {
   margin: 0;
+}
+
+.card__button {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 17px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+
+  @media (min-width: variables.$tablet) {
+    align-self: end;
+    margin-top: 33px;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

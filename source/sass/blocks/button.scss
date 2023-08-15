@@ -4,7 +4,7 @@
   display: grid;
   place-content: center;
   margin: 0;
-  padding: 7px 44px;
+  padding: 8px 44px;
   border: none;
   font-family: variables.$font-primary;
   font-size: 16px;
@@ -12,14 +12,39 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-}
+  cursor: pointer;
 
-.button--primary {
-  color: #ffffff;
-  background-color: variables.$color-primary;
-}
+  @media (min-width: variables.$tablet) {
+    padding: 13px 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-.button--secondary {
-  color: variables.$text-secondary;
-  background-color: #f2f2f2;
+  &--primary {
+    color: #ffffff;
+    background-color: variables.$color-primary;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
+  }
+
+  &--secondary {
+    color: variables.$text-secondary;
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
+  }
 }
