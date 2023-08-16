@@ -36,8 +36,8 @@
 
     @media (min-resolution: 2dppx) {
       background-image:
-      url("../img/cat-hero-desktop@2x.jpg"),
-      linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
+        url("../img/cat-hero-desktop@2x.jpg"),
+        linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
     }
   }
 }
@@ -95,8 +95,8 @@
 
 .hero__image {
   display: block;
-  margin-bottom: 3px;
   margin: 0 auto;
+  margin-bottom: 3px;
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / -1;
