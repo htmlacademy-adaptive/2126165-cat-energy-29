@@ -150,10 +150,16 @@
           </div>
         </dl>
         <div class="example__slider slider">
-          <img class="slider__image slider__image--first" width="280" height="256" src="img/cat-fat.png"
-            srcset="img/cat-fat@2x.png 2x" alt="Кот упитанного телосложения.">
-          <img class="slider__image slider__image--second" width="280" height="256" src="img/cat-skinny.png"
-            srcset="img/cat-skinny@2x.png 2x" alt="Кот худого телосложения.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
+            <img class="slider__image slider__image--first" src="img/cat-fat-phone.png"
+              srcset="img/cat-fat-phone@2x.png 2x" width="280" height="256" alt="Кот упитанного телосложения.">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
+            <img class="slider__image slider__image--second" src="img/cat-skinny-phone.png"
+              srcset="img/cat-skinny-phone@2x.png 2x" width="280" height="256" alt="Кот худого телосложения.">
+          </picture>
           <button class="slider__change-image" type="button">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
