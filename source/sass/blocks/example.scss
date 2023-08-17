@@ -196,6 +196,7 @@
   @media (min-width: variables.$desktop) {
     grid-column: 2 / 3;
     grid-row: span 4;
+    align-self: start;
     justify-self: end;
     margin: 0;
   }
