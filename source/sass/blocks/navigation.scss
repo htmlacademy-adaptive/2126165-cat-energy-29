@@ -47,6 +47,7 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   border: none;
+  cursor: pointer;
 
   @media (min-width: variables.$tablet) {
     display: none;

@@ -4,10 +4,18 @@
   padding: 59px 0 43px;
   text-align: center;
   background-color: variables.$color-primary;
-  background-image: url("../img/cat-promo.png");
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
+    url("../img/cat-promo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
+      url("../img/cat-promo@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -36,6 +44,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 57px 125px 60px 79px;
+    background-position: center 60%;
   }
 
   @media (min-width: variables.$desktop) {

@@ -12,6 +12,13 @@
   background-size: auto $percent-height, auto $percent-height, auto;
   color: #ffffff;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/cat-hero@2x.jpg"),
+      linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
+      linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
+  }
+
   @media (min-width: variables.$tablet) {
     text-align: left;
     background-color: #ffffff;
@@ -21,11 +28,17 @@
 
   @media (min-width: variables.$desktop) {
     background-image:
-      url("../img/cat-hero-big.jpg"),
+      url("../img/cat-hero-desktop.jpg"),
       linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
     background-size: min(694px, 50%), 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/cat-hero-desktop@2x.jpg"),
+        linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
+    }
   }
 }
 
@@ -80,10 +93,8 @@
   }
 }
 
-.hero__image {
-  display: block;
+.hero__image-wrapper {
   margin-bottom: 3px;
-  margin: 0 auto;
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / -1;
@@ -91,16 +102,25 @@
     width: 708px;
     height: 609px;
     margin: 0;
-    margin-left: -495px;
-    margin-top: -100px;
+    margin-left: -529px;
+    margin-top: -93px;
   }
 
   @media (min-width: variables.$desktop) {
     grid-row: 1 / -1;
     width: 552px;
     height: 499px;
-    margin-left: -290px;
-    margin-top: 0;
+    margin: 0;
+    margin-left: -294px;
+  }
+}
+
+.hero__image {
+  display: block;
+
+  @media (min-width: variables.$tablet) {
+    width: 100%;
+    height: auto;
   }
 }
 

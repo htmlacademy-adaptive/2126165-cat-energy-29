@@ -105,6 +105,7 @@
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     margin-bottom: 24px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -127,7 +128,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 53px;
+    margin-bottom: 39px;
     padding: 0;
     max-width: 340px;
     font-size: 16px;

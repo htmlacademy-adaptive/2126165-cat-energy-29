@@ -37,8 +37,19 @@ function init() {
   map.controls.remove("fullscreenControl");
   map.controls.remove("zoomControl");
   map.controls.remove("rulerControl");
+  map.behaviors.disable(['scrollZoom']);
 
   map.geoObjects.add(placemark);
 };
 
 ymaps.ready(init);
+
+window.onresize = function (event) {
+  if (document.documentElement.clientWidth == 320) {
+    location.reload()
+  } else if (document.documentElement.clientWidth == 768) {
+    location.reload()
+  } else if (document.documentElement.clientWidth == 1280) {
+    location.reload()
+  };
+}
