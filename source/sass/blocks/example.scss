@@ -1,7 +1,7 @@
 @use "../common/variables.scss";
 
 @mixin item-special {
-  position: static;
+  max-width: 122px;
   margin: 0;
   padding: 0;
   font-family: variables.$font-primary;
@@ -10,6 +10,10 @@
   color: variables.$text-primary;
   text-transform: uppercase;
   transform: none;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 200px;
+  }
 }
 
 .example {
@@ -72,7 +76,7 @@
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 34px 32px;
   margin: 0;
   margin-bottom: 20px;
 
@@ -91,7 +95,9 @@
 }
 
 .example__item {
-  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   padding: 14px 10px 7px;
   text-align: center;
   border: 1px solid #cdcdcd;
@@ -100,14 +106,36 @@
   @media (min-width: variables.$tablet) {
     padding-bottom: 9px;
   }
+
+  &--special {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    padding: 0;
+    border: none;
+
+    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+      grid-column: 3 / -1;
+      flex-direction: column;
+      align-items: end;
+      gap: 10px;
+      text-align: right;
+    }
+
+    @media (min-width: variables.$desktop) {
+      gap: 66px;
+      justify-content: start;
+    }
+  }
 }
 
 .example__description {
-  position: absolute;
+  max-width: 77px;
+  margin-top: 7px;
+  margin-bottom: -22px;
   padding: 0 5px;
-  top: calc(46 * 100% / 56);
-  left: 50%;
-  transform: translateX(-50%);
   font-family: variables.$font-secondary;
   font-size: 12px;
   line-height: 12px;
@@ -116,11 +144,12 @@
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    bottom: -5px;
-    padding: 0 10px;
+    max-width: 200px;
+    margin-top: 12px;
+    margin-bottom: -15px;
+    padding: 0 7px;
     font-size: 14px;
     line-height: 14px;
-    white-space: nowrap;
     background-color: #ffffff;
 
     br {
@@ -144,7 +173,6 @@
 
 .example__amount {
   margin: 0;
-  margin-bottom: 10px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -160,27 +188,6 @@
     @media (min-width: variables.$tablet) {
       font-size: 20px;
     }
-  }
-}
-
-.example__item--special {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  gap: 3px;
-  padding: 0;
-  border: none;
-
-  @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-column: 3 / -1;
-    flex-direction: column;
-    gap: 10px;
-    text-align: right;
-  }
-
-  @media (min-width: variables.$desktop) {
-    gap: 66px;
-    justify-content: start;
   }
 }
 
