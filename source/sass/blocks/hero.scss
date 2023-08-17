@@ -94,6 +94,9 @@
 }
 
 .hero__image-wrapper {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
   margin-bottom: 3px;
 
   @media (min-width: variables.$tablet) {

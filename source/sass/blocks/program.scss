@@ -2,7 +2,7 @@
 
 .program {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 69px 1fr;
   align-items: start;
   padding: 21px 33px 18px 20px;
   background-color: variables.$color-secondary;
