@@ -37,6 +37,7 @@ function init() {
   map.controls.remove("fullscreenControl");
   map.controls.remove("zoomControl");
   map.controls.remove("rulerControl");
+  map.behaviors.disable(['scrollZoom']);
 
   map.geoObjects.add(placemark);
 };
