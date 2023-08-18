@@ -2,23 +2,14 @@
 
 .academy-logo {
   text-decoration: none;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    mask: url("../img/logo-academy.svg") no-repeat center;
-    background-color: #666666;
-  }
+.academy-logo:hover .academy-logo__icon {
+  fill: variables.$color-primary;
+}
 
-  &:hover::after {
-    background-color: variables.$color-primary;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.academy-logo:active {
+  opacity: 0.3;
 }
 
 .academy-logo__text {
@@ -27,4 +18,8 @@
   line-height: 20px;
   font-weight: 400;
   color: variables.$text-secondary;
+}
+
+.academy-logo__icon {
+  fill: #666666;
 }

@@ -22,29 +22,13 @@
 }
 
 .footer__logo {
-  display: grid;
-  place-content: center;
   padding-bottom: 18px;
-  border-bottom: 1px solid #d9d9d9;
   text-align: center;
-
-  & svg {
-    width: 128px;
-    height: 24px;
-  }
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
     padding: 6px 0;
     border: none;
-  }
-
-  &:hover path,
-  &:focus path {
-    fill: #3e3e3e;
-  }
-
-  &:active path {
-    fill: #6b6b6b;
   }
 }
 

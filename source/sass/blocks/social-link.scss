@@ -4,27 +4,17 @@
   display: block;
   width: 28px;
   height: 22px;
-  mask: no-repeat center;
-  background-color: #666666;
+}
 
-  &--vk {
-    mask: url("../img/vk.svg");
-  }
+.social-link__icon {
+  fill: #666666;
+}
 
-  &--youtube {
-    mask: url("../img/youtube.svg");
-  }
+.social-link:hover .social-link__icon,
+.social-link:focus .social-link__icon {
+  fill: variables.$color-primary;
+}
 
-  &--telegram {
-    mask: url("../img/telegram.svg");
-  }
-
-  &:hover,
-  &:focus {
-    background-color: variables.$color-primary;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.social-link:active {
+  opacity: 0.3;
 }

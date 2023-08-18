@@ -1,0 +1,17 @@
+.footer-logo {
+  display: grid;
+  place-content: center;
+}
+
+.footer-logo__text {
+  fill: #111111;
+}
+
+.footer-logo:hover .footer-logo__text,
+.footer-logo:focus .footer-logo__text {
+  fill: #3e3e3e;
+}
+
+.footer-logo:active .footer-logo__text {
+  fill: #6b6b6b;
+}
