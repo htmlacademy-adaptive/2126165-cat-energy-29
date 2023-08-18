@@ -32,24 +32,13 @@
   border: none;
   background: none;
   background-color: #666666;
+  color: #666666;
   cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: variables.$color-primary;
-  }
-
-  &:hover path,
-  &:focus path {
-    fill: variables.$color-primary;
-  }
-
-  &:hover rect,
-  &:focus rect {
-    stroke: variables.$color-primary;
-  }
-
-  &:focus {
+    color: variables.$color-primary;
     outline: none;
   }
 
