@@ -50,14 +50,3 @@
     margin-left: 416px;
   }
 }
-
-.footer__academy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: variables.$tablet) {
-    gap: 23px;
-    padding: 0;
-  }
-}
