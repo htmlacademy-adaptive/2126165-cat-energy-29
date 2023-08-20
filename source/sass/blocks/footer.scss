@@ -17,17 +17,17 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 67px 0;
+    padding: 68px 0;
   }
 }
 
 .footer__logo {
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
-    padding: 6px 0;
+    padding: 5px 0;
     border: none;
   }
 }
@@ -42,7 +42,7 @@
     margin: 0;
     margin-left: 160px;
     margin-right: auto;
-    padding: 8px 0;
+    padding: 7px 0;
     border: none;
   }
 

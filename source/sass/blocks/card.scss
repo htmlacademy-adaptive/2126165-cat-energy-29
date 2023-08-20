@@ -48,13 +48,13 @@
     height: 210px;
     margin: 0 auto;
     margin-top: -71px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: variables.$desktop) {
     width: 169px;
     margin-top: -72px;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 }
 
@@ -148,7 +148,7 @@
 
   @media (min-width: variables.$tablet) {
     gap: 6px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
@@ -172,7 +172,7 @@
 
   @media (min-width: variables.$tablet) {
     align-self: end;
-    margin-top: 33px;
+    margin-top: 32px;
     padding: 10px 45px;
     font-size: 16px;
     line-height: 20px;
