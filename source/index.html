@@ -13,11 +13,10 @@
 </head>
 
 <body class="page__body">
-
-  <header class="page__header header page__header--background">
-    <nav class="header__navigation container navigation">
+  <header class="page__header header page__header--with-background">
+    <nav class="container navigation">
       <div class="navigation__hat">
-        <a class="header__logo header-logo" href="./" aria-current="page">
+        <a class="header-logo" href="./" aria-current="page">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
@@ -46,7 +45,7 @@
     </nav>
   </header>
   <main class="page__content">
-    <section class="page__hero hero">
+    <section class="hero">
       <div class="hero__wrapper container">
         <h1 class="hero__title title title--primary">Функциональное питание для&nbsp;котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -73,13 +72,13 @@
       <div class="programs__wrapper container">
         <h2 class="visually-hidden">Программы Кэт энерджи.</h2>
         <ul class="programs__list">
-          <li class="programs__item program program--slim">
+          <li class="program program--slim">
             <h3 class="program__title">Похудение</h3>
             <p class="program__descriprion">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program__link" href="#">Каталог Slim</a>
           </li>
-          <li class="programs__item program program--pro">
+          <li class="program program--pro">
             <h3 class="program__title">Набор массы</h3>
             <p class="program__descriprion">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
@@ -155,20 +154,22 @@
       </div>
     </section>
     <section class="invite">
-      <div class="invite__wrapper container">
-        <h2 class="visually-hidden">Расположение магазина.</h2>
-        <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="invite__address">
-          <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
-          <span class="invite__text">Санкт-Петербург</span>
-        </address>
+      <div class="container">
+        <div class="invite__wrapper">
+          <h2 class="visually-hidden">Расположение магазина.</h2>
+          <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="invite__address">
+            <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
+            <span class="invite__text">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="invite__map map" id="map"></div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo footer-logo" href="./" aria-current="page" aria-label="Логотип Кэт энерджи.">
+      <a class="footer__logo footer-logo" href="./" aria-current="page" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">
           <use href="img/sprite.svg#footer-logo-text"></use>
         </svg>
@@ -202,8 +203,7 @@
           </li>
         </ul>
       </section>
-      <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Сайт HTML Academy.">
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
         <span class="academy-logo__text">HTML Academy</span>
         <svg class="academy-logo__icon" id="academy-icon" width="27" height="34">
           <use href="img/sprite.svg#academy-icon"></use>

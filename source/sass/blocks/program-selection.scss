@@ -108,6 +108,7 @@
 
 .program-selection__textarea {
   width: 100%;
+  min-height: 150px;
   resize: vertical;
 
   @media (min-width: variables.$tablet) {

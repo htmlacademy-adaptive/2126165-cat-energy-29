@@ -16,7 +16,7 @@
   <header class="header">
     <nav class="container navigation">
       <div class="navigation__hat">
-        <a class="header__logo header-logo" href="index.html">
+        <a class="header-logo" href="index.html">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
@@ -180,20 +180,22 @@
       </div>
     </section>
     <section class="invite invite--secondary">
-      <div class="invite__wrapper container">
-        <h2 class="visually-hidden">Расположение магазина.</h2>
-        <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="invite__address">
-          <span class="invite__text">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="invite__text">Санкт-Петербург</span>
-        </address>
+      <div class="container">
+        <div class="invite__wrapper">
+          <h2 class="visually-hidden">Расположение магазина.</h2>
+          <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="invite__address">
+            <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
+            <span class="invite__text">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="invite__map map" id="map"></div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo footer-logo" href="index.html" aria-label="Логотип Кэт энерджи.">
+      <a class="footer__logo footer-logo" href="index.html" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">
           <use href="img/sprite.svg#footer-logo-text"></use>
         </svg>
@@ -227,8 +229,7 @@
           </li>
         </ul>
       </section>
-      <a class="footer__academy academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Сайт HTML Academy.">
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
         <span class="academy-logo__text">HTML Academy</span>
         <svg class="academy-logo__icon" id="academy-icon" width="27" height="34">
           <use href="img/sprite.svg#academy-icon"></use>

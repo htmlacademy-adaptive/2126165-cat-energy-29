@@ -17,7 +17,7 @@
 }
 
 .page__header {
-  &--background {
+  &--with-background {
     @media (min-width: variables.$desktop) {
       margin-bottom: -360px;
     }
@@ -26,16 +26,4 @@
 
 .page__content {
   min-width: 100%;
-}
-
-.page__hero {
-  padding-top: 27px;
-
-  @media (min-width: variables.$tablet) {
-    padding-top: 63px;
-  }
-
-  @media (min-width: variables.$desktop) {
-    padding-top: 143px;
-  }
 }

@@ -1,7 +1,8 @@
 @use "../common/variables.scss";
 
 .hero {
-  $percent-height: calc(302 * 100% / 480);
+  $percent-height: calc(100% - 160px);
+  padding-top: 27px;
   text-align: center;
   background-image:
     url("../img/cat-hero.jpg"),
@@ -20,6 +21,7 @@
   }
 
   @media (min-width: variables.$tablet) {
+    padding-top: 63px;
     text-align: left;
     background-color: #ffffff;
     background-image: none;
@@ -27,6 +29,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    padding-top: 143px;
     background-image:
       url("../img/cat-hero-desktop.jpg"),
       linear-gradient(90deg, #ffffff 50%, #63a63c 50%);

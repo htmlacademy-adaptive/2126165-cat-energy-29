@@ -23,13 +23,13 @@
 
   @media (min-width: variables.$tablet) {
     padding: 45px 0 101px;
-    background-image: linear-gradient(#ffffff calc(619 * 100% / 1081), #eaeaea calc(619 * 100% / 1081));
+    background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
   @media (min-width: variables.$desktop) {
     padding: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(#ffffff calc(136 * 100% / 598), variables.$color-secondary calc(136 * 100% / 598));
+    background-image: linear-gradient(#ffffff calc(100% - 462px), variables.$color-secondary calc(100% - 462px));
   }
 }
 
