@@ -8,11 +8,13 @@
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
   }
 
   &--error {
-    outline: 2px solid variables.$color-error;
+    border: 1px solid variables.$color-error;
+    outline: 1px solid variables.$color-error;
   }
 }
 

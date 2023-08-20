@@ -12,7 +12,8 @@
   }
 }
 
-.academy-logo:hover .academy-logo__icon {
+.academy-logo:hover .academy-logo__icon,
+.academy-logo:focus .academy-logo__icon {
   fill: variables.$color-primary;
 }
 
