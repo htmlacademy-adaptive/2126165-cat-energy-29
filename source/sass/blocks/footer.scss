@@ -49,3 +49,10 @@
     margin-left: 416px;
   }
 }
+
+.footer__copyright {
+  @media (max-width: variables.$mobile) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}

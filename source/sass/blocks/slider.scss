@@ -2,6 +2,11 @@
 
 .slider {
   position: relative;
+
+  @media (max-width: variables.$mobile) {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .slider__image {

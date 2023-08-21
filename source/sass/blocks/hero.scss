@@ -108,7 +108,8 @@
     width: 708px;
     height: 609px;
     margin: 0;
-    margin-left: -529px;
+    // margin-left: -529px;
+    margin-left: calc(-574 * 100% / 768);
     margin-top: -93px;
   }
 
