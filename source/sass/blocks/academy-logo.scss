@@ -14,7 +14,7 @@
 
 .academy-logo:hover .academy-logo__icon,
 .academy-logo:focus .academy-logo__icon {
-  fill: variables.$color-primary;
+  color: variables.$color-primary;
 }
 
 .academy-logo:active {
@@ -30,5 +30,5 @@
 }
 
 .academy-logo__icon {
-  fill: #666666;
+  color: #666666;
 }
