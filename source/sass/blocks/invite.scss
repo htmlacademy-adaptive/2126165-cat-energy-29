@@ -15,6 +15,7 @@
   padding: 27px 0;
 
   @media (min-width: variables.$tablet) {
+    gap: 0;
     padding: 61px 40px;
   }
 
