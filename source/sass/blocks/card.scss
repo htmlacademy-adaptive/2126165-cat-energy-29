@@ -37,8 +37,6 @@
 .card__image-link {
   grid-column: 1 / 2;
   grid-row: span 2;
-  // display: grid;
-  // place-content: center;
   width: 140px;
   height: 107px;
 
@@ -62,25 +60,11 @@
   display: block;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
   }
-
-  // &--big {
-  //   width: 84px;
-
-  //   @media (min-width: variables.$tablet) {
-  //     width: 168px;
-  //     height: 206px;
-  //   }
-
-  //   @media (min-width: variables.$desktop) {
-  //     width: 172px;
-  //     height: 196px;
-  //   }
-  // }
 }
 
 .card__caption-link {
