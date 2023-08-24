@@ -17,7 +17,7 @@
   <header class="header">
     <nav class="container navigation">
       <div class="navigation__hat">
-        <a class="header__logo header-logo" href="index.html">
+        <a class="header-logo" href="index.html">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
@@ -25,7 +25,7 @@
               alt="Логотип Кэт энерджи.">
           </picture>
           <svg class="header-logo__text" width="101" height="18" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#logo-text"></use>
+            <use xlink:href="img/sprite.svg#header-logo-text"></use>
           </svg>
         </a>
         <button class="navigation__toggle" type="button">
@@ -49,15 +49,18 @@
     <section class="catalog">
       <div class="catalog__wrapper container">
         <h1 class="catalog__title title title--primary">Каталог продукции</h1>
-        <ul class="catalog__list cards">
-          <li class="cards__item card">
+        <ul class="cards">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/product-1-desktop.png 1x, img/catalog/product-1-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-1-tablet.png 1x, img/catalog/product-1-tablet@2x.png 2x" width="161"
-                  height="172">
+                  srcset="img/catalog/product-1-tablet.png 1x, img/catalog/product-1-tablet@2x.png 2x" width="200"
+                  height="210">
                 <img class="card__image" src="img/catalog/product-1-phone.png"
-                  srcset="img/catalog/product-1-phone@2x.png 2x" width="68" height="86" alt="">
+                  srcset="img/catalog/product-1-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -79,17 +82,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
                 <source media="(min-width: 1280px)"
-                  srcset="img/catalog/product-2-desktop.png 1x, img/catalog/product-2-desktop@2x.png 2x" width="172"
-                  height="196">
+                  srcset="img/catalog/product-2-desktop.png 1x, img/catalog/product-2-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-2-tablet.png 1x, img/catalog/product-2-tablet@2x.png 2x" width="168"
-                  height="206">
-                <img class="card__image card__image--big" src="img/catalog/product-2-phone.png"
-                  srcset="img/catalog/product-2-phone@2x.png 2x" width="84" height="100" alt="">
+                  srcset="img/catalog/product-2-tablet.png 1x, img/catalog/product-2-tablet@2x.png 2x" width="200"
+                  height="210">
+                <img class="card__image" src="img/catalog/product-2-phone.png"
+                  srcset="img/catalog/product-2-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -111,14 +114,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/product-3-desktop.png 1x, img/catalog/product-3-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-3-tablet.png 1x, img/catalog/product-3-tablet@2x.png 2x" width="163"
-                  height="174">
+                  srcset="img/catalog/product-3-tablet.png 1x, img/catalog/product-3-tablet@2x.png 2x" width="200"
+                  height="210">
                 <img class="card__image" src="img/catalog/product-3-phone.png"
-                  srcset="img/catalog/product-3-phone@2x.png 2x" width="68" height="78" alt="">
+                  srcset="img/catalog/product-3-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -140,17 +146,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
                 <source media="(min-width: 1280px)"
-                  srcset="img/catalog/product-4-desktop.png 1x, img/catalog/product-4-desktop@2x.png 2x" width="172"
-                  height="196">
+                  srcset="img/catalog/product-4-desktop.png 1x, img/catalog/product-4-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-4-tablet.png 1x, img/catalog/product-4-tablet@2x.png 2x" width="168"
-                  height="200">
-                <img class="card__image card__image--big" src="img/catalog/product-4-phone.png"
-                  srcset="img/catalog/product-4-phone@2x.png 2x" width="84" height="100" alt="">
+                  srcset="img/catalog/product-4-tablet.png 1x, img/catalog/product-4-tablet@2x.png 2x" width="200"
+                  height="210">
+                <img class="card__image" src="img/catalog/product-4-phone.png"
+                  srcset="img/catalog/product-4-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -172,14 +178,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/product-5-desktop.png 1x, img/catalog/product-5-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-5-tablet.png 1x, img/catalog/product-5-tablet@2x.png 2x" width="161"
-                  height="171">
+                  srcset="img/catalog/product-5-tablet.png 1x, img/catalog/product-5-tablet@2x.png 2x" width="200"
+                  height="210">
                 <img class="card__image" src="img/catalog/product-5-phone.png"
-                  srcset="img/catalog/product-5-phone@2x.png 2x" width="68" height="78" alt="">
+                  srcset="img/catalog/product-5-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -201,17 +210,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
                 <source media="(min-width: 1280px)"
-                  srcset="img/catalog/product-6-desktop.png 1x, img/catalog/product-6-desktop@2x.png 2x" width="172"
-                  height="196">
+                  srcset="img/catalog/product-6-desktop.png 1x, img/catalog/product-6-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-6-tablet.png 1x, img/catalog/product-6-tablet@2x.png 2x" width="168"
-                  height="200">
-                <img class="card__image card__image--big" src="img/catalog/product-6-phone.png"
-                  srcset="img/catalog/product-6-phone@2x.png 2x" width="84" height="100" alt="">
+                  srcset="img/catalog/product-6-tablet.png 1x, img/catalog/product-6-tablet@2x.png 2x" width="200"
+                  height="210">
+                <img class="card__image" src="img/catalog/product-6-phone.png"
+                  srcset="img/catalog/product-6-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -233,14 +242,17 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item card">
+          <li class="card">
             <a class="card__image-link" href="#">
               <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/product-7-desktop.png 1x, img/catalog/product-7-desktop@2x.png 2x" width="169"
+                  height="210">
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/product-7-tablet.png 1x, img/catalog/product-7-tablet@2x.png 2x" width="163"
-                  height="174">
+                  srcset="img/catalog/product-7-tablet.png 1x, img/catalog/product-7-tablet@2x.png 2x" width="200"
+                  height="210">
                 <img class="card__image" src="img/catalog/product-7-phone.png"
-                  srcset="img/catalog/product-7-phone@2x.png 2x" width="72" height="84" alt="">
+                  srcset="img/catalog/product-7-phone@2x.png 2x" width="140" height="107" alt="">
               </picture>
             </a>
             <a class="card__caption-link" href="#" tabindex="-1">
@@ -262,7 +274,7 @@
             </dl>
             <button class="card__button button button--primary" type="button">Заказать</button>
           </li>
-          <li class="cards__item showing">
+          <li class="showing">
             <p class="showing__title">Показать еще 100500 товаров</p>
             <p class="showing__description">На самом деле вкусов гораздо больше!</p>
             <a class="showing__button button button--secondary" href="#">Показать&nbsp;все</a>
@@ -321,22 +333,24 @@
       </div>
     </section>
     <section class="invite invite--secondary">
-      <div class="invite__wrapper container">
-        <h2 class="visually-hidden">Расположение магазина.</h2>
-        <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="invite__address">
-          <span class="invite__text">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="invite__text">Санкт-Петербург</span>
-        </address>
+      <div class="container">
+        <div class="invite__wrapper">
+          <h2 class="visually-hidden">Расположение магазина.</h2>
+          <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="invite__address">
+            <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
+            <span class="invite__text">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="invite__map map" id="map"></div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo footer-logo" href="index.html" aria-label="Логотип Кэт энерджи.">
+      <a class="footer__logo footer-logo" href="index.html" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">
-          <use href="img/sprite.svg#footer-logo"></use>
+          <use href="img/sprite.svg#footer-logo-text"></use>
         </svg>
       </a>
       <section class="footer__social social">
@@ -368,7 +382,7 @@
           </li>
         </ul>
       </section>
-      <a class="footer__academy academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
+      <a class="footer__copyright academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Сайт HTML Academy.">
         <span class="academy-logo__text">HTML Academy</span>
         <svg class="academy-logo__icon" id="academy-icon" width="27" height="34" aria-hidden="true">
