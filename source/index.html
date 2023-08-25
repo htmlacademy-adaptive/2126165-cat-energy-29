@@ -164,7 +164,17 @@
           </address>
         </div>
       </div>
-      <div class="invite__map map" id="map"></div>
+      <div class="invite__map map invite__map--nojs" id="map"></div>
+      <div class="invite__map-image-wrapper invite__map-image-wrapper--nojs">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1280"
+            height="400">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
+            height="400">
+          <img class="invite__map-image" src="img/map-phone.png" srcset="img/map-phone@2x.png 2x" width="320"
+            height="362" alt="Карта с местоположением Кэт энерджи.">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="footer">
