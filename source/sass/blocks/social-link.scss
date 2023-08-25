@@ -2,19 +2,28 @@
 
 .social-link {
   display: block;
-}
-
-.social-link__icon {
   width: 28px;
   height: 22px;
-  fill: #666666;
-}
+  background-color: #666666;
 
-.social-link:hover .social-link__icon,
-.social-link:focus .social-link__icon {
-  fill: variables.$color-primary;
-}
+  &--vk {
+    mask: url("../img/sprite.svg#vk-icon") no-repeat center;
+  }
 
-.social-link:active {
-  opacity: 0.3;
+  &--youtube {
+    mask: url("../img/sprite.svg#youtube-icon") no-repeat center;
+  }
+
+  &--telegram {
+    mask: url("../img/sprite.svg#telegram-icon") no-repeat center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
