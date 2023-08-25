@@ -192,6 +192,16 @@
         </div>
       </div>
       <div class="invite__map map" id="map"></div>
+      <div class="invite__map-image-wrapper invite__map-image-wrapper--nojs">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1280"
+            height="400">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
+            height="400">
+          <img class="invite__map-image" src="img/map-phone.png" srcset="img/map-phone@2x.png 2x" width="320"
+            height="362" alt="Карта с местоположением Кэт энерджи.">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -206,31 +216,23 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social-link social-link--vk" href="https://vk.com/htmlacademy">
-              <svg class="social-link__icon" id="vk-icon" width="28" height="22" aria-hidden="true">
-                <use href="img/sprite.svg#vk-icon"></use>
-              </svg>
               <span class="visually-hidden">Вконтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social-link social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="social-link__icon" id="youtube-icon" width="28" height="22" aria-hidden="true">
-                <use href="img/sprite.svg#youtube-icon"></use>
-              </svg>
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social-link social-link--telegram" href="https://t.me/htmlacademy">
-              <svg class="social-link__icon" id="telegram-icon" width="28" height="22" aria-hidden="true">
-                <use href="img/sprite.svg#telegram-icon"></use>
-              </svg>
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
         </ul>
       </section>
-      <a class="footer__copyright academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+      <a class="footer__copyright academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Сайт HTML Academy.">
         <span class="academy-logo__text">HTML Academy</span>
         <svg class="academy-logo__icon" id="academy-icon" width="27" height="34">
           <use href="img/sprite.svg#academy-icon"></use>
