@@ -37,8 +37,6 @@
 .card__image-link {
   grid-column: 1 / 2;
   grid-row: span 2;
-  display: grid;
-  place-content: center;
   width: 140px;
   height: 107px;
 
@@ -48,41 +46,24 @@
     height: 210px;
     margin: 0 auto;
     margin-top: -71px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: variables.$desktop) {
     width: 169px;
     margin-top: -72px;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 }
 
 .card__image {
   display: block;
-  width: 81px;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    width: 161px;
-    height: 172px;
-  }
-
-  &--big {
-    width: 84px;
-
-    @media (min-width: variables.$tablet) {
-      width: 168px;
-      height: 206px;
-    }
-
-    @media (min-width: variables.$desktop) {
-      width: 172px;
-      height: 196px;
-    }
   }
 }
 
@@ -148,7 +129,7 @@
 
   @media (min-width: variables.$tablet) {
     gap: 6px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
@@ -172,7 +153,7 @@
 
   @media (min-width: variables.$tablet) {
     align-self: end;
-    margin-top: 33px;
+    margin-top: 32px;
     padding: 10px 45px;
     font-size: 16px;
     line-height: 20px;

@@ -4,19 +4,18 @@
   display: block;
   width: 28px;
   height: 22px;
-  mask: no-repeat center;
   background-color: #666666;
 
   &--vk {
-    mask: url("../img/vk.svg");
+    mask: url("../img/sprite.svg#vk-icon") no-repeat center;
   }
 
   &--youtube {
-    mask: url("../img/youtube.svg");
+    mask: url("../img/sprite.svg#youtube-icon") no-repeat center;
   }
 
   &--telegram {
-    mask: url("../img/telegram.svg");
+    mask: url("../img/sprite.svg#telegram-icon") no-repeat center;
   }
 
   &:hover,

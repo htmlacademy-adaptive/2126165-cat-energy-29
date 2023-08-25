@@ -5,11 +5,11 @@
   padding: 28px 0 30px;
 
   @media (min-width: variables.$tablet) {
-    padding: 65px 0 60px;
+    padding: 62px 0 60px;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 74px 0 80px;
+    padding: 71px 0 80px;
   }
 }
 
@@ -108,9 +108,10 @@
 
 .program-selection__textarea {
   width: 100%;
+  min-height: 150px;
   resize: vertical;
 
-  @media (min-width: variables.$desktop) {
+  @media (min-width: variables.$tablet) {
     min-height: 175px;
   }
 }
@@ -247,7 +248,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 73px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: variables.$desktop) {

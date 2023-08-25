@@ -2,22 +2,26 @@
 
 .invite {
   position: relative;
+
+  &--secondary {
+    background-color: variables.$color-secondary;
+  }
 }
 
 .invite__wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: calc(100% - 268px);
   padding: 27px 0;
 
   @media (min-width: variables.$tablet) {
+    gap: 0;
     padding: 61px 40px;
   }
 
   @media (min-width: variables.$desktop) {
     position: absolute;
     top: 95px;
-    left: calc(220 * 100% / 1440);
     align-items: start;
     max-width: 565px;
     padding: 62px 73px 60px 82px;
@@ -66,8 +70,37 @@
   margin: 0;
 }
 
-.invite--secondary {
-  background-color: variables.$color-secondary;
+.invite__map-image-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: none;
+
+  @media (min-width: variables.$tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 1280px;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.invite__map-image {
+  display: block;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: variables.$tablet) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 1280px;
+  }
 }
 
 .invite__map {
@@ -77,5 +110,9 @@
 
   @media (min-width: variables.$tablet) {
     height: 400px;
+  }
+
+  &--nojs {
+    display: none;
   }
 }

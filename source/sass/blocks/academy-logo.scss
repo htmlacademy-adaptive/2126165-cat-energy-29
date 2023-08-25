@@ -1,24 +1,24 @@
 @use "../common/variables.scss";
 
 .academy-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    mask: url("../img/logo-academy.svg") no-repeat center;
-    background-color: #666666;
+  @media (min-width: variables.$tablet) {
+    gap: 23px;
+    padding: 0;
   }
+}
 
-  &:hover::after {
-    background-color: variables.$color-primary;
-  }
+.academy-logo:hover .academy-logo__icon,
+.academy-logo:focus .academy-logo__icon {
+  color: variables.$color-primary;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.academy-logo:active {
+  opacity: 0.3;
 }
 
 .academy-logo__text {
@@ -27,4 +27,10 @@
   line-height: 20px;
   font-weight: 400;
   color: variables.$text-secondary;
+}
+
+.academy-logo__icon {
+  width: 27px;
+  height: 34px;
+  color: #666666;
 }

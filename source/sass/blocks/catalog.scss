@@ -4,17 +4,22 @@
   padding-top: 27px;
 
   @media (min-width: variables.$tablet) {
-    position: relative;
-    padding-top: 65px;
+    padding-top: 63px;
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 74px;
+    padding-top: 72px;
   }
 }
 
 .catalog__wrapper {
-  position: relative;
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 78px;
+  }
 }
 
 .catalog__title {

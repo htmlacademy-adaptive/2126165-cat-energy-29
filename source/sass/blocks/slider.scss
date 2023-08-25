@@ -2,6 +2,11 @@
 
 .slider {
   position: relative;
+
+  @media (max-width: variables.$mobile) {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .slider__image {
@@ -32,28 +37,19 @@
   border: none;
   background: none;
   background-color: #666666;
+  color: #666666;
   cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: variables.$color-primary;
-  }
-
-  &:hover path,
-  &:focus path {
-    fill: variables.$color-primary;
-  }
-
-  &:hover rect,
-  &:focus rect {
-    stroke: variables.$color-primary;
-  }
-
-  &:focus {
+    color: variables.$color-primary;
     outline: none;
   }
 
   &:active {
+    background-color: #5eaa2f;
+    color: #5eaa2f;
     opacity: 0.6;
   }
 }
@@ -63,4 +59,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
 }

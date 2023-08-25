@@ -1,7 +1,13 @@
 let screenWidth = window.screen.width;
+let map = document.querySelector(".invite__map");
+let mapImage = document.querySelector(".invite__map-image-wrapper");
 let center;
 let zoom;
 let pinSize;
+
+map.classList.remove("invite__map--nojs");
+mapImage.classList.remove("invite__map-image-wrapper--nojs");
+
 
 if (screenWidth < 1280) {
   center = [59.938631, 30.323037];
@@ -37,19 +43,9 @@ function init() {
   map.controls.remove("fullscreenControl");
   map.controls.remove("zoomControl");
   map.controls.remove("rulerControl");
-  map.behaviors.disable(['scrollZoom']);
+  // map.behaviors.disable(['scrollZoom']);
 
   map.geoObjects.add(placemark);
 };
 
 ymaps.ready(init);
-
-window.onresize = function (event) {
-  if (document.documentElement.clientWidth == 320) {
-    location.reload()
-  } else if (document.documentElement.clientWidth == 768) {
-    location.reload()
-  } else if (document.documentElement.clientWidth == 1280) {
-    location.reload()
-  };
-}

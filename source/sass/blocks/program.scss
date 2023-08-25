@@ -2,7 +2,7 @@
 
 .program {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 69px 1fr;
   align-items: start;
   padding: 21px 33px 18px 20px;
   background-color: variables.$color-secondary;
@@ -27,12 +27,12 @@
 
   &--slim {
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      grid-template-columns: calc(393 * 100% / 593) calc(200 * 100% / 593);
+      grid-template-columns: calc(100% - 200px) calc(100% - 393px);
       padding: 77px 63px 58px 52px;
     }
 
     @media (min-width: variables.$desktop) {
-      grid-template-columns: calc(162 * 100% / 457) calc(295 * 100% / 457);
+      grid-template-columns: calc(100% - 295px) calc(100% - 162px);
       padding: 41px 61px 58px 52px;
     }
   }
@@ -41,12 +41,12 @@
     padding-top: 24px;
 
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      grid-template-columns: calc(359 * 100% / 627) calc(268 * 100% / 627);
+      grid-template-columns: calc(100% - 268px) calc(100% - 359px);
       padding: 77px 29px 58px 52px;
     }
 
     @media (min-width: variables.$desktop) {
-      grid-template-columns: calc(166 * 100% / 469) calc(290 * 100% / 469);
+      grid-template-columns: calc(100% - 290px) calc(100% - 166px);
       padding: 47px 61px 58px 52px;
     }
   }
