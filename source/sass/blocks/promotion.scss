@@ -24,8 +24,9 @@
     height: 80px;
     margin: 0 auto;
     margin-bottom: 48px;
-    background-image: url("../img/gift.svg");
+    background-image: url("../img/sprite.svg#gift");
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-width: variables.$tablet) {
       margin: 0;

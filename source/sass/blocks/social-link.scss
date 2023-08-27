@@ -7,15 +7,15 @@
   background-color: #666666;
 
   &--vk {
-    mask: url("../img/sprite.svg#vk-icon") no-repeat center;
+    mask: url("../img/sprite.svg#vk") no-repeat center;
   }
 
   &--youtube {
-    mask: url("../img/sprite.svg#youtube-icon") no-repeat center;
+    mask: url("../img/sprite.svg#youtube") no-repeat center;
   }
 
   &--telegram {
-    mask: url("../img/sprite.svg#telegram-icon") no-repeat center;
+    mask: url("../img/sprite.svg#telegram") no-repeat center;
   }
 
   &:hover,
