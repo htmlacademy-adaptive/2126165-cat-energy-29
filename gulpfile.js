@@ -75,11 +75,12 @@ const optimizeSvg = () =>
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: 'sprite' }))
   .pipe(rename('sprite.svg'))
+  // .pipe(gulp.dest('source/img'));
   .pipe(gulp.dest('build/img'));
 }
 
