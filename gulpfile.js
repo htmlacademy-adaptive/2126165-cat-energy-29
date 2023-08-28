@@ -80,7 +80,6 @@ export const sprite = () => {
   .pipe(svgo())
   .pipe(stacksvg({ output: 'sprite' }))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('source/img'))
   .pipe(gulp.dest('build/img'));
 }
 
