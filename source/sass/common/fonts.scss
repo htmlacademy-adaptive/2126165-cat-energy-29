@@ -6,6 +6,7 @@
     url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
     url("../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
+  unicode-range: U+0410-044F, 0000—007F;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
     url("../fonts/oswald/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
+  unicode-range: U+0410-044F, 0000—007F;
 }
 
 @font-face {
@@ -26,4 +28,5 @@
     url("../fonts/lato/lato-regular.woff2") format("woff2"),
     url("../fonts/lato/lato-regular.woff") format("woff");
   font-display: swap;
+  unicode-range: U+0410-044F, 0000—007F;
 }
