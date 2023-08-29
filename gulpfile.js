@@ -15,7 +15,7 @@ import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -75,7 +75,7 @@ const optimizeSvg = () =>
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: 'sprite' }))
