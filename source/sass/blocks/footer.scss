@@ -5,14 +5,15 @@
 }
 
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
+  display: grid;
+  gap: 10px;
+  padding: 41px 0;
 
   @media (min-width: variables.$tablet) {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     align-items: start;
-    flex-wrap: wrap;
+    grid-auto-flow: row dense;
+    // gap: 0;
     padding: 55px 0;
   }
 
@@ -26,27 +27,25 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
+    justify-self: start;
+    grid-column: 1 / 2;
     padding: 5px 0;
     border: none;
   }
 }
 
 .footer__social {
-  margin-bottom: 20px;
-  padding: 20px 0;
+  margin-bottom: 10px;
+  padding: 12px 0 18px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
     max-width: 180px;
     margin: 0;
-    margin-left: 160px;
-    margin-right: auto;
+    justify-self: center;
+    grid-column: 2 / 3;
     padding: 7px 0;
     border: none;
-  }
-
-  @media (min-width: variables.$desktop) {
-    margin-left: 416px;
   }
 }
 
@@ -54,5 +53,10 @@
   @media (max-width: variables.$mobile) {
     width: 280px;
     margin: 0 auto;
+  }
+
+  @media (min-width: variables.$tablet) {
+    justify-self: end;
+    grid-column: 3 / -1;
   }
 }

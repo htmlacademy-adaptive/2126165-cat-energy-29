@@ -63,6 +63,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    grid-auto-flow: dense;
     column-gap: 80px;
   }
 }
@@ -93,6 +94,7 @@
 }
 
 .program-selection__label {
+  flex-shrink: 2;
   font-size: 16px;
   line-height: 18px;
 

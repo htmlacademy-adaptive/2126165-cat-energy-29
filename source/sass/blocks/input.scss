@@ -12,8 +12,7 @@
     outline: 1px solid #444444;
   }
 
-  &--error,
-  &:invalid {
+  &--error {
     border: 1px solid variables.$color-error;
     outline: 1px solid variables.$color-error;
   }
@@ -23,8 +22,7 @@
   color: variables.$color-primary;
 }
 
-.input--error + .input__icon,
-.input:invalid + .input__icon {
+.input--error + .input__icon {
   color: variables.$color-error;
 }
 

@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 69px 1fr;
   align-items: start;
-  padding: 21px 33px 18px 20px;
+  padding: 21px 20px 18px 20px;
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
@@ -46,7 +46,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      grid-template-columns: calc(100% - 290px) calc(100% - 166px);
+      grid-template-columns: calc(100% - 293px) calc(100% - 166px);
       padding: 47px 61px 58px 52px;
     }
   }
@@ -92,6 +92,12 @@
   }
 }
 
+.program--pro .program__title {
+  @media (min-width: variables.$desktop) {
+    padding-top: 30px;
+  }
+}
+
 .program__title {
   grid-column: 2 / -1;
   margin: 0;
@@ -113,7 +119,7 @@
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
     margin: 0;
-    padding-top: 34px;
+    padding-top: 36px;
   }
 }
 

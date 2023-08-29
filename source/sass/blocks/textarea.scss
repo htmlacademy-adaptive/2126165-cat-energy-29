@@ -1,1 +1,11 @@
-//
+@use "../common/variables.scss";
+
+.textarea {
+  @media (min-width: variables.$tablet) {
+    padding: 15px 20px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 12px;
+  }
+}
