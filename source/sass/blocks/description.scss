@@ -67,19 +67,19 @@
   }
 
   &--healthy::before {
-    background-image: url("../img/healthy-icon.svg");
+    background-image: url("../img/sprite.svg#healthy-icon");
   }
 
   &--simple::before {
-    background-image: url("../img/simple-icon.svg");
+    background-image: url("../img/sprite.svg#simple-icon");
   }
 
   &--tasty::before {
-    background-image: url("../img/tasty-icon.svg");
+    background-image: url("../img/sprite.svg#tasty-icon");
   }
 
   &--fast::before {
-    background-image: url("../img/fast-icon.svg");
+    background-image: url("../img/sprite.svg#fast-icon");
   }
 
   @media (min-width: variables.$tablet) {

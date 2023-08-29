@@ -43,7 +43,7 @@
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url("../img/burger-button.svg");
+  background-image: url("../img/sprite.svg#burger-button");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   border: none;
@@ -54,7 +54,7 @@
   }
 
   &--closed {
-    background-image: url("../img/close-button.svg");
+    background-image: url("../img/sprite.svg#close-button");
     background-position: center;
     background-size: 18px 18px;
   }
