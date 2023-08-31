@@ -1,0 +1,6 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#000" stroke-width="1.5" d="M0-.75h24.76"
+    transform="matrix(.6866 -.727 .6866 .727 2 20)"></path>
+  <path stroke="#000" stroke-width="1.5" d="M0-.75h24.76"
+    transform="matrix(.6866 .727 -.6866 .727 1 2)"></path>
+</svg>
