@@ -12,6 +12,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -419,7 +421,7 @@
             height="400">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
             height="400">
-          <img class="invite__map-image" src="img/map-phone.png" srcset="img/map-phone@2x.png 2x" width="320"
+          <img class="invite__map-image" src="img/map-phone.png" loading="lazy" srcset="img/map-phone@2x.png 2x" width="320"
             height="362" alt="Карта с местоположением Кэт энерджи.">
         </picture>
       </div>
