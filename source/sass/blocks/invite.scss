@@ -95,6 +95,7 @@
   display: block;
   width: 320px;
   height: 362px;
+  object-fit: contain;
 
   @media (min-width: variables.$tablet) {
     width: 768px;

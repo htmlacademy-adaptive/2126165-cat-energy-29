@@ -30,8 +30,10 @@
   }
 
   &--nojs {
-    position: static;
-    display: block;
+    @media (max-width: variables.$mobile) {
+      position: static;
+      display: block;
+    }
   }
 }
 
