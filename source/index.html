@@ -146,26 +146,30 @@
           </div>
         </dl>
         <div class="example__slider slider">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x" width="560" height="512">
-            <source type="image/webp" srcset="img/cat-fat-phone.webp 1x, img/cat-fat-phone@2x.webp 2x" width="280"
-              height="256">
-            <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x"
-              width="560" height="512">
-            <img class="slider__image slider__image--first" src="img/cat-fat-phone.png"
-              srcset="img/cat-fat-phone@2x.png 2x" width="280" height="256" alt="Кот упитанного телосложения.">
-          </picture>
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x" width="560" height="512">
-            <source type="image/webp" srcset="img/cat-skinny-phone.webp 1x, img/cat-skinny-phone@2x.webp 2x" width="280"
-              height="256">
-            <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x"
-              width="560" height="512">
-            <img class="slider__image slider__image--second" src="img/cat-skinny-phone.png"
-              srcset="img/cat-skinny-phone@2x.png 2x" width="280" height="256" alt="Кот худого телосложения.">
-          </picture>
+          <div class="slider__image-wrapper slider__image-wrapper--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-fat-phone.webp 1x, img/cat-fat-phone@2x.webp 2x" width="280"
+                height="256">
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x"
+                width="560" height="512">
+              <img class="slider__image" src="img/cat-fat-phone.png" srcset="img/cat-fat-phone@2x.png 2x" width="280"
+                height="256" alt="Кот упитанного телосложения.">
+            </picture>
+          </div>
+          <div class="slider__image-wrapper slider__image-wrapper--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-skinny-phone.webp 1x, img/cat-skinny-phone@2x.webp 2x"
+                width="280" height="256">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x"
+                width="560" height="512">
+              <img class="slider__image" src="img/cat-skinny-phone.png" srcset="img/cat-skinny-phone@2x.png 2x"
+                width="280" height="256" alt="Кот худого телосложения.">
+            </picture>
+          </div>
           <button class="slider__change-image" type="button">
             <svg class="slider__toggle" width="40" height="40" aria-hidden="true">
               <use href="img/sprite.svg#slider-toggle"></use>
