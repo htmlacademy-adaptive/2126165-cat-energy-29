@@ -8,7 +8,6 @@ let pinSize;
 map.classList.remove("invite__map--nojs");
 mapImage.classList.remove("invite__map-image-wrapper--nojs");
 
-
 if (screenWidth < 1280) {
   center = [59.938631, 30.323037];
   zoom = 15;
