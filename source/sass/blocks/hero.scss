@@ -5,20 +5,16 @@
   padding-top: 27px;
   text-align: center;
   background-image:
-    url("../img/cat-hero.jpg"),
+    image-set(url("../img/cat-hero@2x.webp") type("image/webp") 2x,
+      url("../img/cat-hero.webp") type("image/webp") 1x,
+      url("../img/cat-hero@2x.jpg") 2x,
+      url("../img/cat-hero.jpg") 1x),
     linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
     linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto $percent-height, auto $percent-height, auto;
   color: #ffffff;
-
-  @media (min-resolution: 2dppx) {
-    background-image:
-      url("../img/cat-hero@2x.jpg"),
-      linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
-      linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
-  }
 
   @media (min-width: variables.$tablet) {
     padding-top: 63px;
@@ -31,17 +27,14 @@
   @media (min-width: variables.$desktop) {
     padding-top: 143px;
     background-image:
-      url("../img/cat-hero-desktop.jpg"),
+      image-set(url("../img/cat-hero-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/cat-hero-desktop.webp") type("image/webp") 1x,
+        url("../img/cat-hero-desktop@2x.jpg") 2x,
+        url("../img/cat-hero-desktop.jpg") 1x),
       linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
     background-size: min(694px, 50%), 100%;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        url("../img/cat-hero-desktop@2x.jpg"),
-        linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
-    }
   }
 }
 
