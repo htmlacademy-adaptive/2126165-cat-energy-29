@@ -2,11 +2,11 @@
 
 .example {
   position: relative;
-  padding: 25px 0 40px;
+  padding: 25px 0 37px;
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    padding: 45px 0 101px;
+    padding: 45px 0 98px;
     background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
