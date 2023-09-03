@@ -1,21 +1,5 @@
 @use "../common/variables.scss";
 
-@mixin item-special {
-  max-width: 122px;
-  margin: 0;
-  padding: 0;
-  font-family: variables.$font-primary;
-  font-size: 14px;
-  line-height: 20px;
-  color: variables.$text-primary;
-  text-transform: uppercase;
-  transform: none;
-
-  @media (min-width: variables.$tablet) {
-    max-width: 200px;
-  }
-}
-
 .example {
   position: relative;
   padding: 25px 0 40px;
@@ -158,16 +142,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    top: calc(63 * 100% / 72);
     background-color: variables.$color-secondary;
-  }
-
-  &--special {
-    @include item-special;
-
-    @media (min-width: variables.$tablet) {
-      font-size: 20px;
-    }
   }
 }
 
@@ -181,13 +156,23 @@
     font-size: 30px;
     line-height: 37px;
   }
+}
 
-  &--special {
-    @include item-special;
+.example__item--special .example__description,
+.example__item--special .example__amount {
+  max-width: 122px;
+  margin: 0;
+  padding: 0;
+  font-family: variables.$font-primary;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$text-primary;
+  text-transform: uppercase;
+  transform: none;
 
-    @media (min-width: variables.$tablet) {
-      font-size: 20px;
-    }
+  @media (min-width: variables.$tablet) {
+    max-width: 200px;
+    font-size: 20px;
   }
 }
 

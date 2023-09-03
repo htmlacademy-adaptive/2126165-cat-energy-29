@@ -14,8 +14,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" as="image" href="img/hero-cup-phone.webp"
-    imagesrcset="img/hero-cup-phone.webp 320w, img/hero-cup-tablet.webp 768w, img/hero-cup-desktop.webp 1280w">
 </head>
 
 <body class="page__body">
@@ -197,21 +195,19 @@
         </div>
       </div>
       <div class="invite__map map invite__map--nojs" id="map"></div>
-      <div class="invite__map-image-wrapper invite__map-image-wrapper--nojs">
-        <picture>
-          <source type="image/webp" media="(min-width: 1280px)"
-            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1280" height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="400">
-          <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x" width="320" height="362">
-          <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1280"
-            height="400">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
-            height="400">
-          <img class="invite__map-image" src="img/map-phone.png" loading="lazy" srcset="img/map-phone@2x.png 2x"
-            width="320" height="362" alt="Карта с местоположением Кэт энерджи.">
-        </picture>
-      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1280px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1280" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x"
+          width="768" height="400">
+        <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x" width="320" height="362">
+        <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1280"
+          height="400">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
+          height="400">
+        <img class="invite__map-image invite__map-image--nojs" loading="lazy" src="img/map-phone.png"
+          srcset="img/map-phone@2x.png 2x" width="320" height="362" alt="Карта с местоположением Кэт энерджи.">
+      </picture>
     </section>
   </main>
   <footer class="footer">
