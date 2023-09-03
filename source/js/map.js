@@ -1,12 +1,12 @@
 let screenWidth = window.screen.width;
 let map = document.querySelector(".invite__map");
-let mapImage = document.querySelector(".invite__map-image-wrapper");
+let mapImage = document.querySelector(".invite__map-image");
 let center;
 let zoom;
 let pinSize;
 
 map.classList.remove("invite__map--nojs");
-mapImage.classList.remove("invite__map-image-wrapper--nojs");
+mapImage.classList.remove("invite__map-image--nojs");
 
 if (screenWidth < 1280) {
   center = [59.938631, 30.323037];
