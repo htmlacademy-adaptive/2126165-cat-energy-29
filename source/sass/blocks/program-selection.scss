@@ -108,7 +108,7 @@
   width: 100%;
   max-height: 45px;
 
-  @media(min-width: variables.$tablet) {
+  @media (min-width: variables.$tablet) {
     max-height: 52px;
   }
 }
