@@ -2,10 +2,10 @@
 
 .textarea {
   @media (min-width: variables.$tablet) {
-    padding: 15px 20px;
+    padding: max(1.5rem, 15px) max(2rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 12px;
+    padding-top: max(1.2rem, 12px);
   }
 }

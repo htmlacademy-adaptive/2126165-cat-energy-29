@@ -29,16 +29,16 @@
 .input__icon {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: min(1.2rem, 18px);
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: min(2rem, 25px);
+  height: min(2rem, 25px);
 
   @media (min-width: variables.$tablet) {
-    right: 14px;
+    right: max(1.4rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
-    right: 16px;
+    right: clamp(16px, 1.6rem, 22px);
   }
 }

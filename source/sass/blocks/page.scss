@@ -2,8 +2,15 @@
 
 .page {
   font-family: variables.$font-primary;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(100vw / 320 * 10);
+
+  @media (min-width: variables.$tablet) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: calc(100vw / 1440 * 10);
+  }
 }
 
 .page__body {

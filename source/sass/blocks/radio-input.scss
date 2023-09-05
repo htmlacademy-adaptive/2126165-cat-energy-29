@@ -4,31 +4,29 @@
   display: grid;
   place-content: center;
   appearance: none;
-  width: 30px;
-  min-width: 30px;
-  height: 30px;
+  width: min(3rem, 40px);
+  height: min(3rem, 40px);
   margin: 0;
   padding: 0;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 
   @media (min-width: variables.$tablet) {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
+    width: clamp(40px, 4rem, 50px);
+    height: clamp(40px, 4rem, 50px);
   }
 }
 
 .radio-input:checked::before {
   content: "";
   display: block;
-  width: 14px;
-  height: 14px;
+  width: min(1.4rem, 20px);
+  height: min(1.4rem, 20px);
   border-radius: 50%;
   background-color: variables.$color-primary;
 
   @media (min-width: variables.$tablet) {
-    width: 18px;
-    height: 18px;
+    width: clamp(18px, 1.8rem, 25px);
+    height: clamp(18px, 1.8rem, 25px);
   }
 }

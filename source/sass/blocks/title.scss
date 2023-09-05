@@ -1,19 +1,19 @@
 @use "../common/variables.scss";
 
 .title {
-  font-size: 36px;
+  font-size: min(3.6rem, 45px);
   font-weight: 400;
 
   &--primary {
-    line-height: 36px;
+    line-height: min(3.6rem, 45px);
   }
 
   &--secondary {
-    line-height: 40px;
+    line-height: min(4rem, 50px);
   }
 
   @media (min-width: variables.$tablet) {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: clamp(60px, 6rem, 70px);
+    line-height: clamp(60px, 6rem, 70px);
   }
 }
