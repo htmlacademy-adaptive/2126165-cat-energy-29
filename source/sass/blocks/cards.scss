@@ -28,13 +28,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: repeat(auto-fit, minmax(min(24.5rem, 324px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(24.5rem, 324px), 1fr));
     gap: 144px 80px;
-  }
-}
-
-.cards__item {
-  @media (min-width: variables.$desktop) {
-    min-width: max-content;
   }
 }
