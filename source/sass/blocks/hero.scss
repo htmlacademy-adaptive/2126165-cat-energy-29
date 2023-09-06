@@ -99,8 +99,8 @@
     grid-column: 2 / -1;
     grid-row-end: -1;
     max-width: none;
-    width: 708px;
-    height: 609px;
+    width: min(70.8rem, 830px);
+    height: min(60.9rem, 714px);
     margin: 0;
     margin-left: -53rem;
     margin-top: -93px;
@@ -108,8 +108,8 @@
 
   @media (min-width: variables.$desktop) {
     grid-row: 1 / -1;
-    width: 552px;
-    height: 499px;
+    width: clamp(552px, 55.2rem, 668px);
+    height: clamp(499px, 49.9rem, 604px);
     margin: 0;
     margin-left: -29.4rem;
   }

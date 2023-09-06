@@ -8,11 +8,11 @@
 }
 
 .description__wrapper {
-  margin-bottom: 49px;
+  margin-bottom: min(4.9rem, 60px);
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 0;
-    padding-bottom: 45px;
+    padding-bottom: min(4.5rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -23,26 +23,26 @@
 
 .description__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: min(4rem, 50px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 32px;
+    margin-bottom: min(3.2rem, 40px);
   }
 }
 
 .description__list {
   @include mixins.list-reset;
   display: grid;
-  gap: 20px;
+  gap: min(2rem, 40px);
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 58px;
+    gap: min(3.7rem) min(5.8rem);
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 81px;
+    gap: max(81px, 8.1rem);
   }
 }
 
@@ -50,19 +50,19 @@
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 20px;
+  gap: min(2rem, 30px);
 
   &::before {
     content: "";
     display: block;
-    width: 60px;
-    height: 60px;
+    width: min(6rem, 75px);
+    height: min(6rem, 75px);
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-width: variables.$tablet) {
-      width: 80px;
-      height: 80px;
+      width: clamp(80px, 8rem, 100px);
+      height: clamp(80px, 8rem, 100px);
     }
   }
 
@@ -85,8 +85,8 @@
   @media (min-width: variables.$tablet) {
     grid-template-columns: auto;
     gap: 31px;
-    max-width: 250px;
-    padding: 40px 0 57px;
+    max-width: clamp(250px, 25rem, 360px);
+    padding: clamp(40px, 4rem, 56px) 0 clamp(57px, 5.7rem, 80px);
     counter-increment: number 1;
   }
 
@@ -98,9 +98,9 @@
       z-index: -1;
       content: counter(number);
       display: block;
-      font-size: 280px;
-      line-height: 280px;
-      width: 134px;
+      font-size: clamp(280px, 28rem, 340px);
+      line-height: clamp(280px, 28rem, 340px);
+      width: clamp(134px, 13.4rem, 162px);
       color: variables.$color-secondary;
     }
   }
@@ -108,13 +108,15 @@
 
 .description__text {
   margin: 0;
-  padding-top: 2px;
+  padding-top: 0.2rem;
   font-family: variables.$font-secondary;
+  font-size: min(1.4rem, 20px);
+  line-height: min(1.8rem, 25px);
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
     padding: 0;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(24px, 2.4rem, 30px);
   }
 }

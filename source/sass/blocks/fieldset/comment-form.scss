@@ -1,7 +1,7 @@
 @use "./common/variables.scss";
 
 .comment-form__wrapper {
-  padding-top: 18px;
+  padding-top: min(1.8rem, 30px);
 
   @media (min-width: variables.$tablet) {
     padding-top: 52px;

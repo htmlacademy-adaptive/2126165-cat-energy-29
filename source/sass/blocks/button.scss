@@ -4,11 +4,10 @@
   display: grid;
   place-content: center;
   margin: 0;
-  padding: 8px 44px;
   border: none;
   font-family: variables.$font-primary;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 22px);
+  line-height: min(2rem, 28px);
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -16,8 +15,8 @@
 
   @media (min-width: variables.$tablet) {
     padding: 13px 45px;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: clamp(20px, 2rem, 24px);
+    line-height: clamp(20px, 2rem, 24px);
   }
 
   &--primary {

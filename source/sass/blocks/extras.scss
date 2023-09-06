@@ -6,7 +6,7 @@
 
 .extras__item {
   display: grid;
-  padding: 13px 0 18px;
+  padding: min(1.3rem, 20px) 0 min(1.8rem, 28px);
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -15,29 +15,29 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 26px 38px 28px;
+    padding: min(2.6rem, 32px) min(3.8rem, 48px) min(2.8rem, 35px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: calc(325 * 100% / 896) calc(326 * 100% / 896) calc(245 * 100% / 896);
     align-items: center;
-    padding: 14px 0 17px;
+    padding: clamp(14px, 1.4rem, 18px) 0 clamp(17px, 1.7rem, 22px);
   }
 }
 
 .extras__caption {
   margin: 0;
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 16px;
+  margin-bottom: min(1.2rem, 18px);
+  font-size: min(1.6rem, 20px);
+  line-height: min(1.6rem, 20px);
   font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     margin: 0;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: clamp(20px, 2rem, 24px);
+    line-height: clamp(20px, 2rem, 24px);
   }
 }
 
@@ -46,10 +46,10 @@
   justify-content: space-between;
   gap: 5px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: min(1.5rem, 22px);
   font-family: variables.$font-secondary;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: min(1.4rem, 18px);
+  line-height: min(1.4rem, 18px);
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
@@ -59,8 +59,8 @@
     justify-items: end;
     margin: 0;
     text-align: end;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(20px, 2rem, 26px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -81,14 +81,14 @@
 }
 
 .extras__button {
-  padding: 10px;
+  padding: min(1rem, 18px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-top: 24px;
-    padding: 12px;
-    font-size: 16px;
-    line-height: 16px;
+    margin-top: min(2.4rem, 32px);
+    padding: clamp(12px, 1.2rem, 18px);
+    font-size: clamp(16px, 1.6rem, 24px);
+    line-height: clamp(16px, 1.6rem, 24px);
   }
 
   @media (min-width: variables.$desktop) {

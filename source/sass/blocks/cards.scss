@@ -23,11 +23,16 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 141px 60px;
+    gap: 141px min(6rem);
   }
 
-  @media (min-width: variables.$desktop) {
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 144px clamp(80px, 8rem, 500px);
+    justify-content: center;
+  }
+
+  @media (min-width: 1440px) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 144px 80px;
   }
 }

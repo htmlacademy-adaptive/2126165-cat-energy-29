@@ -1,3 +1,4 @@
+let header = document.querySelector(".header");
 let navList = document.querySelector(".site-list");
 let navToggle = document.querySelector(".navigation__toggle");
 let navClue = document.querySelector(".navigation__clue");
@@ -16,3 +17,8 @@ navToggle.addEventListener("click", function () {
     navClue.textContent = "Открыть меню.";
   }
 });
+
+window.addEventListener('resize', (e) => {
+  navList.style.top = header.offsetHeight + "px";
+});
+

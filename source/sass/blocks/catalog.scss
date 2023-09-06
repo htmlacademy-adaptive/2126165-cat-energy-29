@@ -1,7 +1,7 @@
 @use "../common/variables.scss";
 
 .catalog {
-  padding-top: 27px;
+  padding-top: min(2.7rem, 35px);
 
   @media (min-width: variables.$tablet) {
     padding-top: 63px;
@@ -28,11 +28,5 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 165px;
-  }
-}
-
-.catalog__promotion {
-  @media (min-width: variables.$desktop) {
-    max-width: 245px;
   }
 }

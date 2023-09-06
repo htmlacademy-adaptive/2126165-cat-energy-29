@@ -6,11 +6,6 @@
   display: grid;
   grid-template-columns: var(--cat-width) 1fr;
 
-  @media (max-width: variables.$mobile) {
-    width: 28rem;
-    margin: 0 auto;
-  }
-
   @media (min-width: variables.$tablet) {
     grid-template-columns: var(--cat-width) 1fr;
   }
@@ -34,8 +29,11 @@
   height: auto;
 
   @media (min-width: variables.$tablet) {
-    width: 560px;
-    height: 512px;
+    width: clamp(560px, 56rem, 630px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: clamp(560px, 56rem, 800px);
   }
 }
 

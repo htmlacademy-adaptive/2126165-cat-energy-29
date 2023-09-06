@@ -1,7 +1,7 @@
 @use "../common/variables.scss";
 
 .extra-products {
-  padding: 24px 0 35px;
+  padding: min(2.4rem, 40px) 0 min(3.5rem, 55px);
 
   @media (min-width: variables.$tablet) {
     padding: 0;
@@ -23,38 +23,17 @@
   }
 }
 
-.extra-products__list {
-  margin-bottom: 36px;
-
-  @media (min-width: variables.$tablet) {
-    margin-bottom: 70px;
-  }
-
-  @media (min-width: variables.$desktop) {
-    margin: 0;
-    grid-column: 1 / 2;
-  }
-}
-
-.extra-products__title {
+.extra-products__title-wrapper {
   position: relative;
-  max-width: 270px;
-  margin: 0;
-  margin-left: -20px;
-  margin-bottom: 36px;
-  padding: 0 20px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  background-color: #ffffff;
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
     width: 100vw;
     height: 2px;
     top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: variables.$color-primary;
     z-index: -1;
 
@@ -63,23 +42,45 @@
     }
   }
 
-  &::before {
-    left: 50%;
-    transform: translateX(-50%);
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
   }
+}
+
+.extra-products__title {
+  max-width: fit-content;
+  margin: 0;
+  margin-left: -20px;
+  margin-bottom: min(3.6rem, 40px);
+  padding: 0 20px;
+  font-size: min(2.4rem, 28px);
+  line-height: min(2.4rem, 28px);
+  font-weight: 400;
+  background-color: #ffffff;
 
   @media (min-width: variables.$tablet) {
-    max-width: 425px;
     margin-left: 0;
     margin-bottom: 79px;
     padding: 0 40px;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: clamp(36px, 3.6rem, 40px);
+    line-height: clamp(36px, 3.6rem, 40px);
   }
 
   @media (min-width: variables.$desktop) {
-    grid-column: 1 / -1;
     margin-left: -40px;
     margin-bottom: 49px;
+  }
+}
+
+.extra-products__list {
+  margin-bottom: min(3.6rem, 40px);
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin: 0;
+    grid-column: 1 / 2;
   }
 }
