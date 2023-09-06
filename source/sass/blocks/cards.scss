@@ -22,17 +22,19 @@
   }
 
   @media (min-width: variables.$tablet) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 141px min(6rem);
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 141px 60px;
+    justify-items: stretch;
   }
 
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(auto-fill, 245px);
-    gap: 144px clamp(80px, 8rem, 500px);
-    justify-content: center;
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(min(24.5rem, 324px), 1fr));
+    gap: 144px 80px;
   }
+}
 
-  @media (min-width: 1440px) {
-    grid-template-columns: repeat(4, 1fr);
+.cards__item {
+  @media (min-width: variables.$desktop) {
+    min-width: max-content;
   }
 }

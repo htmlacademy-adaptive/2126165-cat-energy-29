@@ -16,7 +16,7 @@
 .extra-products__wrapper {
   @media (min-width: variables.$desktop) {
     display: grid;
-    grid-template-columns: calc(896 * 100% / 1220) auto;
+    grid-template-columns: 89.6rem auto;
     column-gap: 80px;
     row-gap: 30px;
     grid-auto-flow: dense;

@@ -29,7 +29,6 @@
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: clamp(245px, 24.5rem, 300px);
     padding-left: clamp(38px, 3.8rem, 46px);
     padding-right: clamp(38px, 3.8rem, 46px);
   }

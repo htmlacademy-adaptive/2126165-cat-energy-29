@@ -48,8 +48,8 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 55px;
-    font-size: clamp(16px,1.6rem,20px);
-    line-height: clamp(24px,2.4rem,30px);
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(24px, 2.4rem, 30px);
   }
 
   @media (min-width: variables.$desktop) {

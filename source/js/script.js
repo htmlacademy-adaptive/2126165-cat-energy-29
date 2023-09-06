@@ -21,4 +21,3 @@ navToggle.addEventListener("click", function () {
 window.addEventListener('resize', (e) => {
   navList.style.top = header.offsetHeight + "px";
 });
-
