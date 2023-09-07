@@ -100,11 +100,15 @@
     grid-column: 2 / -1;
     grid-row-end: -1;
     max-width: none;
-    width: clamp(708px, 70.8rem, 830px);
-    height: clamp(609px, 60.9rem, 714px);
     margin: 0;
-    margin-left: -53rem;
     margin-top: -93px;
+    width: min(70.8rem, 830px);
+    height: min(60.9rem, 714px);
+    margin-left: -64rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: -53rem;
   }
 
   @media (min-width: variables.$desktop) {
