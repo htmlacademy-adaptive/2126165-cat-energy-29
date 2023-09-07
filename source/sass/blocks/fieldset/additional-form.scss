@@ -15,7 +15,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: min(3.2rem, 77px) min(5.8rem, 90px);
+    gap: clamp(32px, 3.2rem, 77px) clamp(58px, 5.8rem, 90px);
     justify-content: start;
   }
 

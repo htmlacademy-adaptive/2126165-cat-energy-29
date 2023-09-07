@@ -67,8 +67,8 @@
   margin-bottom: min(2rem, 40px);
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-template-columns: repeat(2, min(16.2rem, 235px)) 1fr;
-    gap: min(4.3rem);
+    grid-template-columns: repeat(2, clamp(162px, 16.2rem, 235px)) 1fr;
+    gap: max(43px, 4.3rem);
     margin-bottom: 104px;
   }
 
@@ -106,7 +106,7 @@
       grid-column: 3 / -1;
       flex-direction: column;
       align-items: end;
-      gap: 1rem;
+      gap: max(1rem, 10px);
       text-align: right;
     }
 
@@ -173,7 +173,7 @@
   transform: none;
 
   @media (min-width: variables.$tablet) {
-    max-width: 20rem;
+    max-width: max(20rem, 200px);
     font-size: clamp(20px, 2rem, 26px);
   }
 }

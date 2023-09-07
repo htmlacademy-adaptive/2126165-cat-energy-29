@@ -12,8 +12,8 @@
   gap: clamp(13px, 1.3rem, 20px);
 
   @media (min-width: variables.$tablet) {
-    padding: min(2.5rem, 35px);
-    padding-top: min(2.3rem, 35px);
+    padding: clamp(25px, 2.5rem, 35px);
+    padding-top: clamp(23px, 2.3rem, 35px);
     border: 1px solid #e7e7e7;
   }
 

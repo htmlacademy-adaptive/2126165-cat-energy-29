@@ -14,7 +14,6 @@
   cursor: pointer;
 
   @media (min-width: variables.$tablet) {
-    padding: 13px 45px;
     font-size: clamp(20px, 2rem, 24px);
     line-height: clamp(20px, 2rem, 24px);
   }

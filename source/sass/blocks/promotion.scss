@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: min(5.8rem, 74px) min(12.5rem, 159px) min(6rem, 76px) min(7.9rem, 100px);
+    padding: clamp(58px, 5.8rem, 74px) clamp(125px, 12.5rem, 159px) clamp(60px, 6rem, 76px) clamp(79px, 7.9rem, 100px);
     background-position: center 60%;
   }
 

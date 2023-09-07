@@ -12,7 +12,7 @@
     min-width: clamp(174px, 17.4rem, 240px);
     display: flex;
     align-items: center;
-    gap: 1.3rem;
+    gap: clamp(13px, 1.3rem, 32px);
   }
 
   &:hover {
@@ -30,7 +30,7 @@
   object-fit: contain;
 
   @media (min-width: variables.$tablet) {
-    width: min(6rem, 75px);
+    width: clamp(60px, 6rem, 75px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -39,7 +39,7 @@
 }
 
 .header-logo__text {
-  width: min(10.1rem, 126px);
+  width: clamp(101px, 10.1rem, 126px);
   height: auto;
 
   @media (max-width: variables.$mobile) {

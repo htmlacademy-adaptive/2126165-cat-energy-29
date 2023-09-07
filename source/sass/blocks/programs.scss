@@ -3,7 +3,7 @@
 
 .programs__wrapper {
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(4.5rem, 55px);
+    margin-bottom: clamp(45px, 4.5rem, 55px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -19,7 +19,7 @@
 
   @media (min-width: variables.$tablet) {
     padding: 0;
-    gap: min(3rem, 40px);
+    gap: clamp(30px, 3rem, 40px);
   }
 
   @media (min-width: variables.$desktop) {

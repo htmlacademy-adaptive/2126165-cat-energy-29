@@ -8,7 +8,7 @@
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-template-columns: 39.3rem auto;
+    grid-template-columns: max(393px, 39.3rem) auto;
     grid-auto-flow: dense;
   }
 
@@ -32,7 +32,7 @@
 
   &--slim {
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      padding: min(7.7rem, 92px) min(6.3rem, 75px) min(5.8rem, 69px) min(5.2rem, 62px);
+      padding: clamp(77px, 7.7rem, 92px) clamp(63px, 6.3rem, 75px) clamp(58px, 5.8rem, 69px) clamp(52px, 5.2rem, 62px);
     }
 
     @media (min-width: variables.$desktop) {
@@ -44,7 +44,7 @@
     padding-top: 2.4rem;
 
     @media (min-width: variables.$tablet) and (max-width: 1279px) {
-      padding: min(7.7rem, 92px) min(2.9rem, 34px) min(5.8rem, 69px) min(5.2rem, 62px);
+      padding: clamp(77px, 7.7rem, 92px) clamp(29px, 2.9rem, 34px) clamp(58px, 5.8rem, 69px) clamp(52px, 5.2rem, 62px);
     }
 
     @media (min-width: variables.$desktop) {
@@ -58,8 +58,8 @@
     background-image: url("../img/sprite.svg#cat-slim");
 
     @media (min-width: variables.$tablet) {
-      width: min(20rem, 278px);
-      height: min(21.1rem, 293px);
+      width: clamp(200px, 20rem, 278px);
+      height: clamp(211px, 21.1rem, 293px);
     }
 
     @media (min-width: variables.$desktop) {
@@ -76,8 +76,8 @@
     background-image: url("../img/sprite.svg#cat-pro");
 
     @media (min-width: variables.$tablet) {
-      width: min(26.8rem, 372px);
-      height: min(20rem, 278px);
+      width: clamp(268px, 26.8rem, 372px);
+      height: clamp(200px, 20rem, 278px);
       margin-left: -34px;
       margin-top: 14px;
     }
@@ -108,7 +108,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: min(2.4rem, 32px);
+    margin-bottom: clamp(24px, 2.4rem, 32px);
     padding: 0;
     font-size: clamp(36px, 3.6rem, 46px);
     line-height: clamp(36px, 3.6rem, 46px);
@@ -134,9 +134,9 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: min(3.9rem, 40px);
+    margin-bottom: clamp(39px, 3.9rem, 40px);
     padding: 0;
-    max-width: 34rem;
+    max-width: max(34rem, 340px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(24px, 2.4rem, 30px);
   }
