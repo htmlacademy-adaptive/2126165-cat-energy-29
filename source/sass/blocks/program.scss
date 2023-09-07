@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: clamp(162px, 16.2rem, 300px) 1fr;
+    grid-template-columns: clamp(162px, 16.2rem, 264px) 1fr;
   }
 
   &::before {
@@ -117,7 +117,7 @@
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
     margin: 0;
-    padding-top: max(36px, 3.6rem);
+    padding-top: clamp(36px, 3.6rem, 42px);
   }
 }
 
