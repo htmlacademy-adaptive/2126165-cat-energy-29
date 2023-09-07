@@ -23,14 +23,17 @@
   color: variables.$text-primary;
 }
 
+.page__background-wrapper {
+  display: grid;
+}
+
 .page__header {
-  &--with-background {
-    @media (min-width: variables.$desktop) {
-      margin-bottom: -360px;
-    }
-  }
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 }
 
 .page__content {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
   min-width: 100%;
 }
