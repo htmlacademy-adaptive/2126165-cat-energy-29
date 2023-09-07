@@ -24,16 +24,23 @@
 }
 
 .page__background-wrapper {
-  display: grid;
+  min-width: 100%;
+
+  @media (min-width: variables.$desktop) {
+    display: grid;
+  }
 }
 
 .page__header {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 }
 
 .page__content {
-  grid-column: 1 / -1;
-  grid-row: 2 / -1;
-  min-width: 100%;
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+  }
 }
