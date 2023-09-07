@@ -47,6 +47,7 @@
   }
 
   @media (min-width: variables.$desktop) {
+    min-height: 550px;
     margin-bottom: 82px;
     padding-left: 80px;
   }
@@ -124,7 +125,7 @@
 
 .hero__button {
   padding: min(1.1rem, 15px) min(4.4rem, 60px);
-  font-size: min(1.4rem, 18px);
+  font-size: min(1.6rem, 20px);
   line-height: min(1.8rem, 23px);
 
   @media (min-width: variables.$tablet) {

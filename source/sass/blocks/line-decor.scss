@@ -1,0 +1,21 @@
+@use "../common/variables.scss";
+
+.line-decor {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: variables.$color-primary;
+    z-index: -1;
+
+    @media (min-width: variables.$tablet) {
+      top: 22px;
+    }
+  }
+}

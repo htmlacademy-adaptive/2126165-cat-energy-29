@@ -28,7 +28,7 @@
   margin-bottom: min(3.7rem, 40px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(5.4rem, 60px);
+    margin-bottom: min(5.5rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -45,7 +45,7 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    max-width: 34rem;
+    max-width: clamp(340px, 34rem, 415px);
     margin-bottom: 66px;
     font-size: clamp(20px, 2rem, 22px);
     line-height: clamp(30px, 3rem, 33px);
@@ -122,7 +122,7 @@
 }
 
 .program-selection__button {
-  margin-bottom: min(2rem, 30px);
+  margin-bottom: min(2.3rem, 30px);
   padding: min(1rem, 15px) min(4.4rem, 66px);
 
   @media (min-width: variables.$tablet) {
@@ -172,26 +172,6 @@
   display: grid;
 }
 
-.program-selection__headline-wrapper {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 2px;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: variables.$color-primary;
-    z-index: -1;
-
-    @media (min-width: variables.$tablet) {
-      top: 24px;
-    }
-  }
-}
-
 .program-selection__headline {
   max-width: fit-content;
   margin-left: -20px;
@@ -203,11 +183,11 @@
   background-color: #ffffff;
 
   @media (min-width: variables.$tablet) {
-    font-size: clamp(36px, 3.6rem, 40px);
-    line-height: clamp(36px, 3.6rem, 40px);
     padding: 0 40px;
     margin-left: -40px;
     margin-bottom: clamp(35px, 3.5rem, 40px);
+    font-size: clamp(36px, 3.6rem, 40px);
+    line-height: clamp(36px, 3.6rem, 40px);
 
     br {
       display: none;
@@ -242,7 +222,7 @@
 }
 
 .program-selection__contacts {
-  margin-bottom: min(2.4rem, 40px);
+  margin-bottom: min(2.3rem, 40px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
@@ -252,6 +232,12 @@
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
     margin-bottom: 69px;
+  }
+}
+
+.program-selection__contacts .program-selection__headline {
+  @media (max-width: variables.$mobile) {
+    max-width: min(22.7rem, 275px);
   }
 }
 
