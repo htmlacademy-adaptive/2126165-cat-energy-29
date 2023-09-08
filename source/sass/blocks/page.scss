@@ -28,6 +28,7 @@
 
   @media (min-width: variables.$desktop) {
     display: grid;
+    grid-template-rows: repeat(3, auto);
   }
 }
 
@@ -41,9 +42,11 @@
 .page__content {
   min-width: 100%;
 
-  @media (min-width: variables.$desktop) {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
+  &--with-background {
+    @media (min-width: variables.$desktop) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
   }
 }
 
