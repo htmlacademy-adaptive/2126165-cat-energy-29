@@ -70,7 +70,7 @@
 
 .card__caption-link {
   grid-column: 2 / -1;
-  max-width: min(7.6rem);
+  max-width: 7.6rem;
   margin-bottom: 11px;
   padding-top: 3px;
   text-decoration: none;
@@ -79,7 +79,7 @@
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
     display: block;
-    max-width: max(13.5rem, 135px);
+    max-width: clamp(135px, 13.5rem, 200px);
     margin: 0 auto;
     margin-bottom: min(2rem, 30px);
     padding: 0;
