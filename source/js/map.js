@@ -16,7 +16,7 @@ if (screenWidth < 1280) {
   zoom = 14;
 };
 
-if (screenWidth < 768) {
+if (screenWidth < 640) {
   pinSize = [57, 53];
 } else {
   pinSize = [113, 106];

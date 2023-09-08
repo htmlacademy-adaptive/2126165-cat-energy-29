@@ -37,7 +37,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: min(3.7rem) min(5.8rem);
+    gap: 3.7rem 5.8rem;
   }
 
   @media (min-width: variables.$desktop) {
@@ -98,10 +98,15 @@
       z-index: -1;
       content: counter(number);
       display: block;
-      font-size: clamp(280px, 28rem, 340px);
-      line-height: clamp(280px, 28rem, 340px);
+      font-size: clamp(260px, 28rem, 340px);
+      line-height: clamp(260px, 28rem, 340px);
       width: clamp(134px, 13.4rem, 162px);
       color: variables.$color-secondary;
+    }
+
+    @media (min-width: variables.$desktop) {
+      font-size: clamp(280px, 28rem, 340px);
+      line-height: clamp(280px, 28rem, 340px);
     }
   }
 }

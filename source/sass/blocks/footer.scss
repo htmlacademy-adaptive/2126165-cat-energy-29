@@ -13,7 +13,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     grid-auto-flow: row dense;
-    padding: clamp(55px, 5.5rem, 70px) 0;
+    padding: min(5.5rem, 70px) 0;
   }
 
   @media (min-width: variables.$desktop) {
@@ -28,7 +28,7 @@
   @media (min-width: variables.$tablet) {
     justify-self: start;
     grid-column: 1 / 2;
-    padding: clamp(5px, 0.5rem, 10px) 0;
+    padding: min(0.5rem, 10px) 0;
     border: none;
   }
 }

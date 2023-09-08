@@ -4,6 +4,10 @@
   padding-top: min(1.5rem, 26px);
 
   @media (min-width: variables.$tablet) {
+    padding-top: min(4.1rem, 46px);
+  }
+
+  @media (min-width: variables.$desktop) {
     padding-top: clamp(41px, 4.1rem, 46px);
   }
 }
@@ -12,7 +16,7 @@
   gap: min(1.4rem, 20px);
 
   @media (min-width: variables.$tablet) {
-    gap: clamp(17px, 1.7rem, 25px);
+    gap: clamp(20px, 2rem, 25px);
   }
 
   @media (min-width: variables.$desktop) {

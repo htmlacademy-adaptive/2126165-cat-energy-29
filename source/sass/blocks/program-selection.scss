@@ -5,7 +5,7 @@
   padding: min(2.8rem, 40px) 0 min(3rem, 42px);
 
   @media (min-width: variables.$tablet) {
-    padding: clamp(60px, 6rem, 70px) 0 clamp(60px, 6rem, 70px);
+    padding: min(6rem, 70px) 0 min(6rem, 70px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -28,7 +28,7 @@
   margin-bottom: min(3.7rem, 40px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: clamp(55px, 5.5rem, 60px);
+    margin-bottom: min(5.5rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -45,8 +45,13 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    max-width: clamp(340px, 34rem, 415px);
+    max-width: min(34rem, 415px);
     margin-bottom: 66px;
+    font-size: clamp(16px, 2rem, 22px);
+    line-height: clamp(26px, 3rem, 33px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 22px);
     line-height: clamp(30px, 3rem, 33px);
   }
@@ -97,6 +102,11 @@
   line-height: min(1.8rem, 23px);
 
   @media (min-width: variables.$tablet) {
+    font-size: clamp(18px, 2rem, 23px);
+    line-height: clamp(18px, 2rem, 23px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 23px);
     line-height: clamp(20px, 2rem, 23px);
   }
@@ -129,7 +139,7 @@
     grid-column: 1 / 2;
     max-width: max(282px, 28.2rem);
     margin-bottom: 0;
-    padding: clamp(15px, 1.5rem, 20px);
+    padding: clamp(13px, 1.5rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -185,20 +195,25 @@
   @media (min-width: variables.$tablet) {
     padding: 0 40px;
     margin-left: -40px;
-    margin-bottom: clamp(35px, 3.5rem, 40px);
-    font-size: clamp(36px, 3.6rem, 40px);
-    line-height: clamp(36px, 3.6rem, 40px);
+    margin-bottom: clamp(25px, 3.5rem, 40px);
+    font-size: clamp(32px, 3.6rem, 40px);
+    line-height: clamp(32px, 3.6rem, 40px);
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: clamp(36px, 3.6rem, 40px);
+    line-height: clamp(36px, 3.6rem, 40px);
   }
 }
 
 .program-selection__personal {
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 74px;
+    margin-bottom: min(7.4rem, 74px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -212,7 +227,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 65px;
+    margin-bottom: min(6.5rem, 65px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -226,7 +241,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 67px;
+    margin-bottom: min(6.7rem, 67px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -246,7 +261,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: 62px;
+    margin-bottom: min(6.2rem, 62px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -260,7 +275,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-bottom: clamp(33px, 3.3rem, 40px);
+    margin-bottom: clamp(30px, 3.3rem, 40px);
   }
 
   @media (min-width: variables.$desktop) {

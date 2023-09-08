@@ -17,7 +17,7 @@
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
-    padding-top: clamp(63px, 6.3rem, 70px);
+    padding-top: min(6.3rem, 70px);
     text-align: left;
     background-color: #ffffff;
     background-image: none;
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(10, min-content);
-    padding-left: max(9rem, 90px);
+    padding-left: min(90px, 9rem);
   }
 
   @media (min-width: variables.$desktop) {
@@ -80,13 +80,15 @@
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     max-width: max(460px, 46rem);
-    margin-bottom: clamp(50px, 5rem, 60px);
-    font-size: clamp(20px, 2rem, 24px);
-    line-height: clamp(20px, 2rem, 24px);
+    margin-bottom: min(5rem, 60px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 
   @media (min-width: variables.$desktop) {
     margin-bottom: clamp(52px, 5.2rem, 60px);
+    font-size: clamp(20px, 2rem, 24px);
+    line-height: clamp(20px, 2rem, 24px);
   }
 }
 
@@ -136,7 +138,12 @@
     grid-column: 1 / 2;
     max-width: clamp(244px, 24.4rem, 325px);
     margin-bottom: 10px;
-    padding: clamp(17px, 1.7rem, 20px) clamp(26px, 2.6rem, 32px);
+    padding: clamp(15px, 1.7rem, 20px) clamp(24px, 2.6rem, 32px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 24px);
     line-height: clamp(20px, 2rem, 24px);
   }

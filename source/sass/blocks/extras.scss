@@ -15,7 +15,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
-    padding: clamp(26px, 2.6rem, 32px) clamp(38px, 3.8rem, 48px) clamp(28px, 2.8rem, 35px);
+    padding: min(2.6rem, 32px) min(3.8rem, 48px) min(2.8rem, 35px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -36,6 +36,11 @@
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     margin: 0;
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 24px);
     line-height: clamp(20px, 2rem, 24px);
   }
@@ -85,7 +90,7 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    margin-top: clamp(24px, 2.4rem, 32px);
+    margin-top: min(2.4rem, 32px);
     padding: clamp(12px, 1.2rem, 18px);
     font-size: clamp(16px, 1.6rem, 24px);
     line-height: clamp(16px, 1.6rem, 24px);

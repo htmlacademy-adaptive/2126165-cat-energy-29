@@ -24,13 +24,12 @@
   @media (min-width: variables.$tablet) {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, min-content) 1fr;
-    padding: 0 clamp(37px, 3.7rem, 50px) clamp(40px, 4rem, 54px);
+    padding: 0 min(3.7rem, 45px) min(4rem, 50px);
     background-color: variables.$color-secondary;
   }
 
   @media (min-width: variables.$desktop) {
-    padding-left: clamp(38px, 3.8rem, 46px);
-    padding-right: clamp(38px, 3.8rem, 46px);
+    padding: 0 clamp(38px, 3.8rem, 46px) min(40px, 4rem, 54px) clamp(38px, 3.8rem, 46px);
   }
 }
 
@@ -43,15 +42,16 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
-    width: clamp(200px, 20rem, 240px);
-    height: clamp(210px, 21rem, 252px);
+    width: min(20rem, 245px);
+    height: min(21rem, 252px);
     margin: 0 auto;
     margin-top: -71px;
-    margin-bottom: 20px;
+    margin-bottom: min(2rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
     width: clamp(169px, 16.9rem, 200px);
+    height: clamp(210px, 21rem, 252px);
     margin-top: -72px;
     margin-bottom: 13px;
   }
@@ -81,7 +81,7 @@
     display: block;
     max-width: max(13.5rem, 135px);
     margin: 0 auto;
-    margin-bottom: clamp(20px, 2rem, 30px);
+    margin-bottom: min(2rem, 30px);
     padding: 0;
   }
 
@@ -99,9 +99,14 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(22px, 2.4rem, 29px);
+    text-align: center;
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 27px);
     line-height: clamp(24px, 2.4rem, 33px);
-    text-align: center;
   }
 }
 
@@ -112,11 +117,11 @@
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: max(0.5rem, 5px);
   }
 
   @media (min-width: variables.$desktop) {
-    row-gap: 0.7rem;
+    row-gap: max(0.7rem, 7px);
   }
 }
 
@@ -131,9 +136,14 @@
   @media (min-width: variables.$tablet) {
     gap: 6px;
     padding-bottom: max(6px, 0.6rem);
+    font-size: clamp(14px, 1.6rem, 19px);
+    line-height: clamp(18px, 2rem, 24px);
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(16px, 1.6rem, 19px);
     line-height: clamp(20px, 2rem, 24px);
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -150,6 +160,13 @@
 
   @media (min-width: variables.$tablet) {
     align-self: end;
+    margin-top: min(3.2rem, 45px);
+    padding: clamp(10px, 1rem, 15px) min(4.5rem, 71px);
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop) {
     margin-top: clamp(32px, 3.2rem, 45px);
     padding: clamp(10px, 1rem, 15px) clamp(45px, 4.5rem, 71px);
     font-size: clamp(16px, 1.6rem, 24px);

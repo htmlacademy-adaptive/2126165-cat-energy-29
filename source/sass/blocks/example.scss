@@ -6,7 +6,7 @@
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    padding: 45px 0 98px;
+    padding: min(4.5rem, 45px) 0 min(9.8rem, 98px);
     background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
@@ -29,7 +29,7 @@
   margin-bottom: 40px;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 60px;
+    margin-bottom: min(6rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -47,7 +47,7 @@
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 55px;
+    margin-bottom: min(5.5rem, 55px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(24px, 2.4rem, 30px);
   }
@@ -67,9 +67,9 @@
   margin-bottom: min(2rem, 40px);
 
   @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-template-columns: repeat(2, clamp(162px, 16.2rem, 235px)) 1fr;
+    grid-template-columns: repeat(2, clamp(155px, 16.2rem, 235px)) 1fr;
     gap: max(43px, 4.3rem);
-    margin-bottom: 104px;
+    margin-bottom: min(10.4rem, 104px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -155,6 +155,11 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
+    font-size: clamp(28px, 3rem, 40px);
+    line-height: clamp(35px, 3.7rem, 48px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(30px, 3rem, 40px);
     line-height: clamp(37px, 3.7rem, 48px);
   }
@@ -174,6 +179,10 @@
 
   @media (min-width: variables.$tablet) {
     max-width: max(20rem, 200px);
+    font-size: clamp(19px, 2rem, 26px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 26px);
   }
 }

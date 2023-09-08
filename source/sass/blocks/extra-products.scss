@@ -5,7 +5,7 @@
 
   @media (min-width: variables.$tablet) {
     padding: 0;
-    padding-bottom: 74px;
+    padding-bottom: min(7.4rem, 74px);
   }
 
   @media (min-width: variables.$desktop) {
@@ -42,15 +42,17 @@
 
   @media (min-width: variables.$tablet) {
     margin-left: 0;
-    margin-bottom: 79px;
+    margin-bottom: min(7.9rem, 79px);
     padding: 0 40px;
-    font-size: clamp(36px, 3.6rem, 40px);
-    line-height: clamp(36px, 3.6rem, 40px);
+    font-size: clamp(32px, 3.6rem, 40px);
+    line-height: clamp(32px, 3.6rem, 40px);
   }
 
   @media (min-width: variables.$desktop) {
     margin-left: -40px;
     margin-bottom: 49px;
+    font-size: clamp(36px, 3.6rem, 40px);
+    line-height: clamp(36px, 3.6rem, 40px);
   }
 }
 
@@ -58,7 +60,7 @@
   margin-bottom: min(3.6rem, 40px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 70px;
+    margin-bottom: min(7rem, 70px);
   }
 
   @media (min-width: variables.$desktop) {

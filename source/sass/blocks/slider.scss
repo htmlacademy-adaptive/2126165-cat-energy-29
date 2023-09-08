@@ -5,10 +5,6 @@
   position: relative;
   display: grid;
   grid-template-columns: var(--cat-width) 1fr;
-
-  @media (min-width: variables.$tablet) {
-    grid-template-columns: var(--cat-width) 1fr;
-  }
 }
 
 .slider__image-wrapper {

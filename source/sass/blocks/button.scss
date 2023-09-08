@@ -14,6 +14,11 @@
   cursor: pointer;
 
   @media (min-width: variables.$tablet) {
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(20px, 2rem, 24px);
     line-height: clamp(20px, 2rem, 24px);
   }

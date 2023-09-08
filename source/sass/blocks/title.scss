@@ -13,6 +13,11 @@
   }
 
   @media (min-width: variables.$tablet) {
+    font-size: min(6rem, 70px);
+    line-height: min(6rem, 70px);
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: clamp(60px, 6rem, 70px);
     line-height: clamp(60px, 6rem, 70px);
   }

@@ -14,7 +14,7 @@
     background-color: variables.$color-primary;
     z-index: -1;
 
-    @media (min-width: variables.$tablet) {
+    @media (min-width: 768px) {
       top: 22px;
     }
   }

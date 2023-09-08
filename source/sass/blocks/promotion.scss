@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: clamp(58px, 5.8rem, 74px) clamp(125px, 12.5rem, 159px) clamp(60px, 6rem, 76px) clamp(79px, 7.9rem, 100px);
+    padding: min(5.8rem, 74px) min(12.5rem, 159px) min(6rem, 76px) min(7.9rem, 100px);
     background-position: center 60%;
   }
 
@@ -64,15 +64,18 @@
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
+    max-width: clamp(150px, 16.2rem, 270px);
     margin: 0;
     text-align: left;
-    font-size: clamp(16px, 1.6rem, 24px);
-    line-height: clamp(20px, 2rem, 30px);
+    font-size: clamp(14px, 1.6rem, 24px);
+    line-height: clamp(18px, 2rem, 30px);
   }
 
   @media (min-width: variables.$desktop) {
     width: 16.2rem;
     margin: 0 auto;
+    font-size: clamp(16px, 1.6rem, 24px);
+    line-height: clamp(20px, 2rem, 30px);
     text-align: center;
   }
 }

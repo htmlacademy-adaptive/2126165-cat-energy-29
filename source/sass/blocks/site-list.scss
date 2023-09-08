@@ -18,7 +18,7 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     flex-direction: row;
-    gap: 34px;
+    gap: min(3.4rem, 34px);
     flex-wrap: wrap;
     justify-content: end;
     padding-right: 4px;
@@ -92,8 +92,8 @@
 
   @media (min-width: variables.$tablet) {
     padding: 14px 0 12px;
-    font-size: clamp(18px, 1.8rem, 22px);
-    line-height: clamp(24px, 2.4rem, 28px);
+    font-size: clamp(16px, 1.8rem, 22px);
+    line-height: min(2.4rem, 28px);
   }
 
   @media (min-width: variables.$desktop) {
