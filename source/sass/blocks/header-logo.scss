@@ -17,7 +17,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    min-width: clamp(174px, 17.4rem, 240px);
+    min-width: clamp(202px, 20.2rem, 240px);
+    height: clamp(59px, 5.9rem, 75px);
   }
 
   &:hover {
