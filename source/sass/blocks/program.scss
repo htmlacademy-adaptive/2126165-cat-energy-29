@@ -12,12 +12,12 @@
     grid-auto-flow: dense;
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: max(325px, 39.3rem) auto;
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: clamp(162px, 16.2rem, 264px) 1fr;
+    grid-template-columns: clamp(128px, 16.2rem, 264px) 1fr;
   }
 
   &::before {
@@ -28,31 +28,31 @@
     background-position: center;
     background-size: contain;
 
-    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    @media (min-width: variables.$tablet) and (max-width: 1023px) {
       grid-column: 2 / -1;
       grid-row: span 3;
     }
   }
 
   &--slim {
-    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    @media (min-width: variables.$tablet) and (max-width: 1023px) {
       padding: min(7.7rem, 92px) min(6.3rem, 75px) min(5.8rem, 69px) min(5.2rem, 62px);
     }
 
     @media (min-width: variables.$desktop) {
-      padding: clamp(41px, 4.1rem, 55px) clamp(61px, 6.1rem, 82px) clamp(58px, 5.8rem, 78px) clamp(52px, 5.2rem, 70px);
+      padding: clamp(38px, 4.1rem, 55px) clamp(42px, 6.1rem, 82px) clamp(46px, 5.8rem, 78px) clamp(46px, 5.2rem, 70px);
     }
   }
 
   &--pro {
     padding-top: 2.4rem;
 
-    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    @media (min-width: variables.$tablet) and (max-width: 1023px) {
       padding: min(7.7rem, 92px) min(2.9rem, 34px) min(5.8rem, 69px) min(5.2rem, 62px);
     }
 
     @media (min-width: variables.$desktop) {
-      padding: clamp(47px, 4.7rem, 63px) clamp(61px, 6.1rem, 82px) clamp(58px, 5.8rem, 78px) clamp(52px, 5.2rem, 70px);
+      padding: clamp(41px, 4.7rem, 63px) clamp(42px, 6.1rem, 82px) clamp(46px, 5.8rem, 78px) clamp(46px, 5.2rem, 70px);
     }
   }
 
@@ -67,8 +67,8 @@
     }
 
     @media (min-width: variables.$desktop) {
-      width: clamp(100px, 10rem, 151px);
-      height: clamp(106px, 10.6rem, 160px);
+      width: clamp(94px, 10rem, 151px);
+      height: clamp(100px, 10.6rem, 160px);
       margin: 0;
     }
   }
@@ -87,8 +87,8 @@
     }
 
     @media (min-width: variables.$desktop) {
-      width: clamp(134px, 13.4rem, 202px);
-      height: clamp(100px, 10rem, 151px);
+      width: clamp(128px, 13.4rem, 202px);
+      height: clamp(96px, 10rem, 151px);
       margin: 0;
       margin-left: -19px;
     }
@@ -122,8 +122,8 @@
     grid-column: 2 / -1;
     margin: 0;
     padding-top: clamp(36px, 3.6rem, 42px);
-    font-size: clamp(36px, 3.6rem, 46px);
-    line-height: clamp(36px, 3.6rem, 46px);
+    font-size: clamp(26px, 3.6rem, 46px);
+    line-height: clamp(26px, 3.6rem, 46px);
   }
 }
 
@@ -150,8 +150,8 @@
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
     max-width: 100%;
-    margin-bottom: clamp(28px, 2.8rem, 30px);
-    padding-top: clamp(39px, 3.9rem, 45px);
+    margin-bottom: clamp(24px, 2.9rem, 30px);
+    padding-top: clamp(32px, 3.9rem, 45px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(24px, 2.4rem, 30px);
   }
@@ -174,8 +174,8 @@
   &::after {
     content: "";
     display: block;
-    width: min(3.2rem, 42px);
-    height: min(1rem, 12px);
+    width: clamp(32px, 3.2rem, 42px);
+    height: clamp(10px, 1rem, 12px);
     mask: url("../img/sprite.svg#arrow") no-repeat center;
     background-color: variables.$text-primary;
     transition: all 0.5s;
@@ -193,8 +193,8 @@
     grid-column: 1 / -1;
     gap: 25px;
     padding: max(0.4rem, 4px) 0;
-    font-size: clamp(20px, 2rem, 27px);
-    line-height: clamp(20px, 2rem, 27px);
+    font-size: clamp(18px, 2rem, 27px);
+    line-height: clamp(18px, 2rem, 27px);
   }
 
   &:hover::after,

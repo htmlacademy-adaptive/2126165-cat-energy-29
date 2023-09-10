@@ -24,12 +24,12 @@
   @media (min-width: variables.$tablet) {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, min-content) 1fr;
-    padding: 0 min(3.7rem, 45px) min(4rem, 50px);
+    padding: 0 min(3.7rem, 45px) min(4rem, 55px);
     background-color: variables.$color-secondary;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 0 clamp(38px, 3.8rem, 46px) min(40px, 4rem, 54px) clamp(38px, 3.8rem, 46px);
+    padding: 0 clamp(30px, 3.8rem, 46px) clamp(40px, 4rem, 54px);
   }
 }
 
@@ -46,12 +46,12 @@
     height: min(21rem, 252px);
     margin: 0 auto;
     margin-top: -71px;
-    margin-bottom: min(2rem, 20px);
+    margin-bottom: min(2.2rem, 22px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: clamp(169px, 16.9rem, 200px);
-    height: clamp(210px, 21rem, 252px);
+    width: min(16.9rem, 200px);
+    height: min(21rem, 252px);
     margin-top: -72px;
     margin-bottom: 13px;
   }
@@ -87,7 +87,7 @@
 
   @media (min-width: variables.$desktop) {
     max-width: clamp(140px, 14rem, 172px);
-    margin-bottom: clamp(23px, 2.3rem, 30px);
+    margin-bottom: clamp(20px, 2.3rem, 30px);
   }
 }
 
@@ -160,7 +160,7 @@
 
   @media (min-width: variables.$tablet) {
     align-self: end;
-    margin-top: min(3.2rem, 45px);
+    margin-top: 3.2rem;
     padding: clamp(10px, 1rem, 15px) min(4.5rem, 71px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(18px, 2rem, 24px);
@@ -168,7 +168,7 @@
 
   @media (min-width: variables.$desktop) {
     margin-top: clamp(32px, 3.2rem, 45px);
-    padding: clamp(10px, 1rem, 15px) clamp(45px, 4.5rem, 71px);
+    padding: clamp(10px, 1rem, 15px) clamp(38px, 4.5rem, 71px);
     font-size: clamp(16px, 1.6rem, 24px);
     line-height: clamp(20px, 2rem, 29px);
   }

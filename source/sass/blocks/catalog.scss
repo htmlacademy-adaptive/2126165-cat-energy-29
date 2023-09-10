@@ -8,7 +8,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 72px;
+    padding-top: clamp(60px, 7.4rem, 74px);
   }
 }
 
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 78px;
+    margin-bottom: clamp(66px, 7.6rem, 76px);
   }
 }
 
@@ -27,10 +27,10 @@
   margin-bottom: 41px;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(16.5rem, 165px);
+    margin-bottom: min(16.6rem, 1656px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 165px;
+    margin-bottom: clamp(150px, 16.5rem, 165px);
   }
 }
