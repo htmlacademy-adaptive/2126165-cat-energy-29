@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Функциональное питание для котов Кэт Энерджи">
+  <meta name="keywords" content="здоровье кота, лишний вес кота, кошачье питание">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Подбор программы</title>
   <link rel="icon" href="favicon.ico">
@@ -10,6 +12,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -18,8 +22,8 @@
       <div class="navigation__hat">
         <a class="header-logo" href="index.html">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
+            <source media="(min-width: 1024px)" srcset="img/logo/logo-desktop.svg" width="70" height="59">
+            <source media="(min-width: 640px)" srcset="img/logo/logo-tablet.svg" width="60" height="50">
             <img class="header-logo__image" src="img/logo/logo-mobile.svg" width="33" height="38"
               alt="Логотип Кэт энерджи.">
           </picture>
@@ -107,7 +111,9 @@
             </div>
           </fieldset>
           <fieldset class="program-selection__contacts contacts-form program-selection__fieldset">
-            <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
+            <div class="headline-decor">
+              <legend class="program-selection__headline">Контактные данные (владельца кота)</legend>
+            </div>
             <div class="contacts-form__wrapper">
               <ul class="program-selection__list contacts-form__list">
                 <li class="program-selection__item">
@@ -134,14 +140,18 @@
             </div>
           </fieldset>
           <fieldset class="program-selection__comment comment-form program-selection__fieldset">
-            <legend class="program-selection__headline">Комментарий</legend>
+            <div class="headline-decor">
+              <legend class="program-selection__headline">Комментарий</legend>
+            </div>
             <div class="comment-form__wrapper">
               <textarea class="program-selection__textarea form-control textarea" name="comment" cols="30"
                 rows="7">Расскажите обо всех повадках кота</textarea>
             </div>
           </fieldset>
           <fieldset class="program-selection__additional additional-form program-selection__fieldset">
-            <legend class="program-selection__headline">Дополнительно</legend>
+            <div class="headline-decor">
+              <legend class="program-selection__headline">Дополнительно</legend>
+            </div>
             <div class="additional-form__wrapper">
               <ul class="program-selection__list additional-form__list">
                 <li class="program-selection__item">
@@ -165,7 +175,7 @@
                 </li>
                 <li class="program-selection__item">
                   <label class="program-selection__control field">
-                    <input class="program-selection__input form-control checkbox-input" type="checkbox" name="vitamins">
+                    <input class="program-selection__input checkbox-input" type="checkbox" name="vitamins">
                     <span class="program-selection__label">Витамины</span>
                   </label>
                 </li>
@@ -186,26 +196,24 @@
           <p class="invite__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="invite__address">
             <span class="invite__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
-            <span class="invite__text">Санкт-Петербург</span>
+            <span class="invite__text">Санкт&#8209;Петербург</span>
           </address>
         </div>
       </div>
-      <div class="invite__map map" id="map"></div>
-      <div class="invite__map-image-wrapper invite__map-image-wrapper--nojs">
-        <picture>
-          <source type="image/webp" media="(min-width: 1280px)"
-            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1280" height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="400">
-          <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x" width="320" height="362">
-          <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1280"
-            height="400">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768"
-            height="400">
-          <img class="invite__map-image" src="img/map-phone.png" srcset="img/map-phone@2x.png 2x" width="320"
-            height="362" alt="Карта с местоположением Кэт энерджи.">
-        </picture>
-      </div>
+      <div class="invite__map map invite__map--nojs" id="map"></div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1024" height="400">
+        <source type="image/webp" media="(min-width: 640px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x"
+          width="640" height="400">
+        <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x" width="320" height="362">
+        <source media="(min-width: 1024px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1024"
+          height="400">
+        <source media="(min-width: 640px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="640"
+          height="400">
+        <img class="invite__map-image invite__map-image--nojs" loading="lazy" src="img/map-phone.png"
+          srcset="img/map-phone@2x.png 2x" width="320" height="362" alt="Карта с местоположением Кэт энерджи.">
+      </picture>
     </section>
   </main>
   <footer class="footer">

@@ -4,24 +4,22 @@
   display: grid;
   place-content: center;
   appearance: none;
-  width: 30px;
-  min-width: 30px;
-  height: 30px;
+  width: min(3rem, 40px);
+  height: min(3rem, 40px);
   margin: 0;
   border: 1px solid #cdcdcd;
 
   @media (min-width: variables.$tablet) {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
+    width: clamp(40px, 4rem, 50px);
+    height: clamp(40px, 4rem, 50px);
   }
 
   &:checked::before {
     content: "";
     display: block;
-    width: 26px;
-    height: 26px;
-    background-image: url("../img/tick.svg");
+    width: clamp(26px, 2.6rem, 40px);
+    height: clamp(26px, 2.6rem, 40px);
+    background-image: url("../img/sprite.svg#tick");
     background-repeat: no-repeat;
   }
 }

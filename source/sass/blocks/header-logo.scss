@@ -4,15 +4,21 @@
   text-decoration: none;
 
   @media (max-width: variables.$mobile) {
-    width: 33px;
-    height: 38px;
+    width: min(3.3rem, 43px);
+    height: min(3.8rem, 50px);
   }
 
   @media (min-width: variables.$tablet) {
-    min-width: 174px;
+    width: clamp(160px, 17.4rem, 240px);
+    height: clamp(50px, 5rem, 62px);
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: clamp(13px, 1.3rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    min-width: clamp(202px, 20.2rem, 240px);
+    height: clamp(59px, 5.9rem, 75px);
   }
 
   &:hover {
@@ -25,23 +31,22 @@
 }
 
 .header-logo__image {
-  width: 33px;
-  height: 38px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 
   @media (min-width: variables.$tablet) {
-    width: 60px;
-    height: 50px;
+    width: clamp(60px, 6rem, 75px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 70px;
-    height: 59px;
+    width: clamp(70px, 7rem, 85px);
   }
 }
 
 .header-logo__text {
-  width: 101px;
-  height: 18px;
+  width: clamp(101px, 10.1rem, 126px);
+  height: auto;
 
   @media (max-width: variables.$mobile) {
     position: absolute;
@@ -56,7 +61,6 @@
   }
 
   @media (min-width: variables.$desktop) {
-    width: 118px;
-    height: 21px;
+    width: clamp(112px, 11.8rem, 150px);
   }
 }

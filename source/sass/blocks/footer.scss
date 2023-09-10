@@ -5,48 +5,46 @@
 }
 
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
+  display: grid;
+  gap: min(1rem, 15px);
+  padding: min(4.1rem, 50px) 0;
 
   @media (min-width: variables.$tablet) {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     align-items: start;
-    flex-wrap: wrap;
-    padding: 55px 0;
+    grid-auto-flow: row dense;
+    padding: min(5.5rem, 70px) 0;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 68px 0;
+    padding: clamp(62px, 6.7rem, 80px) 0;
   }
 }
 
 .footer__logo {
-  padding-bottom: 17px;
+  padding-bottom: min(1.7rem, 25px);
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
-    padding: 5px 0;
+    justify-self: start;
+    grid-column: 1 / 2;
+    padding: min(0.5rem, 10px) 0;
     border: none;
   }
 }
 
 .footer__social {
-  margin-bottom: 20px;
-  padding: 20px 0;
+  margin-bottom: 10px;
+  padding: min(1.1rem, 18px) 0 min(1.8rem, 28px);
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet) {
-    max-width: 180px;
+    max-width: max(180px, 18rem);
     margin: 0;
-    margin-left: 160px;
-    margin-right: auto;
-    padding: 7px 0;
+    justify-self: center;
+    grid-column: 2 / 3;
+    padding: clamp(7px, 0.7rem, 12px) 0;
     border: none;
-  }
-
-  @media (min-width: variables.$desktop) {
-    margin-left: 416px;
   }
 }
 
@@ -54,5 +52,10 @@
   @media (max-width: variables.$mobile) {
     width: 280px;
     margin: 0 auto;
+  }
+
+  @media (min-width: variables.$tablet) {
+    justify-self: end;
+    grid-column: 3 / -1;
   }
 }

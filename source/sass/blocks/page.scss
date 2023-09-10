@@ -2,8 +2,15 @@
 
 .page {
   font-family: variables.$font-primary;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(100vw / 320 * 10);
+
+  @media (min-width: variables.$tablet) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: calc(100vw / 1440 * 10);
+  }
 }
 
 .page__body {
@@ -16,14 +23,34 @@
   color: variables.$text-primary;
 }
 
+.page__background-wrapper {
+  min-width: 100%;
+
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
 .page__header {
-  &--with-background {
-    @media (min-width: variables.$desktop) {
-      margin-bottom: -360px;
-    }
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 }
 
 .page__content {
   min-width: 100%;
+
+  &--with-background {
+    @media (min-width: variables.$desktop) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+  }
+}
+
+.page__hero {
+  max-width: 2200px;
+  margin: 0 auto;
 }

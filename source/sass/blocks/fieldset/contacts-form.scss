@@ -1,22 +1,26 @@
 @use "./common/variables.scss";
 
 .contacts-form__wrapper {
-  padding-top: 15px;
+  padding-top: min(1.5rem, 26px);
 
   @media (min-width: variables.$tablet) {
-    padding-top: 41px;
+    padding-top: min(4.1rem, 46px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: clamp(35px, 4.1rem, 46px);
   }
 }
 
 .contacts-form__list {
-  gap: 14px;
+  gap: min(1.4rem, 20px);
 
   @media (min-width: variables.$tablet) {
-    gap: 17px;
+    gap: clamp(20px, 2rem, 25px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: clamp(60px, 8rem, 100px);
   }
 }

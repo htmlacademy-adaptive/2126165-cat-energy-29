@@ -1,13 +1,12 @@
 let screenWidth = window.screen.width;
 let map = document.querySelector(".invite__map");
-let mapImage = document.querySelector(".invite__map-image-wrapper");
+let mapImage = document.querySelector(".invite__map-image");
 let center;
 let zoom;
 let pinSize;
 
 map.classList.remove("invite__map--nojs");
-mapImage.classList.remove("invite__map-image-wrapper--nojs");
-
+mapImage.classList.remove("invite__map-image--nojs");
 
 if (screenWidth < 1280) {
   center = [59.938631, 30.323037];
@@ -17,7 +16,7 @@ if (screenWidth < 1280) {
   zoom = 14;
 };
 
-if (screenWidth < 768) {
+if (screenWidth < 640) {
   pinSize = [57, 53];
 } else {
   pinSize = [113, 106];
@@ -43,8 +42,6 @@ function init() {
   map.controls.remove("fullscreenControl");
   map.controls.remove("zoomControl");
   map.controls.remove("rulerControl");
-  // map.behaviors.disable(['scrollZoom']);
-
   map.geoObjects.add(placemark);
 };
 

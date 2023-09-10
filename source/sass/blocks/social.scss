@@ -3,13 +3,9 @@
 .social__list {
   @include mixins.list-reset;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
-  max-width: 132px;
+  gap: min(2.4rem, 36px);
+  max-width: max(13.2rem, 132px);
   margin: 0 auto;
-}
-
-.social__link {
-  width: 28px;
-  height: 22px;
 }

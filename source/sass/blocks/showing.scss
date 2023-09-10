@@ -1,7 +1,7 @@
 @use "../common/variables.scss";
 
 .showing {
-  padding: 25px 0;
+  padding: min(2.5rem, 50px) 0;
   text-align: center;
 
   @media (max-width: variables.$mobile) {
@@ -12,22 +12,22 @@
     content: "";
     display: block;
     margin: 0 auto;
-    margin-bottom: 25px;
-    width: 30px;
-    height: 30px;
+    margin-bottom: min(2.5rem, 35px);
+    width: 3rem;
+    height: 3rem;
     background-image: url("../img/sprite.svg#plus");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-width: variables.$tablet) {
-      width: 60px;
-      height: 60px;
+      width: max(6rem, 60px);
+      height: max(6rem, 60px);
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: min(5rem, 60px);
     }
 
     @media (min-width: variables.$desktop) {
-      margin-bottom: 40px;
+      margin-bottom: min(4rem, 50px);
     }
   }
 
@@ -47,62 +47,75 @@
   }
 
   @media (min-width: variables.$tablet) {
-    padding: 50px 37px 37px;
+    display: grid;
+    padding: min(5rem, 55px) min(3.7rem, 40px) min(4rem, 54px);
     border: 2px solid variables.$color-secondary;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 48px 38px 37px;
+    padding: clamp(40px, 5rem, 50px) clamp(20px, 3.75rem, 40px) clamp(40px, 4rem, 54px);
   }
 }
 
 .showing__title {
   margin: 0;
-  margin-bottom: 8px;
-  font-size: 16px;
-  line-height: 20px;
+  margin-bottom: min(0.8rem, 16px);
+  font-size: min(1.6rem, 24px);
+  line-height: min(2rem, 30px);
   text-transform: uppercase;
   color: #111111;
 
   @media (min-width: variables.$tablet) {
     margin: 0 auto;
-    margin-bottom: 22px;
-    max-width: 134px;
-    font-size: 20px;
-    line-height: 24px;
+    margin-bottom: min(2.2rem, 30px);
+    max-width: 13.4rem;
+    font-size: min(2rem, 26px);
+    line-height: min(2.4rem, 30px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 26px;
+    margin-bottom: clamp(22px, 2.6rem, 32px);
+    font-size: clamp(18px, 2rem, 26px);
+    line-height: clamp(22px, 2.4rem, 30px);
   }
 }
 
 .showing__description {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: min(2.1rem, 28px);
   font-family: variables.$font-secondary;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.6rem, 22px);
 
   @media (min-width: variables.$tablet) {
     margin: 0 auto;
-    margin-bottom: 82px;
-    max-width: 170px;
-    font-size: 16px;
-    line-height: 18px;
+    margin-bottom: 8.2rem;
+    max-width: max(17rem, 168px);
+    font-size: clamp(14px, 1.6rem, 20px);
+    line-height: clamp(16px, 1.8rem, 25px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 90px;
+    margin-bottom: clamp(76px, 8.7rem, 100px);
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(18px, 1.8rem, 25px);
   }
 }
 
 .showing__button {
   width: 100%;
-  padding: 10px;
+  padding: min(1rem, 14px);
 
   @media (min-width: variables.$tablet) {
-    font-size: 16px;
-    line-height: 20px;
+    align-self: end;
+    padding: clamp(10px, 1rem, 15px) clamp(45px, 4.5rem, 55px);
+    font-size: clamp(16px, 1.6rem, 22px);
+    line-height: clamp(18px, 2rem, 28px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: clamp(10px, 1rem, 15px) clamp(39px, 3.9rem, 55px);
+    font-size: clamp(16px, 1.6rem, 22px);
+    line-height: clamp(20px, 2rem, 28px);
   }
 }

@@ -1,17 +1,19 @@
 @use "../common/variables.scss";
 
 .container {
-  width: 280px;
-  // width: calc(100% - 40px);
+  width: calc(100% - 40px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet) {
-    width: 708px;
-    // width: calc(100% - 60px);
+    width: calc(100% - 60px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 1220px;
-    // width: calc(100% - 220px);
+    width: calc(100% - 140px);
+  }
+
+  @media (min-width: 1280px) {
+    width: calc(100% - 220px);
+    max-width: 2145px;
   }
 }

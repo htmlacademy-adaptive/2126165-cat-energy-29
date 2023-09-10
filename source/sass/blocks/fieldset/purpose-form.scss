@@ -1,7 +1,7 @@
 @use "./common/variables.scss";
 
 .purpose-form__wrapper {
-  padding: 22px 0 19px;
+  padding: clamp(22px, 2.2rem, 38px) 0 clamp(19px, 1.9rem, 32px);
 
   @media (min-width: variables.$tablet) {
     padding: 0;
@@ -9,15 +9,15 @@
 }
 
 .purpose-form__list {
-  gap: 13px;
+  gap: clamp(13px, 1.3rem, 20px);
 
   @media (min-width: variables.$tablet) {
-    padding: 25px;
-    padding-top: 23px;
+    padding: min(2.5rem, 35px);
+    padding-top: min(2.3rem, 35px);
     border: 1px solid #e7e7e7;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 24px 28px;
+    padding: clamp(22px, 2.4rem, 30px) clamp(26px, 2.8rem, 36px);
   }
 }

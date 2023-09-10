@@ -1,11 +1,14 @@
 @use "../common/variables.scss";
 
 .hero {
-  $percent-height: calc(100% - 160px);
-  padding-top: 27px;
+  $percent-height: calc(100% - 178px);
+  padding-top: min(2.7rem, 40px);
   text-align: center;
   background-image:
-    url("../img/cat-hero.jpg"),
+    image-set(url("../img/great-img/cat-hero@2x.webp") type("image/webp") 2x,
+      url("../img/great-img/cat-hero.webp") type("image/webp") 1x,
+      url("../img/great-img/cat-hero@2x.jpg") 2x,
+      url("../img/great-img/cat-hero.jpg") 1x),
     linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
     linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
   background-repeat: no-repeat;
@@ -13,15 +16,8 @@
   background-size: auto $percent-height, auto $percent-height, auto;
   color: #ffffff;
 
-  @media (min-resolution: 2dppx) {
-    background-image:
-      url("../img/cat-hero@2x.jpg"),
-      linear-gradient(90deg, #64a73d 50%, #62a53b 50%),
-      linear-gradient(#62a63b $percent-height, #ffffff $percent-height);
-  }
-
   @media (min-width: variables.$tablet) {
-    padding-top: 63px;
+    padding-top: min(6.4rem, 70px);
     text-align: left;
     background-color: #ffffff;
     background-image: none;
@@ -29,19 +25,16 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 143px;
+    padding-top: clamp(134px, 14.3rem, 143px);
     background-image:
-      url("../img/cat-hero-desktop.jpg"),
-      linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
+      image-set(url("../img/great-img/cat-hero-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/great-img/cat-hero-desktop.webp") type("image/webp") 1x,
+        url("../img/great-img/cat-hero-desktop@2x.jpg") 2x,
+        url("../img/great-img/cat-hero-desktop.jpg") 1x),
+      linear-gradient(90deg, #ffffff 50%, #63a63d 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
-    background-size: min(694px, 50%), 100%;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        url("../img/cat-hero-desktop@2x.jpg"),
-        linear-gradient(90deg, #ffffff 50%, #63a63c 50%);
-    }
+    background-size: min(72rem, 50%), 100%;
   }
 }
 
@@ -50,102 +43,108 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(10, min-content);
-    min-height: 810px;
-    padding-left: 90px;
+    padding-left: min(90px, 9rem);
   }
 
   @media (min-width: variables.$desktop) {
-    min-height: 551px;
-    margin-bottom: 82px;
-    padding-left: 80px;
+    min-height: 55rem;
+    margin-bottom: max(8.2rem, 70px);
+    padding-left: clamp(56px, 8rem, 80px);
   }
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 25px;
+  max-width: min(25rem);
+  margin: 0 auto;
+  margin-bottom: min(2.5rem, 40px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    min-width: 440px;
-    margin-bottom: 40px;
+    min-width: clamp(440px, 44rem, 660px);
+    margin: 0;
+    margin-bottom: clamp(40px, 4rem, 48px);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 440px;
-    padding-top: 82px;
+    padding-top: clamp(70px, 8.2rem, 82px);
   }
 }
 
 .hero__slogan {
   margin: 0;
-  margin-bottom: 29px;
-  line-height: 14px;
+  margin-bottom: min(2.9rem, 42px);
+  font-size: min(1.4rem, 18px);
+  line-height: min(1.4rem, 18px);
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    max-width: 460px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    line-height: 20px;
+    max-width: max(460px, 46rem);
+    margin-bottom: min(5rem, 60px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 52px;
+    margin-bottom: clamp(48px, 5.2rem, 60px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 }
 
 .hero__image-wrapper {
-  width: 280px;
-  height: 270px;
+  width: 28rem;
+  max-width: 350px;
   margin: 0 auto;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / -1;
     grid-row-end: -1;
-    width: 708px;
-    height: 609px;
+    max-width: none;
     margin: 0;
-    // margin-left: -529px;
-    margin-left: calc(-574 * 100% / 768);
     margin-top: -93px;
+    width: min(70.8rem, 830px);
+    height: min(60.9rem, 714px);
+    margin-left: -64rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: -53rem;
   }
 
   @media (min-width: variables.$desktop) {
     grid-row: 1 / -1;
-    width: 552px;
-    height: 499px;
+    width: clamp(530px, 55.2rem, 668px);
+    height: clamp(477px, 49.9rem, 604px);
     margin: 0;
-    margin-left: -294px;
+    margin-left: -295px;
   }
 }
 
 .hero__image {
   display: block;
-
-  @media (min-width: variables.$tablet) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero__button {
-  padding: 11px 44px;
-  font-size: 14px;
-  line-height: 18px;
+  padding: min(1.1rem, 15px) min(4.4rem, 60px);
+  font-size: min(1.6rem, 20px);
+  line-height: min(1.8rem, 23px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    max-width: 244px;
+    max-width: clamp(244px, 24.4rem, 325px);
     margin-bottom: 10px;
-    padding: 17px 26px;
-    font-size: 20px;
-    line-height: 20px;
+    padding: clamp(15px, 1.7rem, 20px) clamp(24px, 2.6rem, 32px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 18px 26px;
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 }

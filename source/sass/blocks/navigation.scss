@@ -9,7 +9,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 55px;
+    padding-top: clamp(46px, 5.5rem, 55px);
   }
 }
 
@@ -40,12 +40,12 @@
 
 .navigation__toggle {
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: min(2.4rem, 30px);
+  height: min(2.4rem, 30px);
   background-color: transparent;
   background-image: url("../img/sprite.svg#burger-button");
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: contain;
   border: none;
   cursor: pointer;
 
@@ -56,7 +56,7 @@
   &--closed {
     background-image: url("../img/sprite.svg#close-button");
     background-position: center;
-    background-size: 18px 18px;
+    background-size: min(1.8rem, 30px) min(1.8rem, 30px);
   }
 
   &--nojs {
@@ -74,10 +74,10 @@
   }
 
   @media (min-width: variables.$tablet) {
-    max-width: 450px;
+    max-width: max(45rem, 450px);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 600px;
+    max-width: max(52.9rem, 400px);
   }
 }

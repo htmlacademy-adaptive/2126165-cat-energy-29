@@ -3,27 +3,27 @@
 
 .programs__wrapper {
   @media (min-width: variables.$tablet) {
-    margin-bottom: 45px;
+    margin-bottom: clamp(40px, 4.5rem, 55px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 72px;
+    margin-bottom: clamp(68px, 7.2rem, 80px);
   }
 }
 
 .programs__list {
   @include mixins.list-reset;
   display: grid;
-  gap: 20px;
-  padding: 20px 0;
+  gap: min(2rem, 30px);
+  padding: min(2rem, 30px) 0;
 
   @media (min-width: variables.$tablet) {
     padding: 0;
-    gap: 30px;
+    gap: clamp(25px, 3rem, 40px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: clamp(70px, 8rem, 90px);
   }
 }

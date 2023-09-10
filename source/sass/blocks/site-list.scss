@@ -18,19 +18,22 @@
   @media (min-width: variables.$tablet) {
     display: flex;
     flex-direction: row;
-    gap: 34px;
+    gap: min(3.4rem, 34px);
     flex-wrap: wrap;
     justify-content: end;
     padding-right: 4px;
   }
 
   @media (min-width: variables.$desktop) {
+    gap: clamp(26px, 3.3rem, 33px);
     padding-right: 2px;
   }
 
   &--nojs {
-    position: static;
-    display: block;
+    @media (max-width: variables.$mobile) {
+      position: static;
+      display: block;
+    }
   }
 }
 
@@ -71,7 +74,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 2px;
+    bottom: 3px;
     height: 2px;
     background-color: variables.$color-primary;
   }
@@ -80,8 +83,8 @@
 .site-list__link {
   display: block;
   padding: 22px 22px 24px;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: min(2rem, 24px);
+  line-height: min(2rem, 24px);
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -89,13 +92,14 @@
 
   @media (min-width: variables.$tablet) {
     padding: 14px 0 12px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: clamp(16px, 1.8rem, 22px);
+    line-height: min(2.4rem, 28px);
   }
 
   @media (min-width: variables.$desktop) {
     padding: 20px 0 13px;
-    font-size: 20px;
+    font-size: clamp(16px, 2rem, 24px);
+    line-height: clamp(20px, 2.4rem, 30px);
   }
 
   &:hover {

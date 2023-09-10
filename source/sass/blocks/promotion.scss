@@ -1,76 +1,81 @@
 @use "../common/variables.scss";
 
 .promotion {
-  padding: 59px 0 43px;
+  padding: min(5.9rem, 68px) 0 min(4.3rem, 49px);
   text-align: center;
   background-color: variables.$color-primary;
+  // Точечно отключает stylenint по причине бага с указанием правил для ретина дисплеев в сочетании с градиентом
+  /* stylelint-disable unit-no-unknown */
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
-    url("../img/cat-promo.jpg");
+    image-set(url("../img/cat-promo@2x.webp") type("image/webp") 2x,
+      url("../img/cat-promo.webp") type("image/webp") 1x,
+      url("../img/cat-promo@2x.jpg") 2x,
+      url("../img/cat-promo.jpg") 1x);
+  /* stylelint-enable unit-no-unknown */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
-      url("../img/cat-promo@2x.jpg");
-  }
-
   &::before {
     content: "";
     display: block;
-    width: 78px;
-    height: 80px;
+    width: min(7.8rem, 132px);
+    height: min(8rem, 136px);
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: min(4.8rem, 60px);
     background-image: url("../img/sprite.svg#gift");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-width: variables.$tablet) {
       margin: 0;
-      width: 80px;
-      height: 82px;
+      width: clamp(80px, 8rem, 132px);
+      height: clamp(82px, 8.2rem, 136px);
     }
 
     @media (min-width: variables.$desktop) {
       margin: 0 auto;
-      margin-bottom: 46px;
+      margin-bottom: clamp(40px, 4.6rem, 60px);
     }
   }
 
-  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+  @media (min-width: variables.$tablet) and (max-width: 1023px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 58px 125px 60px 79px;
+    padding: min(5.8rem, 74px) min(12.5rem, 159px) min(6rem, 76px) min(7.9rem, 100px);
     background-position: center 60%;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 58px 42px 43px;
+    max-width: none;
+    padding: min(5.8rem, 74px) min(4.2rem, 53px) min(4.3rem, 54px);
+    background-position: center 60%;
   }
 }
 
 .promotion__text {
   margin: 0 auto;
-  max-width: 162px;
+  max-width: min(16.2rem, 270px);
   font-family: variables.$font-secondary;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(2rem, 30px);
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
+    max-width: clamp(150px, 16.2rem, 270px);
     margin: 0;
     text-align: left;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: clamp(14px, 1.6rem, 24px);
+    line-height: clamp(18px, 2rem, 30px);
   }
 
   @media (min-width: variables.$desktop) {
+    width: max(16.2rem, 150px);
     margin: 0 auto;
-    min-width: 162px;
+    font-size: clamp(14px, 1.6rem, 24px);
+    line-height: clamp(18px, 2rem, 30px);
     text-align: center;
   }
 }

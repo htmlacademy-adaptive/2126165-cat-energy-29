@@ -2,8 +2,8 @@
 
 .social-link {
   display: block;
-  width: 28px;
-  height: 22px;
+  width: clamp(28px, 2.8rem, 35px);
+  height: clamp(22px, 2.2rem, 28px);
   background-color: #666666;
 
   &--vk {

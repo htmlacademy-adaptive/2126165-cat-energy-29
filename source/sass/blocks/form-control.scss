@@ -2,17 +2,23 @@
 
 .form-control {
   margin: 0;
-  padding: 14px 12px 11px 15px;
+  padding: min(1.4rem, 22px) min(1.2rem, 19px) min(1.1rem, 17px) min(1.5rem, 24px);
   font-family: variables.$font-primary;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: min(1.6rem, 20px);
+  line-height: min(1.8rem, 23px);
   color: variables.$text-secondary;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
 
   @media (min-width: variables.$tablet) {
-    padding: 11px 20px;
-    font-size: 20px;
-    line-height: 20px;
+    padding: clamp(9px, 1.1rem, 14px) clamp(18px, 2rem, 26px);
+    font-size: clamp(18px, 2rem, 23px);
+    line-height: clamp(18px, 2rem, 23px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: clamp(11px, 1.1rem, 14px) clamp(20px, 2rem, 26px);
+    font-size: clamp(18px, 2rem, 23px);
+    line-height: clamp(18px, 2rem, 23px);
   }
 }

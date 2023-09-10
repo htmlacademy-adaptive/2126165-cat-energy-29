@@ -1,35 +1,19 @@
 @use "../common/variables.scss";
 
-@mixin item-special {
-  max-width: 122px;
-  margin: 0;
-  padding: 0;
-  font-family: variables.$font-primary;
-  font-size: 14px;
-  line-height: 20px;
-  color: variables.$text-primary;
-  text-transform: uppercase;
-  transform: none;
-
-  @media (min-width: variables.$tablet) {
-    max-width: 200px;
-  }
-}
-
 .example {
   position: relative;
-  padding: 25px 0 40px;
+  padding: min(2.5rem, 40px) 0 min(4rem, 56px);
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    padding: 45px 0 101px;
+    padding: min(4.5rem, 45px) 0 min(10.1rem, 101px);
     background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
   @media (min-width: variables.$desktop) {
     padding: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(#ffffff calc(100% - 462px), variables.$color-secondary calc(100% - 462px));
+    background-image: linear-gradient(#ffffff min(calc(100% - 462px), 23%), variables.$color-secondary min(calc(100% - 462px), 23%));
   }
 }
 
@@ -45,51 +29,53 @@
   margin-bottom: 40px;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 60px;
+    margin-bottom: min(6rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    margin-bottom: 146px;
+    margin-bottom: clamp(104px, 14.6rem, 146px);
   }
 }
 
 .example__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: min(2rem, 36px);
   font-family: variables.$font-secondary;
+  font-size: min(1.4rem, 18px);
+  line-height: min(1.8rem, 23px);
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 55px;
-    font-size: 16px;
-    line-height: 24px;
+    margin-bottom: min(5.5rem, 55px);
+    font-size: clamp(16px, 1.6rem, 20px);
+    line-height: clamp(24px, 2.4rem, 30px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    max-width: 433px;
-    margin-bottom: 69px;
+    max-width: clamp(433px, 43.3rem, 660px);
+    margin-bottom: clamp(58px, 6.9rem, 69px);
   }
 }
 
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 34px 32px;
+  gap: min(3.4rem, 45px) min(3.2rem);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: min(2rem, 40px);
 
-  @media (min-width: variables.$tablet) and (max-width: 1279px) {
-    grid-template-columns: repeat(2, 162px) 1fr;
-    gap: 43px;
-    margin-bottom: 104px;
+  @media (min-width: variables.$tablet) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, clamp(155px, 16.2rem, 235px)) 1fr;
+    gap: max(43px, 4.3rem);
+    margin-bottom: min(10.4rem, 104px);
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    gap: 60px 42px;
-    max-width: 366px;
+    gap: clamp(50px, 6rem, 80px) clamp(40px, 4.2rem, 80px);
+    max-width: clamp(366px, 36.6rem, 645px);
     margin-bottom: 0;
   }
 }
@@ -98,13 +84,13 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  padding: 14px 10px 7px;
+  padding: min(1.4rem, 22px) min(1rem, 16px) min(0.7rem, 11px);
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: min(0.1rem) solid #cdcdcd;
   border-radius: 5px;
 
   @media (min-width: variables.$tablet) {
-    padding-bottom: 9px;
+    padding-bottom: clamp(9px, 0.9rem, 14px);
   }
 
   &--special {
@@ -112,44 +98,44 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3px;
+    gap: 0.3rem;
     padding: 0;
     border: none;
 
-    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    @media (min-width: variables.$tablet) and (max-width: 1023px) {
       grid-column: 3 / -1;
       flex-direction: column;
       align-items: end;
-      gap: 10px;
+      gap: max(1rem, 10px);
       text-align: right;
     }
 
     @media (min-width: variables.$desktop) {
-      gap: 66px;
+      gap: min(6.6rem, 66px);
       justify-content: start;
     }
   }
 }
 
 .example__description {
-  max-width: 77px;
-  margin-top: 7px;
-  margin-bottom: -22px;
-  padding: 0 5px;
+  max-width: 7.7rem;
+  margin-top: 0.7rem;
+  margin-bottom: max(-2.2rem, -30px);
+  padding: 0 0.5rem;
   font-family: variables.$font-secondary;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: min(1.2rem, 16px);
+  line-height: min(1.2rem, 16px);
   text-transform: lowercase;
   color: variables.$text-secondary;
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    max-width: 200px;
-    margin-top: 11px;
-    margin-bottom: -15px;
-    padding: 0 7px;
-    font-size: 14px;
-    line-height: 14px;
+    max-width: max(200px, 20rem);
+    margin-top: max(11px, 1.1rem);
+    margin-bottom: clamp(-21px, -1.5rem, -15px);
+    padding: 0 max(7px, 0.7rem);
+    font-size: clamp(14px, 1.4rem, 18px);
+    line-height: clamp(14px, 1.4rem, 18px);
     background-color: #ffffff;
 
     br {
@@ -158,49 +144,62 @@
   }
 
   @media (min-width: variables.$desktop) {
-    top: calc(63 * 100% / 72);
     background-color: variables.$color-secondary;
-  }
-
-  &--special {
-    @include item-special;
-
-    @media (min-width: variables.$tablet) {
-      font-size: 20px;
-    }
   }
 }
 
 .example__amount {
   margin: 0;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: min(2.4rem, 27px);
+  line-height: min(2.4rem, 27px);
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: clamp(28px, 3rem, 40px);
+    line-height: clamp(35px, 3.7rem, 48px);
   }
 
-  &--special {
-    @include item-special;
+  @media (min-width: variables.$desktop) {
+    font-size: clamp(28px, 3rem, 40px);
+    line-height: clamp(35px, 3.7rem, 48px);
+  }
+}
 
-    @media (min-width: variables.$tablet) {
-      font-size: 20px;
-    }
+.example__item--special .example__description,
+.example__item--special .example__amount {
+  max-width: 12.2rem;
+  margin: 0;
+  padding: 0;
+  font-family: variables.$font-primary;
+  font-size: min(1.4rem, 20px);
+  line-height: clamp(20px, 2rem, 28px);
+  color: variables.$text-primary;
+  text-transform: uppercase;
+  transform: none;
+
+  @media (min-width: variables.$tablet) {
+    max-width: max(20rem, 200px);
+    font-size: clamp(19px, 2rem, 26px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: clamp(20px, 2rem, 26px);
   }
 }
 
 .example__slider {
-  min-height: 256px;
+  @media (max-width: variables.$mobile) {
+    width: 28rem;
+    margin: 0 auto;
+  }
 
   @media (min-width: variables.$tablet) {
-    width: 560px;
-    min-height: 512px;
+    width: clamp(560px, 56rem, 630px);
     margin: 0 auto;
   }
 
   @media (min-width: variables.$desktop) {
+    width: clamp(560px, 56rem, 800px);
     grid-column: 2 / 3;
     grid-row: span 4;
     align-self: start;

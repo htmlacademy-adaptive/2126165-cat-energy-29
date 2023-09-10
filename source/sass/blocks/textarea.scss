@@ -1,1 +1,11 @@
-//
+@use "../common/variables.scss";
+
+.textarea {
+  @media (min-width: variables.$tablet) {
+    padding: clamp(15px, 1.5rem, 15px) clamp(20px, 2rem, 20px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: max(1.2rem, 12px);
+  }
+}
