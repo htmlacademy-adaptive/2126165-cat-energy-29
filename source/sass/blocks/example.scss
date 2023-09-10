@@ -188,8 +188,6 @@
 }
 
 .example__slider {
-  height: 256px;
-
   @media (max-width: variables.$mobile) {
     width: 28rem;
     margin: 0 auto;
@@ -197,7 +195,6 @@
 
   @media (min-width: variables.$tablet) {
     width: clamp(560px, 56rem, 630px);
-    min-height: 512px;
     margin: 0 auto;
   }
 
