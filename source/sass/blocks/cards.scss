@@ -23,12 +23,12 @@
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(auto-fill, minmax(min(26rem, 335px), 1fr));
-    gap: min(14.1rem, 141px) min(6rem, 60px);
+    gap: min(13.9rem, 139px) min(6rem, 60px);
     justify-items: stretch;
   }
 
   @media (min-width: variables.$desktop) {
     grid-template-columns: repeat(auto-fill, minmax(min(24.5rem, 324px), 1fr));
-    gap: 144px 80px;
+    gap: clamp(135px, 14.5rem, 145px) 80px;
   }
 }

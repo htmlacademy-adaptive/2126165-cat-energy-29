@@ -9,7 +9,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 55px;
+    padding-top: clamp(46px, 5.5rem, 55px);
   }
 }
 
@@ -78,6 +78,6 @@
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: max(52.9rem, 529px);
+    max-width: max(52.9rem, 400px);
   }
 }

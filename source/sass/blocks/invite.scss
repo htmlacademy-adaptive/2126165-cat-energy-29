@@ -13,7 +13,7 @@
   justify-content: space-between;
   gap: 8px;
   flex-wrap: wrap;
-  padding: min(2.6rem, 40px) 0;
+  padding: min(2.7rem, 40px) 0;
 
   @media (min-width: variables.$tablet) {
     gap: 0;
@@ -24,9 +24,9 @@
     position: absolute;
     top: 95px;
     align-items: start;
-    column-gap: 84px;
-    width: clamp(565px, 56.5rem, 1000px);
-    padding: clamp(62px, 6.2rem, 81px) clamp(73px, 7.3rem, 95px) clamp(60px, 6rem, 78px) clamp(82px, 8.2rem, 107px);
+    column-gap: clamp(65px, 8.4rem, 84px);
+    width: clamp(550px, 56.5rem, 1000px);
+    padding: clamp(58px, 6.1rem, 81px) clamp(69px, 7.5rem, 95px) clamp(56px, 6rem, 78px) clamp(78px, 8rem, 107px);
     background-color: #ffffff;
     z-index: 1;
   }
@@ -48,8 +48,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: clamp(20px, 2rem, 27px);
-    line-height: clamp(26px, 2.6rem, 35px);
+    font-size: clamp(18px, 2rem, 27px);
+    line-height: clamp(24px, 2.6rem, 35px);
   }
 }
 

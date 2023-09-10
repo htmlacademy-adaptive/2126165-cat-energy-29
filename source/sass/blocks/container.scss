@@ -9,6 +9,10 @@
   }
 
   @media (min-width: variables.$desktop) {
+    width: calc(100% - 140px);
+  }
+
+  @media (min-width: 1280px) {
     width: calc(100% - 220px);
     max-width: 2145px;
   }

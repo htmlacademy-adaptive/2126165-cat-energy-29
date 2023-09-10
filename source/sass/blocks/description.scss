@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .description {
-  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+  @media (min-width: variables.$tablet) and (max-width: 1023px) {
     border-bottom: 1px solid #e6e6e6;
   }
 }
@@ -12,11 +12,11 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 0;
-    padding-bottom: min(4.5rem, 60px);
+    padding-bottom: min(4.7rem, 60px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 70px;
+    margin-bottom: clamp(50px, 7rem, 70px);
     padding-bottom: 0;
   }
 }
@@ -41,8 +41,11 @@
   }
 
   @media (min-width: variables.$desktop) {
+    column-gap: clamp(76px, 8.1rem, 81px);
+  }
+
+  @media (min-width: 1080px) {
     grid-template-columns: repeat(4, 1fr);
-    gap: max(81px, 8.1rem);
   }
 }
 
@@ -105,8 +108,8 @@
     }
 
     @media (min-width: variables.$desktop) {
-      font-size: clamp(280px, 28rem, 340px);
-      line-height: clamp(280px, 28rem, 340px);
+      font-size: clamp(270px, 28rem, 340px);
+      line-height: clamp(270px, 28rem, 340px);
     }
   }
 }

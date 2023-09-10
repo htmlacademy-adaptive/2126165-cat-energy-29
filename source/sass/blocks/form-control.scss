@@ -18,7 +18,7 @@
 
   @media (min-width: variables.$desktop) {
     padding: clamp(11px, 1.1rem, 14px) clamp(20px, 2rem, 26px);
-    font-size: clamp(20px, 2rem, 23px);
-    line-height: clamp(20px, 2rem, 23px);
+    font-size: clamp(18px, 2rem, 23px);
+    line-height: clamp(18px, 2rem, 23px);
   }
 }

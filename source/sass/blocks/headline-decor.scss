@@ -1,6 +1,6 @@
 @use "../common/variables.scss";
 
-.line-decor {
+.headline-decor {
   position: relative;
 
   &::after {
@@ -8,14 +8,14 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    top: 18px;
+    top: 16px;
     left: 50%;
     transform: translateX(-50%);
     background-color: variables.$color-primary;
     z-index: -1;
 
     @media (min-width: 768px) {
-      top: 22px;
+      top: 2.2rem;
     }
   }
 }

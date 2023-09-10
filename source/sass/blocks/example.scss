@@ -2,18 +2,18 @@
 
 .example {
   position: relative;
-  padding: min(2.5rem, 40px) 0 min(3.7rem, 56px);
+  padding: min(2.5rem, 40px) 0 min(4rem, 56px);
   background-color: #eaeaea;
 
   @media (min-width: variables.$tablet) {
-    padding: min(4.5rem, 45px) 0 min(9.8rem, 98px);
+    padding: min(4.5rem, 45px) 0 min(10.1rem, 101px);
     background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
   @media (min-width: variables.$desktop) {
     padding: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(#ffffff calc(100% - 462px), variables.$color-secondary calc(100% - 462px));
+    background-image: linear-gradient(#ffffff min(calc(100% - 462px), 23%), variables.$color-secondary min(calc(100% - 462px), 23%));
   }
 }
 
@@ -34,7 +34,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    margin-bottom: 146px;
+    margin-bottom: clamp(104px, 14.6rem, 146px);
   }
 }
 
@@ -55,7 +55,7 @@
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
     max-width: clamp(433px, 43.3rem, 660px);
-    margin-bottom: 69px;
+    margin-bottom: clamp(58px, 6.9rem, 69px);
   }
 }
 
@@ -66,7 +66,7 @@
   margin: 0;
   margin-bottom: min(2rem, 40px);
 
-  @media (min-width: variables.$tablet) and (max-width: 1279px) {
+  @media (min-width: variables.$tablet) and (max-width: 1023px) {
     grid-template-columns: repeat(2, clamp(155px, 16.2rem, 235px)) 1fr;
     gap: max(43px, 4.3rem);
     margin-bottom: min(10.4rem, 104px);
@@ -74,7 +74,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / 2;
-    gap: clamp(60px, 6rem, 80px) clamp(42px, 4.2rem, 80px);
+    gap: clamp(50px, 6rem, 80px) clamp(40px, 4.2rem, 80px);
     max-width: clamp(366px, 36.6rem, 645px);
     margin-bottom: 0;
   }
@@ -102,7 +102,7 @@
     padding: 0;
     border: none;
 
-    @media (min-width: variables.$tablet) and (max-width: 1279px) {
+    @media (min-width: variables.$tablet) and (max-width: 1023px) {
       grid-column: 3 / -1;
       flex-direction: column;
       align-items: end;
@@ -111,7 +111,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      gap: 66px;
+      gap: min(6.6rem, 66px);
       justify-content: start;
     }
   }
@@ -160,8 +160,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: clamp(30px, 3rem, 40px);
-    line-height: clamp(37px, 3.7rem, 48px);
+    font-size: clamp(28px, 3rem, 40px);
+    line-height: clamp(35px, 3.7rem, 48px);
   }
 }
 
@@ -188,7 +188,7 @@
 }
 
 .example__slider {
-  min-height: 256px;
+  height: 256px;
 
   @media (max-width: variables.$mobile) {
     width: 28rem;

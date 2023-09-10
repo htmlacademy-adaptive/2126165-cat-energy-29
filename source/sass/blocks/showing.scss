@@ -47,12 +47,13 @@
   }
 
   @media (min-width: variables.$tablet) {
-    padding: min(5rem, 55px) min(3.7rem, 40px) min(3.7rem, 40px);
+    display: grid;
+    padding: min(5rem, 55px) min(3.7rem, 40px) min(4rem, 54px);
     border: 2px solid variables.$color-secondary;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: clamp(48px, 4.8rem, 53px) clamp(38px, 3.8rem, 40px) clamp(37px, 3.7rem, 40px);
+    padding: clamp(40px, 5rem, 50px) clamp(20px, 3.75rem, 40px) clamp(40px, 4rem, 54px);
   }
 }
 
@@ -73,9 +74,9 @@
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: clamp(26px, 2.6rem, 32px);
-    font-size: clamp(20px, 2rem, 26px);
-    line-height: clamp(24px, 2.4rem, 30px);
+    margin-bottom: clamp(22px, 2.6rem, 32px);
+    font-size: clamp(18px, 2rem, 26px);
+    line-height: clamp(22px, 2.4rem, 30px);
   }
 }
 
@@ -88,14 +89,14 @@
 
   @media (min-width: variables.$tablet) {
     margin: 0 auto;
-    margin-bottom: min(8.2rem, 90px);
+    margin-bottom: 8.2rem;
     max-width: max(17rem, 168px);
     font-size: clamp(14px, 1.6rem, 20px);
     line-height: clamp(16px, 1.8rem, 25px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: clamp(90px, 9rem, 100px);
+    margin-bottom: clamp(76px, 8.7rem, 100px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(18px, 1.8rem, 25px);
   }
@@ -106,12 +107,14 @@
   padding: min(1rem, 14px);
 
   @media (min-width: variables.$tablet) {
-    padding: clamp(13px, 1.3rem, 15px) clamp(45px, 4.5rem, 55px);
+    align-self: end;
+    padding: clamp(10px, 1rem, 15px) clamp(45px, 4.5rem, 55px);
     font-size: clamp(16px, 1.6rem, 22px);
     line-height: clamp(18px, 2rem, 28px);
   }
 
   @media (min-width: variables.$desktop) {
+    padding: clamp(10px, 1rem, 15px) clamp(39px, 3.9rem, 55px);
     font-size: clamp(16px, 1.6rem, 22px);
     line-height: clamp(20px, 2rem, 28px);
   }

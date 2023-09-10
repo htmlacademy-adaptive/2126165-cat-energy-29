@@ -17,7 +17,7 @@
   color: #ffffff;
 
   @media (min-width: variables.$tablet) {
-    padding-top: min(6.3rem, 70px);
+    padding-top: min(6.4rem, 70px);
     text-align: left;
     background-color: #ffffff;
     background-image: none;
@@ -25,16 +25,16 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 143px;
+    padding-top: clamp(134px, 14.3rem, 143px);
     background-image:
       image-set(url("../img/great-img/cat-hero-desktop@2x.webp") type("image/webp") 2x,
         url("../img/great-img/cat-hero-desktop.webp") type("image/webp") 1x,
         url("../img/great-img/cat-hero-desktop@2x.jpg") 2x,
         url("../img/great-img/cat-hero-desktop.jpg") 1x),
-      linear-gradient(90deg, #ffffff 50%, #65a93e 50%);
+      linear-gradient(90deg, #ffffff 50%, #63a63d 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
-    background-size: min(min(69.4rem, 838px), 50%), 100%;
+    background-size: min(72rem, 50%), 100%;
   }
 }
 
@@ -47,9 +47,9 @@
   }
 
   @media (min-width: variables.$desktop) {
-    min-height: 550px;
-    margin-bottom: 82px;
-    padding-left: 80px;
+    min-height: 55rem;
+    margin-bottom: max(8.2rem, 70px);
+    padding-left: clamp(56px, 8rem, 80px);
   }
 }
 
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 82px;
+    padding-top: clamp(70px, 8.2rem, 82px);
   }
 }
 
@@ -86,9 +86,9 @@
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: clamp(52px, 5.2rem, 60px);
-    font-size: clamp(20px, 2rem, 24px);
-    line-height: clamp(20px, 2rem, 24px);
+    margin-bottom: clamp(48px, 5.2rem, 60px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 }
 
@@ -115,10 +115,10 @@
 
   @media (min-width: variables.$desktop) {
     grid-row: 1 / -1;
-    width: clamp(552px, 55.2rem, 668px);
-    height: clamp(499px, 49.9rem, 604px);
+    width: clamp(530px, 55.2rem, 668px);
+    height: clamp(477px, 49.9rem, 604px);
     margin: 0;
-    margin-left: -29.4rem;
+    margin-left: -295px;
   }
 }
 
@@ -144,7 +144,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: clamp(20px, 2rem, 24px);
-    line-height: clamp(20px, 2rem, 24px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 }

@@ -18,7 +18,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: clamp(60px, 6rem, 70px);
-    line-height: clamp(60px, 6rem, 70px);
+    font-size: clamp(45px, 6rem, 70px);
+    line-height: clamp(45px, 6rem, 70px);
   }
 }

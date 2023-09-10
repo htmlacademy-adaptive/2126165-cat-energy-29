@@ -19,7 +19,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: calc(325 * 100% / 896) calc(326 * 100% / 896) calc(245 * 100% / 896);
+    grid-template-columns: 32.5rem 32.6rem auto;
     align-items: center;
     padding: clamp(14px, 1.4rem, 18px) 0 clamp(17px, 1.7rem, 22px);
   }
@@ -41,8 +41,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: clamp(20px, 2rem, 24px);
-    line-height: clamp(20px, 2rem, 24px);
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
   }
 }
 
@@ -72,7 +72,7 @@
     grid-column: 2 / 3;
     grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
     justify-items: start;
-    padding-top: 7px;
+    padding-top: min(0.7rem, 7px);
     text-align: left;
   }
 }

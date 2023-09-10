@@ -9,15 +9,15 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding-bottom: 86px;
+    padding-bottom: clamp(76px, 8.6rem, 86px);
   }
 }
 
 .extra-products__wrapper {
   @media (min-width: variables.$desktop) {
     display: grid;
-    grid-template-columns: min(89.6rem, 1688px) auto;
-    column-gap: 80px;
+    grid-template-columns: min(89.5rem, 1688px) auto;
+    column-gap: clamp(60px, 8rem, 80px);
     row-gap: 30px;
     grid-auto-flow: dense;
   }
@@ -50,9 +50,9 @@
 
   @media (min-width: variables.$desktop) {
     margin-left: -40px;
-    margin-bottom: 79px;
-    font-size: clamp(36px, 3.6rem, 40px);
-    line-height: clamp(36px, 3.6rem, 40px);
+    margin-bottom: clamp(70px, 7.9rem, 79px);
+    font-size: clamp(32px, 3.6rem, 40px);
+    line-height: clamp(32px, 3.6rem, 40px);
   }
 }
 
