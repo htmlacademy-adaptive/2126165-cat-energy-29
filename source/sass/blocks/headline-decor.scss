@@ -15,7 +15,7 @@
     z-index: -1;
 
     @media (min-width: 768px) {
-      top: 2.2rem;
+      top: min(2.2rem, 25px);
     }
   }
 }
