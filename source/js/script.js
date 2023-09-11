@@ -18,6 +18,8 @@ navToggle.addEventListener("click", function () {
   }
 });
 
+navList.style.top = header.offsetHeight + "px";
+
 window.addEventListener('resize', (e) => {
   navList.style.top = header.offsetHeight + "px";
 });

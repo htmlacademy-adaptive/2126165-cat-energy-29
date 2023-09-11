@@ -54,17 +54,7 @@
   position: relative;
 
   @media (max-width: variables.$mobile) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 1px;
-      left: 50%;
-      right: 0;
-      transform: translateX(-50%);
-      bottom: 0;
-      background-color: #e6e6e6;
-    }
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -82,7 +72,7 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 22px 24px;
+  padding: min(2.2rem, 28px) min(2.2rem, 28px) min(2.3rem, 30px);
   font-size: min(2rem, 24px);
   line-height: min(2rem, 24px);
   font-weight: 400;
