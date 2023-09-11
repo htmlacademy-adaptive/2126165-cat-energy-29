@@ -19,7 +19,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: 32.5rem 32.6rem auto;
+    grid-template-columns: min(32.5rem, 662px) min(32.6rem, 664px) auto;
     align-items: center;
     padding: clamp(14px, 1.4rem, 18px) 0 clamp(17px, 1.7rem, 22px);
   }

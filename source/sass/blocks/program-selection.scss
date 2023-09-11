@@ -15,7 +15,7 @@
 
 .program-selection__wrapper {
   @media (min-width: variables.$tablet) {
-    padding: 0 clamp(40px, 4rem, 60px);
+    padding: 0 40px;
   }
 
   @media (min-width: variables.$desktop) {
@@ -86,7 +86,7 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
-      width: 100vw;
+      width: calc(100% + 40px);
       height: 1px;
       background-color: #d9d9d9;
 
@@ -162,7 +162,7 @@
 
   @media (min-width: variables.$desktop) {
     grid-column: 2 / -1;
-    padding-top: max(15px, 1.5rem);
+    padding-top: 15px;
     padding-left: max(3px, 0.3rem);
   }
 
@@ -185,6 +185,7 @@
 
 .program-selection__headline {
   max-width: fit-content;
+  margin: 0;
   margin-left: -20px;
   margin-bottom: min(2rem, 25px);
   padding: 0 20px;
@@ -258,7 +259,7 @@
 }
 
 .program-selection__comment {
-  margin-bottom: min(1.7rem, 37px);
+  margin-bottom: min(1.6rem, 37px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;

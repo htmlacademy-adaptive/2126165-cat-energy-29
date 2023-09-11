@@ -7,7 +7,7 @@
 .footer__wrapper {
   display: grid;
   gap: min(1rem, 15px);
-  padding: min(4.1rem, 50px) 0;
+  padding: min(3.9rem, 50px) 0;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(3, 1fr);

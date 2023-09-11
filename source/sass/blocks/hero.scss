@@ -34,7 +34,7 @@
       linear-gradient(90deg, #ffffff 50%, #63a63d 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
-    background-size: min(72rem, 50%), 100%;
+    background-size: min(72rem, 50%, 908px), 100%;
   }
 }
 
@@ -47,7 +47,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    min-height: 55rem;
+    min-height: min(55rem, 652px);
     margin-bottom: max(8.2rem, 70px);
     padding-left: clamp(56px, 8rem, 80px);
   }
@@ -62,10 +62,11 @@
     grid-column: 1 / 2;
     min-width: clamp(440px, 44rem, 660px);
     margin: 0;
-    margin-bottom: clamp(40px, 4rem, 48px);
+    margin-bottom: clamp(41px, 4.1rem, 48px);
   }
 
   @media (min-width: variables.$desktop) {
+    margin-bottom: clamp(40px, 4rem, 48px);
     padding-top: clamp(70px, 8.2rem, 82px);
   }
 }

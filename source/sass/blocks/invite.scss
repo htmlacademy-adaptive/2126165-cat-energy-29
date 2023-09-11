@@ -24,8 +24,8 @@
     position: absolute;
     top: 95px;
     align-items: start;
-    column-gap: clamp(65px, 8.4rem, 84px);
-    width: clamp(550px, 56.5rem, 1000px);
+    gap: 10px;
+    width: clamp(530px, 56.5rem, 1000px);
     padding: clamp(58px, 6.1rem, 81px) clamp(69px, 7.5rem, 95px) clamp(56px, 6rem, 78px) clamp(78px, 8rem, 107px);
     background-color: #ffffff;
     z-index: 1;

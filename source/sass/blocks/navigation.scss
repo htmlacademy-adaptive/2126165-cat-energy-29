@@ -20,19 +20,6 @@
   align-items: center;
   padding: 13px 0 14px;
 
-  @media (max-width: variables.$mobile) {
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #d9d9d9;
-    }
-  }
-
   @media (min-width: variables.$tablet) {
     padding: 0;
   }
@@ -71,6 +58,7 @@
     left: 0;
     top: 65px;
     width: 100%;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: variables.$tablet) {

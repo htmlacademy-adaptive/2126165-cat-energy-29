@@ -12,7 +12,7 @@
     content: "";
     display: block;
     margin: 0 auto;
-    margin-bottom: min(2.5rem, 35px);
+    margin-bottom: min(2.4rem, 35px);
     width: 3rem;
     height: 3rem;
     background-image: url("../img/sprite.svg#plus");
@@ -37,7 +37,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 100vw;
+    width: calc(100% + 40px);
     height: 1px;
     background-color: #ebebeb;
 
@@ -74,7 +74,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: clamp(22px, 2.6rem, 32px);
+    margin-bottom: clamp(22px, 2.4rem, 32px);
     font-size: clamp(18px, 2rem, 26px);
     line-height: clamp(22px, 2.4rem, 30px);
   }
@@ -96,7 +96,7 @@
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: clamp(76px, 8.7rem, 100px);
+    margin-bottom: clamp(76px, 8.9rem, 100px);
     font-size: clamp(16px, 1.6rem, 20px);
     line-height: clamp(18px, 1.8rem, 25px);
   }
