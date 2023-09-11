@@ -8,7 +8,7 @@
     position: absolute;
     width: calc(100% + 40px);
     height: 2px;
-    top: 16px;
+    top: min(1.6rem, 19px);
     left: 50%;
     transform: translateX(-50%);
     background-color: variables.$color-primary;
@@ -16,7 +16,7 @@
 
     @media (min-width: variables.$tablet) {
       top: min(2.2rem, 25px);
-      width: calc(100% + 60px);
+      width: calc(100% + 140px);
     }
 
     @media (min-width: variables.$desktop) {
@@ -25,6 +25,13 @@
 
     @media (min-width: 1280px) {
       width: calc(100% + 220px);
+    }
+  }
+
+  &--extra::after {
+    @media (min-width: variables.$tablet) {
+      top: min(2.2rem, 25px);
+      width: calc(100% + 60px);
     }
   }
 }

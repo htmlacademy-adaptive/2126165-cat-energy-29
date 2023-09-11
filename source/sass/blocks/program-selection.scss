@@ -15,7 +15,7 @@
 
 .program-selection__wrapper {
   @media (min-width: variables.$tablet) {
-    padding: 0 clamp(40px, 4rem, 60px);
+    padding: 0 40px;
   }
 
   @media (min-width: variables.$desktop) {
@@ -185,6 +185,7 @@
 
 .program-selection__headline {
   max-width: fit-content;
+  margin: 0;
   margin-left: -20px;
   margin-bottom: min(2rem, 25px);
   padding: 0 20px;
