@@ -190,16 +190,19 @@
 .example__slider {
   @media (max-width: variables.$mobile) {
     width: 28rem;
+    height: 25.6rem;
     margin: 0 auto;
   }
 
   @media (min-width: variables.$tablet) {
     width: clamp(560px, 56rem, 630px);
+    height: min(51.2rem, 570px);
     margin: 0 auto;
   }
 
   @media (min-width: variables.$desktop) {
     width: clamp(560px, 56rem, 800px);
+    height: clamp(512px, 51.2rem, 726px);
     grid-column: 2 / 3;
     grid-row: span 4;
     align-self: start;
