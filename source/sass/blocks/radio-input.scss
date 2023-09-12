@@ -30,3 +30,7 @@
     height: clamp(18px, 1.8rem, 25px);
   }
 }
+
+.field:hover .radio-input {
+  border-color: #bababa;
+}

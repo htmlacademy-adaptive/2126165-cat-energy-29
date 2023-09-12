@@ -10,8 +10,8 @@
 @use "blocks/academy-logo.scss";
 @use "blocks/title.scss";
 @use "blocks/button.scss";
-@use "blocks/map.scss";
 @use "blocks/headline-decor.scss";
+@use "blocks/footnote.scss";
 //Header
 @use "blocks/header.scss";
 @use "blocks/header-logo.scss";
@@ -52,3 +52,7 @@
 @use "blocks/extra-products.scss";
 @use "blocks/extras.scss";
 @use "blocks/promotion.scss";
+//Map
+@use "blocks/map/map.scss";
+@use "blocks/map/ymaps-2-1-79-copyright.scss";
+@use "blocks/map/ymaps-2-1-79-map-copyrights-promo.scss";

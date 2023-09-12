@@ -9,11 +9,6 @@
     gap: clamp(20px, 2rem, 25px);
   }
 
-  &:hover .radio-input,
-  &:hover .checkbox-input {
-    border-color: #bababa;
-  }
-
   &--disabled {
     opacity: 0.3;
   }
