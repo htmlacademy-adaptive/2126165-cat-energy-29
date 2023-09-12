@@ -17,28 +17,3 @@
     outline: 1px solid variables.$color-error;
   }
 }
-
-.input:focus + .input__icon {
-  color: variables.$color-primary;
-}
-
-.input--error + .input__icon {
-  color: variables.$color-error;
-}
-
-.input__icon {
-  position: absolute;
-  top: 50%;
-  right: min(1.2rem, 18px);
-  transform: translateY(-50%);
-  width: clamp(20px, 2rem, 25px);
-  height: clamp(20px, 2rem, 25px);
-
-  @media (min-width: variables.$tablet) {
-    right: clamp(14px, 1.4rem, 20px);
-  }
-
-  @media (min-width: variables.$desktop) {
-    right: clamp(16px, 1.6rem, 22px);
-  }
-}

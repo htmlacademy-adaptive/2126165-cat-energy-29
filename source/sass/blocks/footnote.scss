@@ -1,0 +1,12 @@
+@use "../common/variables.scss";
+
+.footnote__text {
+  font-family: variables.$font-secondary;
+  font-size: min(1.4rem, 18px);
+  line-height: min(1.6rem, 21px);
+
+  @media (min-width: variables.$tablet) {
+    font-size: clamp(16px, 1.6rem, 19px);
+    line-height: clamp(16px, 1.6rem, 19px);
+  }
+}
