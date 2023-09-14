@@ -4,16 +4,11 @@
   border: 1px solid #e7e7e7;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border-color: #cdcdcd;
   }
 
   &:focus {
-    border: 1px solid #444444;
+    border-color: #444444;
     outline: 1px solid #444444;
-  }
-
-  &--error {
-    border: 1px solid variables.$color-error;
-    outline: 1px solid variables.$color-error;
   }
 }

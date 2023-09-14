@@ -33,6 +33,7 @@
     @media (max-width: variables.$mobile) {
       position: static;
       display: block;
+      width: 100%;
     }
   }
 }

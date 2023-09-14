@@ -1,6 +1,8 @@
 @use "../common/variables.scss";
 
 .navigation {
+  position: relative;
+
   @media (min-width: variables.$tablet) {
     display: flex;
     justify-content: space-between;
@@ -23,6 +25,22 @@
   @media (min-width: variables.$tablet) {
     padding: 0;
   }
+
+  &--with-decor::after {
+    @media (max-width: variables.$mobile) {
+      content: "";
+      position: absolute;
+      width: calc(100% + 40px);
+      height: 1px;
+      left: -20px;
+      bottom: 0;
+      background-color: #e6e6e6;
+    }
+  }
+}
+
+.navigation__hat--with-decor+.navigation__list {
+  border: none;
 }
 
 .navigation__toggle {
@@ -55,9 +73,9 @@
   @media (max-width: variables.$mobile) {
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: -20px;
     top: 65px;
-    width: 100%;
+    width: calc(100% + 40px);
     border-top: 1px solid #e6e6e6;
   }
 
