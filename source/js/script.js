@@ -1,4 +1,4 @@
-let header = document.querySelector(".header");
+let navigation = document.querySelector(".navigation");
 let navList = document.querySelector(".site-list");
 let navToggle = document.querySelector(".navigation__toggle");
 let navClue = document.querySelector(".navigation__clue");
@@ -18,8 +18,8 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-navList.style.top = header.offsetHeight + "px";
+navList.style.top = navigation.offsetHeight + "px";
 
 window.addEventListener('resize', (e) => {
-  navList.style.top = header.offsetHeight + "px";
+  navList.style.top = navigation.offsetHeight + "px";
 });
