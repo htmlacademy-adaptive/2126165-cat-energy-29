@@ -141,11 +141,6 @@
   }
 }
 
-.program-selection__input--error {
-  border-color: variables.$color-error;
-  outline: 1px solid variables.$color-error;
-}
-
 .program-selection__input:focus + .program-selection__field-icon {
   color: variables.$color-primary;
 }
