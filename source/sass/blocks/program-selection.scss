@@ -146,11 +146,11 @@
   outline: 1px solid variables.$color-error;
 }
 
-.program-selection__input:focus+.program-selection__field-icon {
+.program-selection__input:focus + .program-selection__field-icon {
   color: variables.$color-primary;
 }
 
-.program-selection__input--error+.program-selection__field-icon {
+.program-selection__input--error + .program-selection__field-icon {
   color: variables.$color-error;
 }
 

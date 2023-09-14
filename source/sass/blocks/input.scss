@@ -11,4 +11,9 @@
     border-color: #444444;
     outline: 1px solid #444444;
   }
+
+  &--error {
+    border-color: variables.$color-error;
+    outline: 1px solid variables.$color-error;
+  }
 }
